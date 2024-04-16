@@ -27,9 +27,7 @@
             <tr class="bg-c-blue">
               <th>ID</th>
               <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Role</th>
+              <th>Address</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -37,17 +35,12 @@
             <tr class="table-row">
               <td>1</td>
               <td>bill Gates</td>
-              <td>billygate@outlook.com</td>
-              <td>0897465132</td>
-              <td>user</td>
+              <td>California, USA</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
-            </tr>
-            <tr>
-              <td colspan="100%" class="text-center">No record found</td>
             </tr>
           </tbody>
         </table>

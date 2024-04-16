@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('admin.customers.index');
+    return view('admin.customers.create');
 });
 
 Auth::routes();

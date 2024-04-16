@@ -12,26 +12,22 @@
     <div class="row pb-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">User List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">User Details</li>
+        <li class="breadcrumb-item"><a href="">Customers List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Customer Details</li>
       </ol>
     </nav>
     <table class="table table-bordered table-sm bg-white">
   
     <tr>
-      <th scope="col">First Name</th>
+      <th scope="col">Id</th>
       <td scope="col"></td>
     </tr>
     <tr>
-      <th scope="col">Last Name</th>
+      <th scope="col">Name</th>
       <td scope="col"></td>
     </tr>
     <tr>
-      <th scope="col">Email</th>
-      <td scope="col"></td>
-    </tr>
-    <tr>
-      <th scope="col">Role</th>
+      <th scope="col">Address</th>
       <td scope="col"></td>
     </tr>
       <td scope="col">
