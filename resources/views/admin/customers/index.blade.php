@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-12 mb-2">
         <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Customers</h3>
-          <a href="" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Customers</a>
+          <a href="{{route('customers.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Customers</a>
         
       </div>
       <!--Search bar-->

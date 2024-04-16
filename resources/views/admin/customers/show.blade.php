@@ -12,7 +12,7 @@
     <div class="row pb-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">Customers List</a></li>
+        <li class="breadcrumb-item"><a href="{{route('customers.index')}}">Customers List</a></li>
         <li class="breadcrumb-item active" aria-current="page">Customer Details</li>
       </ol>
     </nav>
@@ -73,8 +73,8 @@
               <td>oliviajoes19@gmail.com1</td>
               <td>(222) 222-4545</td>
               <td class="text-center">
-                <a href="{{route('customers.edit_contact',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="{{route('customers.edit_delete',['id'=>'1'])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
             <tr class="table-row">
