@@ -44,7 +44,7 @@
         <ul class="navbar-nav mr-auto">
         </ul>
         <ul class="navbar-nav ml-auto">
-                <li>
+                <!-- <li>
                     <div class="dropdown">
                         <a href="{{url('optimize')}}"><i class="icon feather icon-refresh-cw"></i></a>
                     </div>
@@ -53,7 +53,7 @@
                     <div class="dropdown">
                         <a href="{{url('code')}}"><i class="fa fa-code"></i></a>
                     </div>
-                </li>
+                </li> -->
 
             <li>
                 <div class="dropdown">
@@ -84,7 +84,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification ">
                         <div class="pro-head">
-                            <img src="" class="img-radius wid-40 hei-40" style="object-fit: cover">
+                            <img src="images/ds.png" class="img-radius wid-40 hei-40" style="object-fit: cover">
                             <span></span>
                             <a class="dud-logout" title="Logout"
                                onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"
