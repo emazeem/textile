@@ -46,6 +46,114 @@
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
+            <tr class="table-row">
+              <td>2</td>
+              <td>Gold Smith</td>
+              <td>Smith@outlook.com</td>
+              <td>090224332</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>3</td>
+              <td>kyle jamie</td>
+              <td>jamie@outlook.com</td>
+              <td>0329443132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>4</td>
+              <td>harry carter</td>
+              <td>harry@outlook.com</td>
+              <td>0323245132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>5</td>
+              <td>mike bowden</td>
+              <td>mike@outlook.com</td>
+              <td>0232465132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>6</td>
+              <td>katrina kayden</td>
+              <td>kate@outlook.com</td>
+              <td>0332465132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>7</td>
+              <td>mika jeson</td>
+              <td>jesy@outlook.com</td>
+              <td>0897465132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>8</td>
+              <td>peta gilbart</td>
+              <td>gil@outlook.com</td>
+              <td>0897465132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>9</td>
+              <td>angela grey</td>
+              <td>grey@outlook.com</td>
+              <td>0897465132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>10</td>
+              <td>chris mark</td>
+              <td>mark@outlook.com</td>
+              <td>0897465132</td>
+              <td>user</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
             <tr>
               <td colspan="100%" class="text-center">No record found</td>
             </tr>
