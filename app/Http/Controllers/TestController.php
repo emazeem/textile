@@ -16,8 +16,11 @@ class TestController extends Controller
     public function show(){
         return view('admin.test.show');
     }
-    public function upadte(){
+    public function update(){
         return view('admin.test.update');
+    }
+    public function create(){
+        return view('admin.test.create');
     }
 
 }

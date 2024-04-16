@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-12 mb-2">
         <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Personnel</h3>
-          <a href="" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Users</a>
+          <a href="{{route('test.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Add Test</a>
         
       </div>
       <!--Search bar-->
@@ -41,8 +41,8 @@
               <td>0897465132</td>
               <td>user</td>
               <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                <a href="{{route('test.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="{{route('test.show',['id'=>'1'])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>

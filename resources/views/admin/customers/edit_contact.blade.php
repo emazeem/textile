@@ -11,8 +11,8 @@
     <div class="row pb-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">Customers List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Edit Details</li>
+        <li class="breadcrumb-item"><a href="">Customer Detail</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Contacts</li>
       </ol>
     </nav>
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
@@ -20,7 +20,7 @@
             <input type="hidden" value="" name="id">
             <div class="card ">
                 <div class="card-header">
-                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Customer</h5>
+                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Contact</h5>
                     
                 </div>
             </div>
@@ -28,15 +28,15 @@
                 
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label">Name</label>
-                    <input class="form-control" name="name" placeholder="Name" value='Happy Bakery'>
+                    <input class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="col-md-4 pb-4">
-                    <label for="remarks" class="control-label">Address</label>
-                    <input class="form-control" name="address" placeholder="Address" value='456 Baker Blvd, Breadville, TX 78901'>
+                    <label for="remarks" class="control-label">Email</label>
+                    <input class="form-control" name="address" placeholder="Email">
                 </div>
                 <div class="col-md-4 pb-4">
-                    <label for="remarks" class="control-label">Industry</label>
-                    <input class="form-control" name="industry" placeholder="industry" value='Food Service'>
+                    <label for="remarks" class="control-label">Phone</label>
+                    <input class="form-control" name="industry" placeholder="Phone">
                 </div>
                 <div class="card-footer bg-light border-top">
                     <div class="row">
