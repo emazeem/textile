@@ -73,7 +73,7 @@
               <td>oliviajoes19@gmail.com1</td>
               <td>(222) 222-4545</td>
               <td class="text-center">
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="{{route('contacts.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
@@ -99,5 +99,20 @@
             </tr>
           </table>
     </div>
-    
+    <style>
+    .btn-outline-secondary{
+      background-color: #253967!important;
+      color:white;
+    }
+    .btn-outline-secondary:hover{
+      background-color: #253967!important;
+    }
+    table#example thead tr th{
+    background: #253967!important;
+  
+    }
+    .table-row{
+      background: #fff!important;
+    }
+    </style>
 @endsection

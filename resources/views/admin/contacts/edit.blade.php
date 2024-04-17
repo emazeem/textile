@@ -11,8 +11,8 @@
     <div class="row pb-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">Customer Detail</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Edit Contacts</li>
+        <li class="breadcrumb-item"><a href="{{route('customers.show',['id'=>'1'])}}">Customer Detail</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact Details</li>
       </ol>
     </nav>
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">

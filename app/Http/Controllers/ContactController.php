@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function edit(){
-        return view("admin.customers.edit_contact");
+        return view("admin.contacts.edit");
     }
     public function delete(){
-        return view("admin.customers.delete_contact");
+        return view("");
     }
 }
