@@ -36,8 +36,8 @@
           <tbody>
             <tr class="table-row">
               <td>1</td>
-              <td>bill Gates</td>
-              <td>billygate@outlook.com</td>
+              <td>Chemical Lab</td>
+              <td>color</td>
               <td>0897465132</td>
               <td>user</td>
               <td>
@@ -48,8 +48,8 @@
             </tr>
             <tr class="table-row">
               <td>2</td>
-              <td>Gold Smith</td>
-              <td>Smith@outlook.com</td>
+              <td>Chemical Lab</td>
+              <td>fadeness</td>
               <td>090224332</td>
               <td>user</td>
               <td>
@@ -60,8 +60,8 @@
             </tr>
             <tr class="table-row">
               <td>3</td>
-              <td>kyle jamie</td>
-              <td>jamie@outlook.com</td>
+              <td>Chemical Lab</td>
+              <td>fastness</td>
               <td>0329443132</td>
               <td>user</td>
               <td>
@@ -72,8 +72,8 @@
             </tr>
             <tr class="table-row">
               <td>4</td>
-              <td>harry carter</td>
-              <td>harry@outlook.com</td>
+              <td>Physical Lab</td>
+              <td>flamability</td>
               <td>0323245132</td>
               <td>user</td>
               <td>
@@ -84,8 +84,8 @@
             </tr>
             <tr class="table-row">
               <td>5</td>
-              <td>mike bowden</td>
-              <td>mike@outlook.com</td>
+              <td>Wet Lab</td>
+              <td>launder</td>
               <td>0232465132</td>
               <td>user</td>
               <td>
@@ -96,8 +96,8 @@
             </tr>
             <tr class="table-row">
               <td>6</td>
-              <td>katrina kayden</td>
-              <td>kate@outlook.com</td>
+              <td>Physical Lab</td>
+              <td>perspiration</td>
               <td>0332465132</td>
               <td>user</td>
               <td>
@@ -108,8 +108,8 @@
             </tr>
             <tr class="table-row">
               <td>7</td>
-              <td>mika jeson</td>
-              <td>jesy@outlook.com</td>
+              <td>Chemical Lab</td>
+              <td>allergy</td>
               <td>0897465132</td>
               <td>user</td>
               <td>
@@ -120,8 +120,8 @@
             </tr>
             <tr class="table-row">
               <td>8</td>
-              <td>peta gilbart</td>
-              <td>gil@outlook.com</td>
+              <td>Physical Lab</td>
+              <td>tensile strength</td>
               <td>0897465132</td>
               <td>user</td>
               <td>
@@ -132,8 +132,8 @@
             </tr>
             <tr class="table-row">
               <td>9</td>
-              <td>angela grey</td>
-              <td>grey@outlook.com</td>
+              <td>Physical Lab</td>
+              <td>flamability</td>
               <td>0897465132</td>
               <td>user</td>
               <td>
@@ -144,8 +144,8 @@
             </tr>
             <tr class="table-row">
               <td>10</td>
-              <td>chris mark</td>
-              <td>mark@outlook.com</td>
+              <td>Wet Lab</td>
+              <td>wash effect</td>
               <td>0897465132</td>
               <td>user</td>
               <td>
