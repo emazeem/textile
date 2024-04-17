@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\RangeController;
 
 
 
@@ -17,6 +18,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [UserController::class, 'index'])->name('users.index');
         Route::post('update', [UserController::class, 'update'])->name('users.update');
         Route::get('create', [UserController::class, 'create'])->name('users.create');
+        Route::post('store', [UserController::class, 'store'])->name('users.store');
         Route::get('edit/{id}', [UserController::class, 'edit'])->name('users.edit');
         Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
         Route::post('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
@@ -45,6 +47,14 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('create', [TestController::class, 'create'])->name('tests.create');
         Route::get('show/{id}', [TestController::class, 'show'])->name('tests.show');
         Route::post('delete/{id}', [TestController::class, 'delete'])->name('tests.delete');
+
+    });
+    Route::group(['prefix' => 'ranges'], function () {
+        Route::get('', [RangeController::class, 'index'])->name('ranges.index');
+        Route::get('edit', [RangeController::class, 'edit'])->name('ranges.edit');
+        Route::get('create', [RangeController::class, 'create'])->name('ranges.create');
+        Route::get('show/{id}', [RangeController::class, 'show'])->name('ranges.show');
+        Route::post('delete/{id}', [RangeController::class, 'delete'])->name('ranges.delete');
 
     });
 });

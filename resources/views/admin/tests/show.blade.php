@@ -5,7 +5,7 @@
 <div class="row pb-3">
 <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{route('test.index')}}">Test List</a></li>
+        <li class="breadcrumb-item"><a href="{{route('tests.index')}}">Test List</a></li>
         <li class="breadcrumb-item active" aria-current="page">Test Details</li>
       </ol>
     </nav>

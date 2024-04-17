@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{route('ranges.index')}}" class="nav-link">
                         <span class="pcoded-micon">
                             <i class="bx bx-task"></i>
                         </span>
