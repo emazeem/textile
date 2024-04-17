@@ -10,7 +10,7 @@ $(document).ready(function () {
 </script>
  @endif
 <div class="row pb-3">
-    <form class="form-horizontal row" id="user-form" method="post" enctype="multipart/form-data">
+    <form class="form-horizontal row" id="user-form" method="post" enctype="multipart/form-data" action="{{route('users.update')}}">
          @csrf
          <input type="hidden" name="id" value="{{$edit->id}}">
          <div class="col-12">
@@ -18,7 +18,7 @@ $(document).ready(function () {
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">
-                            <h5 class="font-weight-light"><i class="feather icon-user"></i>Add User</h5>
+                            <h5 class="font-weight-light"><i class="feather icon-user"></i>Edit User</h5>
                         </div>
                     </div>
                     <div class="row">

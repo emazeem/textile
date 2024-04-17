@@ -34,8 +34,8 @@
             </tr>
           </thead>
           <tbody>
+          @foreach($users as $user)
             <tr class="table-row">
-                @foreach($users as $user)
                     <td>{{$user->id}}</td>
                     <td>{{$user->fname}} {{$user->lname}}</td>
                     <td>{{$user->email}}</td>
@@ -46,8 +46,8 @@
                     <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                     <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                  </td>
-                @endforeach
             </tr>
+            @endforeach
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">
