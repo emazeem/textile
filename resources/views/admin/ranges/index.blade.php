@@ -153,9 +153,6 @@
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
-            <tr>
-              <td colspan="100%" class="text-center">No record found</td>
-            </tr>
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">
