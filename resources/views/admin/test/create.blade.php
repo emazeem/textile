@@ -20,14 +20,14 @@
         @csrf
         <div class="card">
             <div class="card-footer bg-light border-top">
-                <h5 class="font-weight-light"><i class="feather icon-clock mr-1"></i>Add Test</h5>
+                <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Test</h5>
                 <div class="row">
                     <div class="form-group col-md-3 col-12 ">
                     <label for="lab" class="control-label font-weight-bold">Lab</label>
                             <select type="dropdown" id="lab" name="lab" class="form-control w-100">
-                            <option value="Laravel internee">Chemical Lab</option>
-                            <option value="Sale Executive">Physical Lab</option>
-                            <option value="CEO">Wet Lab</option>
+                            <option value="Chemical lab">Chemical Lab</option>
+                            <option value="Physcial lab">Physical Lab</option>
+                            <option value="Wet lab">Wet Lab</option>
                         </select>
                     </div>
                     <div class="form-group col-md-3 col-12 ">
