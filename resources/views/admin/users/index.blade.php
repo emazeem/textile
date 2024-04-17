@@ -48,9 +48,6 @@
                  </td>
                 @endforeach
             </tr>
-            <tr>
-              <td colspan="100%" class="text-center">No record found</td>
-            </tr>
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">
