@@ -28,23 +28,25 @@
               <th>ID</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Phone</th>
+              <th>Department</th>
               <th>Role</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr class="table-row">
-              <td>1</td>
-              <td>Admin</td>
-              <td>info@textile.com</td>
-              <td>0321456865</td>
-              <td>super-admin</td>
-              <td>
-                <a href="{{route('users.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="{{route('users.show',['id'=>'1'])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
+                @foreach($users as $user)
+                    <td>{{$user->id}}</td>
+                    <td>{{$user->fname}} {{$user->lname}}</td>
+                    <td>{{$user->email}}</td>
+                    <td>{{$user->department}}</td>
+                    <td>{{$user->role}}</td>
+                 <td>
+                    <a href="{{route('users.edit',['id'=>$user->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                    <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                 </td>
+                @endforeach
             </tr>
             <tr>
               <td colspan="100%" class="text-center">No record found</td>
