@@ -12,6 +12,7 @@ $(document).ready(function () {
 <div class="row pb-3">
     <form class="form-horizontal row" id="user-form" method="post" enctype="multipart/form-data">
          @csrf
+         <input type="hidden" name="id" value="{{$edit->id}}">
          <div class="col-12">
             <div class="card user-card user-card-3 support-bar1">
                 <div class="card-footer bg-light border-top">
@@ -63,7 +64,6 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="department" class="control-label font-weight-bold">Department</label>
                             <select type="dropdown" id="department" name="department" class="form-control w-100" value='{{$edit->department}}'>
-                            <option value=""></option>
                             <option value="Sales department">Sales Department</option>
                             <option value="Software department">Software Department</option>
                     </select>

@@ -39,10 +39,6 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-3 ">
-                            <label for="phone" class="control-label font-weight-bold">Phone</label>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"value="">
-                        </div>
                         <div class="col-md-3">
                             <label for="role" class="control-label font-weight-bold">Role</label>
                             <select class="form-select custom-select" name="role">

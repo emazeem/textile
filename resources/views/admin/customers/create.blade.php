@@ -17,15 +17,15 @@
             </div>
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label font-weight-bold">Name</label>
-                    <input class="form-control" name="name" placeholder="name">
+                    <input class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label font-weight-bold">Address</label>
-                    <input class="form-control" name="address" placeholder="address">
+                    <input class="form-control" name="address" placeholder="Address">
                 </div>
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label font-weight-bold">Industry</label>
-                    <input class="form-control" name="address" placeholder="address">
+                    <input class="form-control" name="address" placeholder="Industry">
                 </div>
                 <!--Button -->
                 <div class="card-footer bg-light border-top">
