@@ -25,12 +25,8 @@
       <td scope="col">chemical lab</td>
     </tr>
     <tr>
-      <th scope="col">Users</th>
-      <td scope="col">admin</td>
-    </tr>
-    <tr>
-      <th scope="col">Title</th>
-      <td scope="col">testing</td>
+      <th scope="col">Name</th>
+      <td scope="col">color</td>
     </tr>
     <tr>
       <th scope="col">Description</th>
@@ -66,10 +62,7 @@
     <tr>
 
       <td colspan="2">
-        <a href=""
-
-        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" readonly>
-         </a>
+        <a href="" input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" readonly></a>
          <br>
       </td>
     </tr>
