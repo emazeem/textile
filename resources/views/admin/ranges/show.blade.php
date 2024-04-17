@@ -5,8 +5,8 @@
 <div class="row pb-3">
 <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{route('ranges.index')}}">Test List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Test Details</li>
+        <li class="breadcrumb-item"><a href="{{route('ranges.index')}}">Ranges List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Ranges Details</li>
       </ol>
     </nav>
 <!-- <div class="col-12 mb-2">
@@ -21,16 +21,16 @@
       <td scope="col">1</td>
     </tr>
     <tr>
-      <th scope="col">Lab</th>
-      <td scope="col">chemical lab</td>
-    </tr>
-    <tr>
       <th scope="col">Name</th>
-      <td scope="col">color</td>
+      <td scope="col">Ajwa textile</td>
     </tr>
     <tr>
-      <th scope="col">Description</th>
-      <td scope="col">chemical solidatity</td>
+      <th scope="col">Minimum Range</th>
+      <td scope="col">12</td>
+    </tr>
+    <tr>
+      <th scope="col">Maximum Range</th>
+      <td scope="col">8</td>
     </tr>
     <tr>
       <th scope="col">Status</th>

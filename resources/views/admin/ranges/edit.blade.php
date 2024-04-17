@@ -11,7 +11,7 @@
     <div class="row pb-3">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{route('ranges.index')}}">Test List</a></li>
+        <li class="breadcrumb-item"><a href="{{route('ranges.index')}}">Ranges List</a></li>
         <li class="breadcrumb-item active" aria-current="page">Edit Details</li>
       </ol>
     </nav>
@@ -20,25 +20,21 @@
             <input type="hidden" value="" name="id">
             <div class="card ">
                 <div class="card-header">
-                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Test</h5>
+                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Ranges</h5>
                 </div>
             </div>
             <div class="card-body pt-4 bg-light border-top">
-                <div class="col-md-4 pb-4">
-                <label for="lab" class="control-label font-weight-bold">Lab</label>
-                <select type="dropdown" id="lab" name="lab" class="form-control w-100">
-                    <option value="Chemical lab">Chemical Lab</option>
-                    <option value="Physcial lab">Physical Lab</option>
-                    <option value="Wet lab">Wet Lab</option>
-                </select>
-                </div>
                 <div class="col-md-4 pb-4">
                 <label for="name" class="control-label">Name</label>
                 <input class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="col-md-4 pb-4">
-                <label for="description" class="control-label">Description</label>
-                <input class="form-control" name="description" placeholder="Description">
+                <label for="maxrange" class="control-label">Minimum Range</label>
+                <input class="form-control" name="maxrange" placeholder="maxrange">
+                </div>
+                <div class="col-md-4 pb-4">
+                <label for="minrange" class="control-label">Maximum Range</label>
+                <input class="form-control" name="minrange" placeholder="minrange">
                 </div>
                 <div class="card-footer bg-light border-top">
                     <div class="row">
