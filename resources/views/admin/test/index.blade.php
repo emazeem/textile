@@ -3,13 +3,12 @@
     
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <!--heading and add user button-->
-    <div class="row">
-      <div class="col-12 mb-2">
-        <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i> Test</h3>
-          <a href="{{route('test.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Add Test</a>
-        
-      </div>
-      <!--Search bar-->
+  <div class="row">
+    <div class="col-12 mb-2">
+      <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i> Test</h3>
+      <a href="{{route('test.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Add Test</a>
+    </div>
+    <!--Search bar-->
       <div class="row"></div>
       <div class="col-12 mb-2 mt-2">
         <form action="" class="col-4 float-right">
