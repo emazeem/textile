@@ -19,41 +19,49 @@ class UserController extends Controller
         $edit = User::find($id);
         return view("admin.users.edit", compact("edit"));
     }
-    public function update(Request $request){
-        $this->validate(request(),[
-            'fname'=>'required',
-            'lname'=>'required',
-            'email'=>'required|email|unique:users,email',
-            'password'=>'required',
-            'role'=>'required',
-            'joining'=>'required',
-            'designation'=>'required',
-            'department'=>'required',
-        ],
-        [
-                'fname.required' => 'First Name is required *',
-                'lname.required' => ' LastName is required *',
-                'password.required' => ' Password is required *',
-                'email.required' => ' Email is required *',
-                'role.required' => ' Role is required *',
-                'joining.required' => ' Joining date is required *',
-                'designation.required' => ' Designation is required *',
-                'department.required' => ' Department is required *',
-        ]);
-        
-        $user = User::find($request->id);
-        $user->fname=$request->fname;
-        $user->lname=$request->lname;
-        $user->role=$request->role;
-        $user->joining=$request->joining;
-        $user->email=$request->email;
-        $user->desination=$request->designation;
-        $user->department=$request->department;
-        $user->password=Hash::make($request->password);
-        $user->save();
-        dd($request->all());
-        return response()->json(['success'=>'User updated successfully!','id'=>$user->id]);
+    public function update(Request $request)
+{
+    $this->validate($request, [
+        'fname' => 'required',
+        'lname' => 'required',
+        'email' => 'required|email|unique:users,email,' . $request->id,
+        'password' => 'required',
+        'role' => 'required',
+        'joining' => 'required',
+        'designation' => 'required',
+        'department' => 'required',
+    ], [
+        'fname.required' => 'First Name is required *',
+        'lname.required' => 'Last Name is required *',
+        'password.required' => 'Password is required *',
+        'email.required' => 'Email is required *',
+        'email.email' => 'Please enter a valid email address *',
+        'email.unique' => 'This email is already taken *',
+        'role.required' => 'Role is required *',
+        'joining.required' => 'Joining date is required *',
+        'designation.required' => 'Designation is required *',
+        'department.required' => 'Department is required *',
+    ]);
+    
+    $user = User::find($request->id);
+    if (!$user) {
+        return response()->json(['error' => 'User not found'], 404);
     }
+
+    $user->fname = $request->fname;
+    $user->lname = $request->lname;
+    $user->role = $request->role;
+    $user->joining = $request->joining;
+    $user->email = $request->email;
+    $user->designation = $request->designation;
+    $user->department = $request->department;
+    $user->password = Hash::make($request->password);
+
+    $user->save();
+
+    return response()->json(['success' => 'User updated successfully!', 'id' => $user->id]);
+}
+
     public function create(){
         return view("admin.users.create");
     }
