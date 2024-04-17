@@ -26,7 +26,7 @@
                     <label for="name" class="control-label font-weight-bold">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
-                    <div class="form-group col-md-3 col-12 ml-4">
+                    <!-- <div class="form-group col-md-3 col-12 ml-4">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                         <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
                     </div>
@@ -42,7 +42,42 @@
                     <label for="maxrange" class="control-label font-weight-bold">Maximum Range</label>
                         <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
                 </div>
-            </div>
+            </div> -->
+            <div class="form-group col-md-3 col-12 ml-4">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="toggleRanges()">
+    <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
+</div>
+
+<div class="form-group col-md-3 col-12" id="fixRanges">
+    <label for="fixrange" class="control-label font-weight-bold">Fix Range</label>
+    <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
+</div>
+
+<div class="form-group col-md-3 col-12" id="minmaxRanges" style="display: none;">
+    <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
+    <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
+</div>
+
+<div class="form-group col-md-3" id="maxrangeGroup" style="display: none;">
+    <label for="maxrange" class="control-label font-weight-bold">Maximum Range</label>
+    <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
+</div>
+
+<script>
+    function toggleRanges() {
+        var checkBox = document.getElementById("defaultCheck1");
+        var minmaxRanges = document.getElementById("minmaxRanges");
+        var maxrangeGroup = document.getElementById("maxrangeGroup");
+
+        if (checkBox.checked) {
+            minmaxRanges.style.display = "block";
+            maxrangeGroup.style.display = "block";
+        } else {
+            minmaxRanges.style.display = "none";
+            maxrangeGroup.style.display = "none";
+        }
+    }
+</script>
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">
