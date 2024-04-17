@@ -23,40 +23,36 @@ $(document).ready(function () {
                     <div class="row">
                         <div class="form-group col-md-3 col-12">
                             <label for="fname" class="control-label font-weight-bold">First Name</label>
-                            <input type="text" class="form-control" id="fname" name="fname"placeholder="First Name" autocomplete="off" value=''>
+                            <input type="text" class="form-control" id="fname" name="fname"placeholder="First Name" autocomplete="off" value='{{$edit->fname}}'>
                         </div>
                         <div class="form-group col-md-3 col-12">
                             <label for="lname" class="control-label font-weight-bold">Last Name</label>
-                            <input type="text" class="form-control" id="lname" name="lname"placeholder="Last Name" autocomplete="off" value=''>
+                            <input type="text" class="form-control" id="lname" name="lname"placeholder="Last Name" autocomplete="off" value='{{$edit->lname}}'>
                         </div>
                         <div class="form-group col-md-3 col-12">
                             <label for="email" class="control-label font-weight-bold">Email</label>
-                            <input type="text" class="form-control" id="email" autocomplete="off" name="email" placeholder="Email">
+                            <input type="text" class="form-control" id="email" autocomplete="off" name="email" placeholder="Email" value='{{$edit->email}}'>
                         </div>
                         <div class="form-group col-md-3 col-12 ">
                             <label for="password" class="control-label font-weight-bold">Password</label>
-                            <input type="password" class="form-control" id="password" autocomplete="off" name="password"placeholder="Password">
+                            <input type="password" class="form-control" id="password" autocomplete="off" name="password"placeholder="Password" value='{{$edit->password}}'>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-3 ">
-                            <label for="phone" class="control-label font-weight-bold">Phone</label>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"value="">
-                        </div>
                         <div class="col-md-3">
                             <label for="role" class="control-label font-weight-bold">Role</label>
-                            <select class="form-select custom-select" name="role">
+                            <select class="form-select custom-select" name="role" >
                                 <option value="user">--User</option>
                             </select>
                         </div>
                         <!--Date Of Joining-->
                         <div class="col-md-3">
                             <label for="joining" class="control-label font-weight-bold">Date of Joining</label>
-                            <input type="date" id="joining" name="joining" class="form-control w-100">
+                            <input type="date" id="joining" name="joining" class="form-control w-100" value='{{$edit->joining}}'>
                         </div>
                         <div class="col-md-3">
                             <label for="designation" class="control-label font-weight-bold">Designation</label>
-                            <select type="dropdown" id="designation" name="designation" class="form-control w-100">
+                            <select type="dropdown" id="designation" name="designation" class="form-control w-100" value='{{$edit->designation}}'>
                             <option value="Laravel internee">Laravel Internee</option>
                             <option value="Sale Executive">Sales Executive</option>
                             <option value="CEO">Cheif Executive Officer</option>
@@ -66,7 +62,7 @@ $(document).ready(function () {
                         </div>
                         <div class="col-md-3">
                             <label for="department" class="control-label font-weight-bold">Department</label>
-                            <select type="dropdown" id="department" name="department" class="form-control w-100">
+                            <select type="dropdown" id="department" name="department" class="form-control w-100" value='{{$edit->department}}'>
                             <option value=""></option>
                             <option value="Sales department">Sales Department</option>
                             <option value="Software department">Software Department</option>
