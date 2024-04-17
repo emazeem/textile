@@ -20,7 +20,7 @@
             <input type="hidden" value="" name="id">
             <div class="card ">
                 <div class="card-header">
-                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Contact</h5>
+                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Edit Contact</h5>
                     
                 </div>
             </div>
@@ -28,15 +28,15 @@
                 
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label">Name</label>
-                    <input class="form-control" name="name" placeholder="Name">
+                    <input class="form-control" name="name" placeholder="Name" value="Olivia Jones">
                 </div>
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label">Email</label>
-                    <input class="form-control" name="address" placeholder="Email">
+                    <input class="form-control" name="address" placeholder="Email" value="oliviajoes19@gmail.com1">
                 </div>
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label">Phone</label>
-                    <input class="form-control" name="industry" placeholder="Phone">
+                    <input class="form-control" name="industry" placeholder="Phone" value="(222) 222-4545">
                 </div>
                 <div class="card-footer bg-light border-top">
                     <div class="row">

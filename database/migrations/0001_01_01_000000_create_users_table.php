@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('lname');
             $table->string('role')->default('super-admin');
             $table->string('email')->unique();
+            $table->string('designation');
+            $table->string('department');
+            $table->string('joining');
             $table->string('profile')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

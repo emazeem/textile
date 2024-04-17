@@ -12,7 +12,23 @@
                     <label class="text-capitalize">Navigation</label>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{url('dashboard')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fa fa-home"></i>
+                        </span>
+                        <span class="pcoded-mtext">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('users.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="fa fa-home"></i>
+                        </span>
+                        <span class="pcoded-mtext">Users</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('customers.index')}}" class="nav-link">
                         <span class="pcoded-micon">
                             <i class="fa fa-user"></i>
                         </span>

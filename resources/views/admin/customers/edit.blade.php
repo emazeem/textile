@@ -20,7 +20,7 @@
             <input type="hidden" value="" name="id">
             <div class="card ">
                 <div class="card-header">
-                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Customer</h5>
+                    <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Edit Customer</h5>
                     
                 </div>
             </div>

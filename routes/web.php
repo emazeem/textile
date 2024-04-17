@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
-use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\TestController;
+use App\Http\Controllers\Admin\CustomerController;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\UserController;
 
 
 
@@ -12,6 +13,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
 
+    Route::group(['prefix' => 'users'], function () {
+        Route::get('', [UserController::class, 'index'])->name('users.index');
+        Route::post('update', [UserController::class, 'update'])->name('users.update');
+        Route::get('create', [UserController::class, 'create'])->name('users.create');
+        Route::get('edit/{id}', [UserController::class, 'edit'])->name('users.edit');
+        Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
+        Route::post('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
+
+    });
     Route::group(['prefix' => 'customers'], function () {
         Route::get('', [CustomerController::class, 'index'])->name('customers.index');
         Route::post('update', [CustomerController::class, 'update'])->name('customers.update');
@@ -27,6 +37,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('delete/{id}', [ContactController::class, 'delete'])->name('contacts.delete');
 
     });
+
 
     Route::group(['prefix' => 'test'], function () {
         Route::get('', [TestController::class, 'index'])->name('test.index');

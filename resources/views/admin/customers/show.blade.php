@@ -44,7 +44,7 @@
                     <input type="text" id="contact" name="contact" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <input type="text" id="contact" name="contact" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <input type="text" id="contact" name="contact" class="form-control" placeholder="Phone" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="feather icon-save"></i> Save</button>
+                    <button class="btn btn-primary" type="submit" id="button-addon2"><i class="feather icon-save"></i> Save</button>
                 </div>
             </form>
         </td>
@@ -69,8 +69,8 @@
           <tbody>
             <tr class="table-row">
               <td>1</td>
-              <td>Olivia Jones	</td>
-              <td>oliviajoes19@gmail.com1</td>
+              <td>Olivia Jones</td>
+              <td>oliviajoes19@gmail.com</td>
               <td>(222) 222-4545</td>
               <td class="text-center">
                 <a href="{{route('contacts.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
@@ -100,13 +100,6 @@
           </table>
     </div>
     <style>
-    .btn-outline-secondary{
-      background-color: #253967!important;
-      color:white;
-    }
-    .btn-outline-secondary:hover{
-      background-color: #253967!important;
-    }
     table#example thead tr th{
     background: #253967!important;
   
