@@ -29,7 +29,7 @@
               <th>Lab</th>
               <th>Name</th>
               <th>Description</th>
-              <th>type</th>
+              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -39,7 +39,7 @@
               <td>Chemical Lab</td>
               <td>color</td>
               <td>0897465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="{{route('test.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('test.show',['id'=>'1'])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -51,7 +51,7 @@
               <td>Chemical Lab</td>
               <td>fadeness</td>
               <td>090224332</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -63,7 +63,7 @@
               <td>Chemical Lab</td>
               <td>fastness</td>
               <td>0329443132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -75,7 +75,7 @@
               <td>Physical Lab</td>
               <td>flamability</td>
               <td>0323245132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -87,7 +87,7 @@
               <td>Wet Lab</td>
               <td>launder</td>
               <td>0232465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -99,7 +99,7 @@
               <td>Physical Lab</td>
               <td>perspiration</td>
               <td>0332465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -111,7 +111,7 @@
               <td>Chemical Lab</td>
               <td>allergy</td>
               <td>0897465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -123,7 +123,7 @@
               <td>Physical Lab</td>
               <td>tensile strength</td>
               <td>0897465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -135,7 +135,7 @@
               <td>Physical Lab</td>
               <td>flamability</td>
               <td>0897465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
@@ -147,7 +147,7 @@
               <td>Wet Lab</td>
               <td>wash effect</td>
               <td>0897465132</td>
-              <td>user</td>
+              <td>pending</td>
               <td>
                 <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
