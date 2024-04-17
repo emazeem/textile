@@ -22,7 +22,7 @@
                 <li class="nav-item">
                     <a href="{{route('users.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="fa fa-home"></i>
+                            <i class="fa fa-user"></i>
                         </span>
                         <span class="pcoded-mtext">Users</span>
                     </a>
@@ -30,7 +30,7 @@
                 <li class="nav-item">
                     <a href="{{route('customers.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-users"></i>
                         </span>
                         <span class="pcoded-mtext">Customers</span>
                     </a>
