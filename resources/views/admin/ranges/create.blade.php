@@ -28,7 +28,11 @@
                     </div>
                     <div class="form-group col-md-3 col-12 ml-4">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">Add values</label>
+                        <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
+                    </div>
+                    <div class="form-group col-md-3 col-12 ">
+                    <label for="fixrange" class="control-label font-weight-bold">Fix Range</label>
+                    <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
                     </div>
                     <div class="form-group col-md-3 col-12 ">
                     <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
