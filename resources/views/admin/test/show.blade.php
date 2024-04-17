@@ -46,14 +46,14 @@
     </td>
 </tr>
 <tr>
-            <th scope="col">Sub Task</th>
+            <th scope="col">Sub Test</th>
             <td scope="col"> 
               <form action="" method="post">
                 @csrf
                 <input type="hidden" value="" name="id">
                 <div class="input-group mb-3">
-                    <input type="text" id="subtask" name="subtask" class="form-control" placeholder="subtask" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Submit</button>
+                    <input type="text" id="subtest" name="subtest" class="form-control" placeholder="subtest" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="submit" id="button-addon2">Submit</button>
                 </div>
             </form>
         </td>

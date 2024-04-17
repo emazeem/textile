@@ -12,59 +12,19 @@
                     <label class="text-capitalize">Navigation</label>
                 </li>
                 <li class="nav-item">
-                    <a href="{{url('dashboard')}}" class="nav-link">
-                        <span class="pcoded-micon">
-                            <i class="fa fa-home"></i>
-                        </span>
-                        <span class="pcoded-mtext">Dashboard</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <span class="pcoded-micon">
-                            <i class="fa fa-mail-bulk"></i>
-                        </span>
-                        <span class="pcoded-mtext">Email Marketing</span>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="" class="nav-link">
                         <span class="pcoded-micon">
                             <i class="fa fa-user"></i>
                         </span>
-                        <span class="pcoded-mtext">Users</span>
+                        <span class="pcoded-mtext">Customers</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <span class="pcoded-micon">
-                            <i class="fa fa-clock"></i>
-                        </span>
-                        <span class="pcoded-mtext">Attendance</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{route('test.index')}}" class="nav-link">
                         <span class="pcoded-micon">
                             <i class="bx bx-task"></i>
                         </span>
-                        <span class="pcoded-mtext">Tasks</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <span class="pcoded-micon">
-                            <i class="fa fa-question"></i>
-                        </span>
-                        <span class="pcoded-mtext">Leave Application</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <span class="pcoded-micon">
-                            <i class="fas fa-clone"></i>
-                        </span>
-                        <span class="pcoded-mtext">Post</span>
+                        <span class="pcoded-mtext">Tests</span>
                     </a>
                 </li>
             </ul>
