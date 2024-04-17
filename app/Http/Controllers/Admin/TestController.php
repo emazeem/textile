@@ -7,20 +7,20 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 {
     public function index(){
-        return view('admin.test.index');
+        return view('admin.tests.index');
     }
     
     public function edit(){
-        return view('admin.test.edit');
+        return view('admin.tests.edit');
     }
     public function show(){
-        return view('admin.test.show');
+        return view('admin.tests.show');
     }
     public function update(){
-        return view('admin.test.update');
+        return view('admin.tests.update');
     }
     public function create(){
-        return view('admin.test.create');
+        return view('admin.tests.create');
     }
 
 }
