@@ -39,12 +39,12 @@ Route::group(['middleware' => ['auth']], function () {
     });
 
 
-    Route::group(['prefix' => 'test'], function () {
-        Route::get('', [TestController::class, 'index'])->name('test.index');
-        Route::get('edit', [TestController::class, 'edit'])->name('test.edit');
-        Route::get('create', [TestController::class, 'create'])->name('test.create');
-        Route::get('show/{id}', [TestController::class, 'show'])->name('test.show');
-        Route::post('delete/{id}', [TestController::class, 'delete'])->name('test.delete');
+    Route::group(['prefix' => 'tests'], function () {
+        Route::get('', [TestController::class, 'index'])->name('tests.index');
+        Route::get('edit', [TestController::class, 'edit'])->name('tests.edit');
+        Route::get('create', [TestController::class, 'create'])->name('tests.create');
+        Route::get('show/{id}', [TestController::class, 'show'])->name('tests.show');
+        Route::post('delete/{id}', [TestController::class, 'delete'])->name('tests.delete');
 
     });
 });

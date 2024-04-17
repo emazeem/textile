@@ -36,11 +36,19 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('test.index')}}" class="nav-link">
+                    <a href="{{route('tests.index')}}" class="nav-link">
                         <span class="pcoded-micon">
                             <i class="bx bx-task"></i>
                         </span>
                         <span class="pcoded-mtext">Tests</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="bx bx-task"></i>
+                        </span>
+                        <span class="pcoded-mtext">Ranges</span>
                     </a>
                 </li>
             </ul>
