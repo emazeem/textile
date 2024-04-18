@@ -24,6 +24,7 @@
                 </div>
             </div>
             <div class="card-body pt-4 bg-light border-top">
+                <div class="row">
                 <div class="col-md-4 pb-4">
                 <label for="name" class="control-label">Name</label>
                 <input class="form-control" name="name" placeholder="Name">
@@ -36,6 +37,7 @@
                 <label for="minrange" class="control-label">Maximum Range</label>
                 <input class="form-control" name="minrange" placeholder="minrange">
                 </div>
+            </div>
                 <div class="card-footer bg-light border-top">
                     <div class="row">
                         <div class="col-12">
