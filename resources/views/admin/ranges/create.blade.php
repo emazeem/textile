@@ -27,11 +27,11 @@
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
     
-  <div class="form-group col-md-3 col-12 ml-4">
+  <div class="form-group col-md-4 col-12 ml-4">
     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="toggleRanges()">
     <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
 </div>
-<div class="row">
+<div class="row ml-2">
 <div class="form-group col-md-3 col-12" id="fixRanges">
     <label for="fixrange" class="control-label font-weight-bold">Fix Range</label>
     <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">

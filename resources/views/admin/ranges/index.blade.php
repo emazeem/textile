@@ -1,5 +1,20 @@
 @extends('admin.layout.master')
 @section('content')
+
+<?php
+  $ranges=[
+    ['id'=>'001', 'Name'=>'Fabric Weight', 'Minimum Range'=>'100 g/m2', 'Maximum Range'=>'500 g/m2',],
+    ['id'=>'002', 'Name'=>'Fabric Thickness', 'Minimum Range'=>'0.1mm', 'Maximum Range'=>'2.0mm',],
+    ['id'=>'003', 'Name'=>'Fabric Width', 'Minimum Range'=>'30cm', 'Maximum Range'=>'300cm',],
+    ['id'=>'004', 'Name'=>'Wrap Direction', 'Minimum Range'=>'200 N/50mm', 'Maximum Range'=>'1000 N/50mm',],
+    ['id'=>'005', 'Name'=>'Tear Strength', 'Minimum Range'=>'5N', 'Maximum Range'=>'50N',],
+    ['id'=>'006', 'Name'=>'Water Absorption', 'Minimum Range'=>'1%', 'Maximum Range'=>'20%',],
+    ['id'=>'007', 'Name'=>'Polyester Content', 'Minimum Range'=>'0%', 'Maximum Range'=>'100%',],
+    ['id' => '008','Name' => 'Hydrostatic Pressure Test','Minimum Range' => '1000mm','Maximum Range' => '10,000mm',],
+    ['id' => '009','Name' => 'Bacterial Reduction Percentage','Minimum Range' => '90%','Maximum Range' => '99.9%',],
+    ['id' => '0010','Name' => 'Yarn Evenness: CV% (Coefficient of Variation)','Minimum Range' => '5%','Maximum Range' => '20%',],
+        ];
+    ?>
     
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <!--heading and add user button-->
@@ -28,131 +43,23 @@
               <th>Name</th>
               <th>Minimum Range</th>
               <th>Maximum Range</th>
-              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
+            @foreach($ranges as $range)
             <tr class="table-row">
-              <td>1</td>
-              <td>Chemical Lab</td>
-              <td>color</td>
-              <td>0897465132</td>
-              <td>pending</td>
+              <td>{{$range['id']}}</td>
+              <td>{{$range['Name']}}</td>
+              <td>{{$range['Minimum Range']}}</td>
+              <td>{{$range['Maximum Range']}}</td>
               <td>
                 <a href="{{route('ranges.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('ranges.show',['id'=>'1'])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
-            <tr class="table-row">
-              <td>2</td>
-              <td>Chemical Lab</td>
-              <td>fadeness</td>
-              <td>090224332</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>3</td>
-              <td>Chemical Lab</td>
-              <td>fastness</td>
-              <td>0329443132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>4</td>
-              <td>Physical Lab</td>
-              <td>flamability</td>
-              <td>0323245132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>5</td>
-              <td>Wet Lab</td>
-              <td>launder</td>
-              <td>0232465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>6</td>
-              <td>Physical Lab</td>
-              <td>perspiration</td>
-              <td>0332465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>7</td>
-              <td>Chemical Lab</td>
-              <td>allergy</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>8</td>
-              <td>Physical Lab</td>
-              <td>tensile strength</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>9</td>
-              <td>Physical Lab</td>
-              <td>flamability</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>10</td>
-              <td>Wet Lab</td>
-              <td>wash effect</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
+            @endforeach
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">
