@@ -1,6 +1,19 @@
 @extends('admin.layout.master')
 @section('content')
-    
+    <?php
+        $tests=[
+          ['id'=>1, 'lab'=>'Chemical Lab', 'name'=>'Color', 'description'=>'Color is being test',],
+          ['id'=>2, 'lab'=>'Chemical Lab', 'name'=>'Fadeness', 'description'=>'Fadeness is being test',],
+          ['id'=>3, 'lab'=>'Chemical Lab', 'name'=>'Fastness', 'description'=>'Fastness is being test',],
+          ['id'=>4, 'lab'=>'Physical Lab', 'name'=>'Flamability', 'description'=>'Flamability is being test',],
+          ['id'=>5, 'lab'=>'Wet Lab', 'name'=>'Launder', 'description'=>'Launder is being test',],
+          ['id'=>6, 'lab'=>'Physical Lab', 'name'=>'Perspiration', 'description'=>'Perspiration is being test',],
+          ['id'=>7, 'lab'=>'Chemical Lab', 'name'=>'Allergy', 'description'=>'Allergy is being test',],
+          ['id'=>8, 'lab'=>'Physical Lab', 'name'=>'Tensile Strength', 'description'=>'Tensile Strength is being test',],
+          ['id'=>9, 'lab'=>'Physical Lab', 'name'=>'Flamability', 'description'=>'Flamability  is being test',],
+          ['id'=>10, 'lab'=>'Wet Lab', 'name'=>'Wash Effect	', 'description'=>'Wash Effect  is being test',],
+        ];
+    ?>
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <!--heading and add user button-->
   <div class="row">
@@ -28,142 +41,35 @@
               <th>Lab</th>
               <th>Name</th>
               <th>Description</th>
-              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="table-row">
-              <td>1</td>
-              <td>Chemical Lab</td>
-              <td>color</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="{{route('tests.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="{{route('tests.show',['id'=>'1'])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>2</td>
-              <td>Chemical Lab</td>
-              <td>fadeness</td>
-              <td>090224332</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>3</td>
-              <td>Chemical Lab</td>
-              <td>fastness</td>
-              <td>0329443132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>4</td>
-              <td>Physical Lab</td>
-              <td>flamability</td>
-              <td>0323245132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>5</td>
-              <td>Wet Lab</td>
-              <td>launder</td>
-              <td>0232465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>6</td>
-              <td>Physical Lab</td>
-              <td>perspiration</td>
-              <td>0332465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>7</td>
-              <td>Chemical Lab</td>
-              <td>allergy</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>8</td>
-              <td>Physical Lab</td>
-              <td>tensile strength</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>9</td>
-              <td>Physical Lab</td>
-              <td>flamability</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>10</td>
-              <td>Wet Lab</td>
-              <td>wash effect</td>
-              <td>0897465132</td>
-              <td>pending</td>
-              <td>
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
+          @foreach($tests as $test)
+              <tr class="table-row">
+                  <td>{{$test['id']}}</td>
+                  <td>{{$test['lab']}}</td>
+                  <td >{{$test['name']}}</td>
+                  <td>{{$test['description']}}</td>
+                  <td>
+                      <a href="{{route('tests.edit',['id'=>$test['id']])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                      <a href="{{route('tests.show',['id'=>$test['id']])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                      <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                  </td>
+              </tr>
+          @endforeach
+
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">
         </div>
       </div>
-    </div> 
-    
+    </div>
+
     <style>
     table#example thead tr th{
     background: #233560!important;
-  
+
     }
     .table-row{
       background: #fff!important;
