@@ -10,57 +10,60 @@
     </script>
     @endif
     <div class="row pb-3">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">Ranges List</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Add Details</li>
-      </ol>
-    </nav>
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">Ranges List</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Add Details</li>
+        </ol>
+        </nav>
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
         @csrf
         <div class="card">
             <div class="card-footer bg-light border-top">
                 <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Ranges</h5>
-                <div class="">
                     <div class="form-group col-md-3 col-12 ">
                         <label for="name" class="control-label font-weight-bold">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
-    
-  <div class="form-group col-md-4 col-12 ml-4">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="toggleRanges()">
-    <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
-</div>
+                    <div class="form-group col-md-4 col-12 ml-4">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="toggleRanges()">
+                        <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
+                    </div>
+                    
+                    <label for="fixrange" class="control-label font-weight-bold col-md-3 ">Fix Range</label>
+                    <div class="input-group-append col-md-3" id="fixRanges">
+                        <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
+                        <input type="text" class="form-control col-md-3" id="fixrange" name="unit" placeholder="unit">
+                    </div>
 
-    <div class="col ml-2">
-        <div class="input-group-append col-md-6 col-12" id="fixRanges">
-            <label for="fixrange" class="control-label font-weight-bold col-md-3">Fix Range</label>
-            <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
-            <input type="text" class="form-control col-md-2" id="fixrange" name="unit" placeholder="unit">
-        </div>
-        
-        <div class="input-group-append col-md-6 col-12" id="minmaxRanges" style="display: none;">
-        <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
-        <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
-    </div>
-    
-     <div class="form-group col-md-3" id="maxrangeGroup" style="display: none;">
-     <label for="maxrange" class="control-label font-weight-bold">Maximum Range</label>
-     <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
-    </div>
-</div>
+                    <div class=" col-md-3 col-6" id="minmaxRanges" style="display: none;">
+                        <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
+                        <div class="input-group-append">
+                        <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
+                        <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
+                        </div>
 
-<div class="card-footer bg-light border-top">
-    <div class="row">
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary user-btn float-right">
-                <i class="feather icon-save"> </i> Save</button>
-            </div>
-        </div>
+                    </div>
+                    <div class="form-group col-md-3" id="maxrangeGroup" style="display: none;">
+                        <label for="maxrange" class="control-label font-weight-bold">Maximum Range</label>
+                        <div class="input-group-append">
+                        <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
+                        <input type="text" class="form-control col-md-3" id="maxrange" name="unit" placeholder="unit">
+                    </div>
+                    </div>
+                    
+                    <div class="card-footer bg-light border-top">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary user-btn float-right">
+                                    <i class="feather icon-save"> </i> Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+        </form>
     </div>
-</div>
-</form>
-</div>
 
 <script>
     function toggleRanges() {
