@@ -11,6 +11,10 @@ class UserController extends Controller
         $users = User::all();
         return view("admin.users.index", compact("users"));
     }
+    public function delete($id){
+        User::find($id)->delete();
+        return response()->json(['success'=>'User deleted successfully!']);
+    }
     public function show($id){
         $show = User::Find($id);
         return view("admin.users.show", compact("show"));
