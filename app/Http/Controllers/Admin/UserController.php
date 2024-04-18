@@ -12,7 +12,6 @@ class UserController extends Controller
         return view("admin.users.index", compact("users"));
     }
     public function delete($id){
-        User::find($id)->delete();
         return response()->json(['success'=>'User deleted successfully!']);
     }
     public function show($id){
@@ -104,7 +103,7 @@ class UserController extends Controller
         $user->department=$request->department;
         $user->save();
         
-        
+        $user->save();
         return response()->json(['success'=>'User added successfully!','id'=>$user->id]);
     }
     
