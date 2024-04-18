@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RangeController;
+use App\Http\Controllers\Admin\DepartmentController;
 
 
 
@@ -55,6 +56,14 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('create', [RangeController::class, 'create'])->name('ranges.create');
         Route::get('show/{id}', [RangeController::class, 'show'])->name('ranges.show');
         Route::post('delete/{id}', [RangeController::class, 'delete'])->name('ranges.delete');
+
+    });
+    Route::group(['prefix' => 'departments'], function () {
+        Route::get('', [DepartmentController::class, 'index'])->name('departments.index');
+        Route::get('create', [DepartmentController::class, 'create'])->name('departments.create');
+        Route::get('edit/{id}', [DepartmentController::class, 'edit'])->name('departments.edit');
+        Route::get('show/{id}', [DepartmentController::class, 'show'])->name('departments.show');
+        Route::post('delete/{id}', [DepartmentController::class, 'delete'])->name('departments.delete');
 
     });
 });

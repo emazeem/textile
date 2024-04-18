@@ -42,7 +42,7 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="role" class="control-label font-weight-bold">Role</label>
                             <select class="form-select custom-select" name="role">
-                                <option value="user">--User</option>
+                                <option value="user">--Select an option</option>
                                 <option value="user">user</option>
                             </select>
                         </div>
@@ -54,6 +54,7 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="designation" class="control-label font-weight-bold">Designation</label>
                             <select type="dropdown" id="designation" name="designation" class="form-control w-100">
+                            <option value="select">--Select an option</option>
                             <option value="Laravel internee">Laravel Internee</option>
                             <option value="Sale Executive">Sales Executive</option>
                             <option value="CEO">Cheif Executive Officer</option>
@@ -64,7 +65,7 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="department" class="control-label font-weight-bold">Department</label>
                             <select type="dropdown" id="department" name="department" class="form-control w-100">
-                            <option value=""></option>
+                            <option value="select">--Select an option</option>
                             <option value="Sales department">Sales Department</option>
                             <option value="Software department">Software Department</option>
                     </select>
