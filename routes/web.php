@@ -60,10 +60,8 @@ Route::group(['middleware' => ['auth']], function () {
     });
     Route::group(['prefix' => 'departments'], function () {
         Route::get('', [DepartmentController::class, 'index'])->name('departments.index');
+        Route::get('edit', [DepartmentController::class, 'edit'])->name('departments.edit');
         Route::get('create', [DepartmentController::class, 'create'])->name('departments.create');
-        Route::get('edit/{id}', [DepartmentController::class, 'edit'])->name('departments.edit');
         Route::get('show/{id}', [DepartmentController::class, 'show'])->name('departments.show');
-        Route::post('delete/{id}', [DepartmentController::class, 'delete'])->name('departments.delete');
-
     });
 });
