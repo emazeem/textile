@@ -1,39 +1,6 @@
 <?php
 
-//     function renderTable($names)
-//     {
-//         $html = '<table class="table">';
 
-//         $html .= '<thead><tr class="bg-c-blue">';
-//         if (!empty($names)) {
-//             $firstName = $names[0];
-//             $keys = array_keys($firstName);
-        
-//             foreach ($keys as $key) {
-//                 $html .= '<th>' . ucfirst($key) . '</th>';
-//             }
-            
-//             $html .= '<th>Action</th>';
-//         }
-        
-//         $html .= '</tr></thead>';
-
-//         foreach ($names as $name) {
-//             $html .= '<tr class="table-row">';
-//             foreach ($keys as $key) {
-//                 $html .= '<td>' . $name[$key] . '</td>';
-//             }
-//             $html .= '<td>';
-//             $html .= '<a href="' . route('departments.edit', ['id' => $name['id']]) . '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>';
-//             $html .= '<a href="' . route('departments.show', ['id' => $name['id']]) . '" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>';
-//             $html .= '<a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>';
-//             $html .= '</td>';
-//             $html .= '</tr>';
-//         }
-
-//         return $html;
-//     }
-// }
 
 if (!function_exists('getDepartments')) {
     function getDepartments()
