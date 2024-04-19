@@ -79,7 +79,7 @@ if (!function_exists('getDepartments')) {
     if (!function_exists('getDesignations')) {
         function getDesignations()
         {
-            $designation=[
+            $designations=[
                 ['id'=>1, 'Designation Name'=>'Spinning', 'Department Name'=>'Ms. Ayesha Khan',],
                 ['id'=>2, 'Designation Name'=>'Weaving', 'Department Name'=>'Mr. David Lee',],
                 ['id'=>3, 'Designation Name'=>'Knitting', 'Department Name'=>'Mr. Omar Hassan',],
@@ -94,7 +94,7 @@ if (!function_exists('getDepartments')) {
                 ['id'=>12, 'Designation Name'=>'Information Technology (IT)', 'Department Name'=>'Mr. Hiro Tanaka',],
               ];
     
-            return $designation;
+            return $designations;
         }
 }
 

@@ -64,7 +64,18 @@
             </tr>
           </thead>
           <tbody>
-         
+          @foreach(getDesignations() as $designation)
+          <tr class="table-row">
+              <td>{{$designation['id']}}</td>
+              <td>{{$designation['Designation Name']}}</td>
+              <td>{{$designation['Department Name']}}</td>
+              <td>
+                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+          
+          @endforeach
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">
