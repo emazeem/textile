@@ -19,18 +19,18 @@
                 @csrf
                 <input type="hidden" value="" name="id">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addModalLabel"><i class="bx bx-copy-alt"></i>Add Department</h5>
+                    <h5 class="modal-title" id="addModalLabel"><i class="bx bx-copy-alt mr-1"></i>Add Department</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name" class="control-label">Department Name</label>
+                        <label for="name" class="control-label font-weight-bold">Department Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="">
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Department Head</label>
+                        <label for="address" class="control-label font-weight-bold">Department Head</label>
                         <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="">
                     </div>
                 </div>
@@ -50,18 +50,18 @@
                 @csrf
                 <input type="hidden" value="" name="id">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel"><i class="bx bx-copy-alt"></i>Edit Department</h5>
+                    <h5 class="modal-title" id="editModalLabel"><i class="bx bx-copy-alt mr-1"></i>Edit Department</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name" class="control-label">Department Name</label>
+                        <label for="name" class="control-label font-weight-bold">Department Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="Spinning">
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Department Head</label>
+                        <label for="address" class="control-label font-weight-bold">Department Head</label>
                         <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="Ms. Ayesha Khan">
                     </div>
                 </div>
