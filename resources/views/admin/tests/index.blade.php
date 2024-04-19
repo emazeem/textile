@@ -1,19 +1,6 @@
 @extends('admin.layout.master')
 @section('content')
-    <?php
-        $tests=[
-          ['id'=>1, 'lab'=>'Chemical Lab', 'name'=>'Color', 'description'=>'Color is being test',],
-          ['id'=>2, 'lab'=>'Chemical Lab', 'name'=>'Fadeness', 'description'=>'Fadeness is being test',],
-          ['id'=>3, 'lab'=>'Chemical Lab', 'name'=>'Fastness', 'description'=>'Fastness is being test',],
-          ['id'=>4, 'lab'=>'Physical Lab', 'name'=>'Flamability', 'description'=>'Flamability is being test',],
-          ['id'=>5, 'lab'=>'Wet Lab', 'name'=>'Launder', 'description'=>'Launder is being test',],
-          ['id'=>6, 'lab'=>'Physical Lab', 'name'=>'Perspiration', 'description'=>'Perspiration is being test',],
-          ['id'=>7, 'lab'=>'Chemical Lab', 'name'=>'Allergy', 'description'=>'Allergy is being test',],
-          ['id'=>8, 'lab'=>'Physical Lab', 'name'=>'Tensile Strength', 'description'=>'Tensile Strength is being test',],
-          ['id'=>9, 'lab'=>'Physical Lab', 'name'=>'Flamability', 'description'=>'Flamability  is being test',],
-          ['id'=>10, 'lab'=>'Wet Lab', 'name'=>'Wash Effect	', 'description'=>'Wash Effect  is being test',],
-        ];
-    ?>
+
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <!--heading and add user button-->
   <div class="row">
@@ -37,7 +24,7 @@
         <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
           <thead >
             <tr class="bg-c-blue">
-              <th>ID</th>
+              <th>CID</th>
               <th>Lab</th>
               <th>Name</th>
               <th>Description</th>
@@ -45,9 +32,9 @@
             </tr>
           </thead>
           <tbody>
-          @foreach($tests as $test)
+          @foreach(getTests() as $test)
               <tr class="table-row">
-                  <td>{{$test['id']}}</td>
+                  <td>{{$test['cid']}}</td>
                   <td>{{$test['lab']}}</td>
                   <td >{{$test['name']}}</td>
                   <td>{{$test['description']}}</td>
