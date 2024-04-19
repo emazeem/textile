@@ -16,6 +16,15 @@
         <li class="breadcrumb-item active" aria-current="page">User Details</li>
       </ol>
     </nav>
+    <div class="col-12">
+            <div class="card user-card user-card-3 support-bar1">
+                <div class="card-header bg-light border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="font-weight-light"><i class="feather icon-user mr-1"></i>User Details</h4>
+                        </div>
+                    </div>
+            </div>
     <table class="table table-bordered table-sm bg-white">
     <tr>
       <th scope="col">First Name</th>
@@ -45,8 +54,6 @@
       <th scope="col">Department</th>
       <td scope="col">{{$show->department}}</td>
     </tr>
-    
-    
 </table>
     </div>
     
