@@ -25,13 +25,13 @@
             </div>
             <div class="card-body pt-4 bg-white border-top">
             <div class="col-md-4 pb-4">
-                <label for="name" class="control-label">Name</label>
+                <label for="name" class="control-label font-weight-bold">Name</label>
                 <input class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="row">
 
                 <div class="col-md-4 pb-4">
-                    <label for="fixrange" class="control-label">Fix Range</label>
+                    <label for="fixrange" class="control-label font-weight-bold">Fix Range</label>
                     <div class="input-group-append mb-2">
                         <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
                         <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
@@ -40,7 +40,7 @@
             </div>
 
                 <div class="col-md-4 pb-4">
-                <label for="maxrange" class="control-label">Minimum Range</label>
+                <label for="maxrange" class="control-label font-weight-bold">Minimum Range</label>
                 <div class="input-group-append mb-2">
                     <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
                     <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
@@ -48,7 +48,7 @@
             </div>
 
                 <div class="col-md-4 pb-4">
-                <label for="minrange" class="control-label">Maximum Range</label>
+                <label for="minrange" class="control-label font-weight-bold">Maximum Range</label>
                 <div class="input-group-append mb-2">
                     <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
                     <input type="text" class="form-control col-md-3" id="maxrange" name="unit" placeholder="unit">
