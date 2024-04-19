@@ -36,3 +36,22 @@ if (!function_exists('getCustomers')) {
         return $customers;
     }
 }
+if (!function_exists('getRanges')) {
+    function getRanges()
+    {
+        $ranges=[
+            ['id'=>'1', 'Name'=>'Fabric Weight', 'Minimum Range'=>'100 g/m2', 'Maximum Range'=>'500 g/m2',],
+            ['id'=>'2', 'Name'=>'Fabric Thickness', 'Minimum Range'=>'0.1mm', 'Maximum Range'=>'2.0mm',],
+            ['id'=>'3', 'Name'=>'Fabric Width', 'Minimum Range'=>'30cm', 'Maximum Range'=>'300cm',],
+            ['id'=>'4', 'Name'=>'Wrap Direction', 'Minimum Range'=>'200 N/50mm', 'Maximum Range'=>'1000 N/50mm',],
+            ['id'=>'5', 'Name'=>'Tear Strength', 'Minimum Range'=>'5N', 'Maximum Range'=>'50N',],
+            ['id'=>'6', 'Name'=>'Water Absorption', 'Minimum Range'=>'1%', 'Maximum Range'=>'20%',],
+            ['id'=>'7', 'Name'=>'Polyester Content', 'Minimum Range'=>'0%', 'Maximum Range'=>'100%',],
+            ['id' => '8','Name' => 'Hydrostatic Pressure Test','Minimum Range' => '1000mm','Maximum Range' => '10,000mm',],
+            ['id' => '9','Name' => 'Bacterial Reduction Percentage','Minimum Range' => '90%','Maximum Range' => '99.9%',],
+            ['id' => '10','Name' => 'Yarn Evenness: CV% (Coefficient of Variation)','Minimum Range' => '5%','Maximum Range' => '20%',],
+            ];
+        return $ranges;
+    }
+}
+

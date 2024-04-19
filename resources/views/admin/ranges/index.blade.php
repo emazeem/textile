@@ -1,20 +1,5 @@
 @extends('admin.layout.master')
 @section('content')
-
-<?php
-  $ranges=[
-    ['id'=>'001', 'Name'=>'Fabric Weight', 'Minimum Range'=>'100 g/m2', 'Maximum Range'=>'500 g/m2',],
-    ['id'=>'002', 'Name'=>'Fabric Thickness', 'Minimum Range'=>'0.1mm', 'Maximum Range'=>'2.0mm',],
-    ['id'=>'003', 'Name'=>'Fabric Width', 'Minimum Range'=>'30cm', 'Maximum Range'=>'300cm',],
-    ['id'=>'004', 'Name'=>'Wrap Direction', 'Minimum Range'=>'200 N/50mm', 'Maximum Range'=>'1000 N/50mm',],
-    ['id'=>'005', 'Name'=>'Tear Strength', 'Minimum Range'=>'5N', 'Maximum Range'=>'50N',],
-    ['id'=>'006', 'Name'=>'Water Absorption', 'Minimum Range'=>'1%', 'Maximum Range'=>'20%',],
-    ['id'=>'007', 'Name'=>'Polyester Content', 'Minimum Range'=>'0%', 'Maximum Range'=>'100%',],
-    ['id' => '008','Name' => 'Hydrostatic Pressure Test','Minimum Range' => '1000mm','Maximum Range' => '10,000mm',],
-    ['id' => '009','Name' => 'Bacterial Reduction Percentage','Minimum Range' => '90%','Maximum Range' => '99.9%',],
-    ['id' => '0010','Name' => 'Yarn Evenness: CV% (Coefficient of Variation)','Minimum Range' => '5%','Maximum Range' => '20%',],
-        ];
-    ?>
     
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <!--heading and add user button-->
@@ -47,7 +32,7 @@
             </tr>
           </thead>
           <tbody>
-            @foreach($ranges as $range)
+            @foreach(getRanges() as $range)
             <tr class="table-row">
               <td>{{$range['id']}}</td>
               <td>{{$range['Name']}}</td>
