@@ -58,11 +58,11 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="name" class="control-label">Department Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="Spinning">
                     </div>
                     <div class="form-group">
                         <label for="address" class="control-label">Department Head</label>
-                        <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="">
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="Ms. Ayesha Khan">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -102,10 +102,10 @@
               <td>{{$department['Department Name']}}</td>
               <td>{{$department['Department Head']}}</td>
               <td class="text-center">
-              <button type="button" class="btn btn-success btn-sm pb-1 font-weight-light fas fa-edit" data-toggle="modal" data-target="#editModal">
-              </button>
-                <!-- <a href="{{route('departments.edit',['id'=>$department['id']])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a> -->
+              <!-- <button type="button" class="btn btn-success btn-sm pb-1 font-weight-light fas fa-edit" data-toggle="modal" data-target="#editModal">
+              </button> -->
+              <a href="#" class="btn btn-success btn-sm pb-1 font-weight-light"><i class="fas fa-edit" data-toggle="modal" data-target="#editModal"></i></a>
+              <a href="" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
           

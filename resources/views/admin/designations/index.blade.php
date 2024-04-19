@@ -60,7 +60,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="name" class="control-label">Designation Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Designation Name" value="">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Designation Name" value="Spinning Supervisor">
                     </div>
                     <div class="form-group">
                         <label for="address" class="control-label">Department Name</label>
@@ -107,8 +107,10 @@
               <td>{{$designation['Designation Name']}}</td>
               <td>{{$designation['Department Name']}}</td>
               <td class="text-center">
-              <button type="button" class="btn btn-success btn-sm pb-1 font-weight-light fas fa-edit" data-toggle="modal" data-target="#editModal">
-              </button>
+              <!-- <button type="button" class="btn btn-success btn-sm pb-1 font-weight-light fas fa-edit" data-toggle="modal" data-target="#editModal">
+              </button> -->
+              <a href="#" class="btn btn-success btn-sm pb-1 font-weight-light"><i class="fas fa-edit" data-toggle="modal" data-target="#editModal"></i></a>
+              <a href="" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>
           
