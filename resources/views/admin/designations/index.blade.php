@@ -25,11 +25,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name" class="control-label">Designation Name</label>
+                        <label for="name" class="control-label font-weight-bold">Designation Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Designation Name" value="">
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Department Name</label>
+                        <label for="address" class="control-label font-weight-bold">Department Name</label>
                         <select type="dropdown" id="department" name="department" class="form-control w-100">
                             <option value="Sales department">Sales Department</option>
                             <option value="Software department">Software Department</option>
@@ -59,11 +59,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name" class="control-label">Designation Name</label>
+                        <label for="name" class="control-label font-weight-bold">Designation Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Designation Name" value="Spinning Supervisor">
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Department Name</label>
+                        <label for="address" class="control-label font-weight-bold">Department Name</label>
                         <select type="dropdown" id="department" name="department" class="form-control w-100">
                             <option value="Sales department">Sales Department</option>
                             <option value="Software department">Software Department</option>

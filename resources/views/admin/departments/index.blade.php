@@ -26,11 +26,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name" class="control-label">Department Name</label>
+                        <label for="name" class="control-label font-weight-bold">Department Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="">
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Department Head</label>
+                        <label for="address" class="control-label font-weight-bold">Department Head</label>
                         <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="">
                     </div>
                 </div>
@@ -57,11 +57,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name" class="control-label">Department Name</label>
+                        <label for="name" class="control-label font-weight-bold">Department Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="Spinning">
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Department Head</label>
+                        <label for="address" class="control-label font-weight-bold">Department Head</label>
                         <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="Ms. Ayesha Khan">
                     </div>
                 </div>
