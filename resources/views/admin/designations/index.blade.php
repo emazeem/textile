@@ -58,8 +58,8 @@
           <thead >
             <tr class="bg-c-blue">
               <th>ID</th>
+              <th>Designation Name</th>
               <th>Department Name</th>
-              <th>Department head</th>
               <th>Action</th>
             </tr>
           </thead>
