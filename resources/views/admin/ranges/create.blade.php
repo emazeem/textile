@@ -30,25 +30,26 @@
                         <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
                     </div>
                     
+                    
                     <label for="fixrange" class="control-label font-weight-bold col-md-3">Fix Range</label>
                     <div class="input-group-append col-md-3 mb-2" id="fixRanges">
                         <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
-                        <input type="text" class="form-control col-md-3" id="fixrange" name="unit" placeholder="unit">
+                        <input type="text" class="form-control col-md-4" id="fixrange" name="unit" placeholder="unit">
                     </div>
 
                     <div class=" col-md-3 col-6" id="minmaxRanges" style="display: none;">
                         <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
                         <div class="input-group-append mb-2">
-                        <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
-                        <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
+                        <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Min Range">
+                        <input type="text" class="form-control col-md-4" id="minrange" name="unit" placeholder="unit">
                         </div>
 
                     </div>
                     <div class="form-group col-md-3" id="maxrangeGroup" style="display: none;">
                         <label for="maxrange" class="control-label font-weight-bold">Maximum Range</label>
                         <div class="input-group-append">
-                        <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
-                        <input type="text" class="form-control col-md-3" id="maxrange" name="unit" placeholder="unit">
+                        <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Max Range">
+                        <input type="text" class="form-control col-md-4" id="maxrange" name="unit" placeholder="unit">
                     </div>
                     </div>
                     
