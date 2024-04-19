@@ -62,7 +62,7 @@
                 <li class="nav-item">
                     <a href="{{route('designations.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="bx bx-copy-alt"></i>
+                        <i class='bx bx-id-card'></i>
                         </span>
                         <span class="pcoded-mtext">Designations</span>
                     </a>
