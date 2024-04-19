@@ -8,9 +8,9 @@
         <div class="col-md-8">
         <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
             <div class="card col-md-8 mt-5">
-                <h1 class="mx-auto mt-4">Textile Lims</h1>
+                <h1 class="mx-auto mt-4">Textile LIMS</h1>
 
-                <div class="card-header mx-auto text-dark font-weight-bold">A project by RubicSOL</div>
+                <div class="card-header mx-auto text-dark font-weight-bold">A project by RUBICSOL</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

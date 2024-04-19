@@ -80,18 +80,16 @@ if (!function_exists('getDepartments')) {
         function getDesignations()
         {
             $designations=[
-                ['id'=>1, 'Designation Name'=>'Spinning', 'Department Name'=>'Ms. Ayesha Khan',],
-                ['id'=>2, 'Designation Name'=>'Weaving', 'Department Name'=>'Mr. David Lee',],
-                ['id'=>3, 'Designation Name'=>'Knitting', 'Department Name'=>'Mr. Omar Hassan',],
-                ['id'=>4, 'Designation Name'=>'Human Resources (HR)', 'Department Name'=>'Ms. Beatrice Miller',],
-                ['id'=>5, 'Designation Name'=>'Dyeing & Finishing', 'Department Name'=>'Ms. Isabella Rodriguez',],
-                ['id'=>6, 'Designation Name'=>'Quality Control', 'Department Name'=>'Mr. Chen Lin',],
-                ['id'=>7, 'Designation Name'=>'Fabric Sourcing & Procurement', 'Department Name'=>'Ms. Evelyn Ramirez',],
-                ['id'=>8, 'Designation Name'=>'Production Planning & Scheduling	', 'Department Name'=>'Mr. William Schmidt',],
-                ['id'=>9, 'Designation Name'=>'Warehouse & Logistics', 'Department Name'=>'Mr. Ahmed Ali',],
-                ['id'=>10, 'Designation Name'=>'Sales & Marketing', 'Department Name'=>'Ms. Catherine Dubois',],
-                ['id'=>11, 'Designation Name'=>'Sustainability & Compliance', 'Department Name'=>'Dr. Maria Garcia',],
-                ['id'=>12, 'Designation Name'=>'Information Technology (IT)', 'Department Name'=>'Mr. Hiro Tanaka',],
+                ['id'=>1, 'Designation Name'=>'Spinning Supervisor', 'Department Name'=>'Spinning',],
+                ['id'=>2, 'Designation Name'=>'Weaver', 'Department Name'=>'Weaving',],
+                ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Mr. Omar Hassan',],
+                ['id'=>4, 'Designation Name'=>'Design Assistant', 'Department Name'=>'Designing',],
+                ['id'=>5, 'Designation Name'=>'Cutter', 'Department Name'=>'Cutting',],
+                ['id'=>6, 'Designation Name'=>'Operator', 'Department Name'=>'Weaving',],
+                ['id'=>7, 'Designation Name'=>'Inspector', 'Department Name'=>'Quality Control',],
+                ['id'=>8, 'Designation Name'=>'Manager', 'Department Name'=>'Production',],
+                ['id'=>9, 'Designation Name'=>'Seamstress', 'Department Name'=>'Sewing',],
+                ['id'=>10, 'Designation Name'=>'Analyst', 'Department Name'=>'Research & Development',],
               ];
     
             return $designations;
