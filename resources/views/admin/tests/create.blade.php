@@ -35,8 +35,8 @@
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
                     <div class="form-group col-md-3">
-                            <label for="description" class="control-label font-weight-bold">Description</label>
-                            <input type="text" class="form-control" id="description" name="description" placeholder="Description">
+                        <label for="description" class="control-label font-weight-bold">Description</label>
+                        <textarea class="form-control" id="description" placeholder="Description" rows="2"></textarea>
                         </div>
                 </div>
                 <div class="card-footer bg-light border-top">
