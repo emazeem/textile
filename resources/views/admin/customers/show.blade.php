@@ -16,6 +16,15 @@
         <li class="breadcrumb-item active" aria-current="page">Customer Details</li>
       </ol>
     </nav>
+    <div class="col-12">
+            <div class="card user-card user-card-3 support-bar1">
+                <div class="card-header bg-light border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="font-weight-light"><i class="feather icon-user mr-1"></i>Customer Details</h4>
+                        </div>
+                    </div>
+            </div>
     <table class="table table-bordered table-sm bg-white">
   
     <tr>
@@ -49,55 +58,50 @@
             </form>
         </td>
     </tr>
-    <tr>
-
-      <td colspan="2">
-      
-      </td>
-    </tr>
 </table>
-<table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
-          <thead >
-            <tr class="bg-c-blue">
-              <th>ID</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-row">
-              <td>1</td>
-              <td>Olivia Jones</td>
-              <td>oliviajoes19@gmail.com</td>
-              <td>(222) 222-4545</td>
-              <td class="text-center">
-                <a href="{{route('contacts.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>2</td>
-              <td>Alex Garcia</td>
-              <td>alexgarcia45@gmail.com</td>
-              <td>(222) 222-4545</td>
-              <td class="text-center">
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td>3</td>
-              <td>John Smith</td>
-              <td>johnsmith78964@gmail.com</td>
-              <td>(555) 555-1212</td>
-              <td class="text-center">
-                <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-          </table>
+</div>
+      <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
+                <thead >
+                  <tr class="bg-c-blue">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-row">
+                    <td>1</td>
+                    <td>Olivia Jones</td>
+                    <td>oliviajoes19@gmail.com</td>
+                    <td>(222) 222-4545</td>
+                    <td class="text-center">
+                      <a href="{{route('contacts.edit',['id'=>'1'])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                      <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr class="table-row">
+                    <td>2</td>
+                    <td>Alex Garcia</td>
+                    <td>alexgarcia45@gmail.com</td>
+                    <td>(222) 222-4545</td>
+                    <td class="text-center">
+                      <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                      <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr class="table-row">
+                    <td>3</td>
+                    <td>John Smith</td>
+                    <td>johnsmith78964@gmail.com</td>
+                    <td>(555) 555-1212</td>
+                    <td class="text-center">
+                      <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                      <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+        </table>
     </div>
     <style>
     table#example thead tr th{
