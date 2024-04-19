@@ -15,12 +15,14 @@ $(document).ready(function () {
          <input type="hidden" name="id" value="{{$edit->id}}">
          <div class="col-12">
             <div class="card user-card user-card-3 support-bar1">
-                <div class="card-footer bg-light border-top">
+                <div class="card-header bg-light border-top">
                     <div class="row">
                         <div class="col-12">
-                            <h5 class="font-weight-light"><i class="feather icon-user"></i>Edit User</h5>
+                            <h4 class="font-weight-light"><i class="feather icon-user mr-1"></i>Edit User</h4>
                         </div>
                     </div>
+            </div>
+            <div class="card-body pt-4 bg-white border-top">
                     <div class="row">
                         <div class="form-group col-md-3 col-12">
                             <label for="fname" class="control-label font-weight-bold">First Name</label>
@@ -60,26 +62,26 @@ $(document).ready(function () {
                             <option value="CEO">Cheif Executive Officer</option>
                             <option value="Sales internee">Sales Internee</option>
                             <option value="Content writer">Content Writer</option>
-                    </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="department" class="control-label font-weight-bold">Department</label>
-                            <select type="dropdown" id="department" name="department" class="form-control w-100" value='{{$edit->department}}'>
-                            <option value="Sales department">Sales Department</option>
-                            <option value="Software department">Software Department</option>
-                    </select>
+                        </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="department" class="control-label font-weight-bold">Department</label>
+                                <select type="dropdown" id="department" name="department" class="form-control w-100" value='{{$edit->department}}'>
+                                <option value="Sales department">Sales Department</option>
+                                <option value="Software department">Software Department</option>
+                        </select>
                         </div>
                         
                     </div>
-                    <div class="card-footer bg-light border-top">
+                    <div class="card-footer bg-white mt-4 border-top">
                         <div class="row">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"> </i> Save</button>
+                                <button type="submit" class="btn btn-primary user-btn float-right mt-2"><i class="feather icon-save"> </i> Save</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
         </form>
     </div>
 @endsection

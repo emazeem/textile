@@ -34,11 +34,11 @@
                 </div>
                 <div class="col-md-4 pb-4">
                 <label for="name" class="control-label font-weight-bold">Name</label>
-                <input class="form-control" name="name" placeholder="Name">
+                <input class="form-control" name="name" placeholder="Name" value="Color">
                 </div>
                 <div class="col-md-4 pb-4">
                 <label for="description" class="control-label font-weight-bold ">Description</label>
-                <textarea class="form-control" id="description" placeholder="Description" rows="2"></textarea>
+                <textarea class="form-control" id="description" placeholder="Description" rows="2">Color is being test</textarea>
             </div>
                 <div class="card-footer bg-white border-top">
                     <div class="row">

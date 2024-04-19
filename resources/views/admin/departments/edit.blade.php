@@ -24,7 +24,7 @@
                     
                 </div>
             </div>
-            <div class="card-body pt-4 bg-light border-top">
+            <div class="card-body pt-4 bg-white border-top">
                 
                 <div class="col-md-4 pb-4">
                     <label for="remarks" class="control-label">Department Name</label>
@@ -34,7 +34,7 @@
                     <label for="remarks" class="control-label">Department Head</label>
                     <input class="form-control" name="address" placeholder="Department Head" value='Ms. Ayesha Khan'>
                 </div>
-                <div class="card-footer bg-light border-top">
+                <div class="card-footer bg-white mt-4  border-top">
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"></i> Update</button>
