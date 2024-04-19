@@ -59,6 +59,14 @@
                         <span class="pcoded-mtext">Departments</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('departments.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                            <i class="bx bx-copy-alt"></i>
+                        </span>
+                        <span class="pcoded-mtext">Designations</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

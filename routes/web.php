@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RangeController;
 use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\DesignationController;
 
 
 
@@ -63,5 +64,11 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit', [DepartmentController::class, 'edit'])->name('departments.edit');
         Route::get('create', [DepartmentController::class, 'create'])->name('departments.create');
         Route::get('show/{id}', [DepartmentController::class, 'show'])->name('departments.show');
+    });
+    Route::group(['prefix' => 'designations'], function () {
+        Route::get('', [DesignationController::class, 'index'])->name('designations.index');
+        Route::get('edit', [DesignationController::class, 'edit'])->name('designations.edit');
+        Route::get('create', [DesignationControlle::class, 'create'])->name('designations.create');
+        Route::get('show/{id}', [DesignationControlle::class, 'show'])->name('designations.show');
     });
 });
