@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RangeController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\DesignationController;
+use App\Http\Controllers\Admin\WorkOrderController;
 
 
 
@@ -70,5 +71,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit', [DesignationController::class, 'edit'])->name('designations.edit');
         Route::get('create', [DesignationController::class, 'create'])->name('designations.create');
         Route::get('show/{id}', [DesignationController::class, 'show'])->name('designations.show');
+    });
+    Route::group(['prefix' => 'work-orders'], function () {
+        Route::get('', [WorkOrderController::class, 'index'])->name('work-orders.index');
+        
     });
 });
