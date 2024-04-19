@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('departments.index')}}" class="nav-link">
+                    <a href="{{route('designations.index')}}" class="nav-link">
                         <span class="pcoded-micon">
                             <i class="bx bx-copy-alt"></i>
                         </span>

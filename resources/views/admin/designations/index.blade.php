@@ -64,19 +64,7 @@
             </tr>
           </thead>
           <tbody>
-          @foreach(getDepartments() as $department)
-          <tr class="table-row">
-              <td>{{$department['id']}}</td>
-              <td>{{$department['Department Name']}}</td>
-              <td>{{$department['Department Head']}}</td>
-              <td>
-                <a href="{{route('departments.edit',['id'=>$department['id']])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="{{route('departments.show',['id'=>$department['id']])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
-            </tr>
-          
-          @endforeach
+         
           </tbody>
         </table>
         <div class="row float-right mt-2 mr-0">

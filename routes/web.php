@@ -68,7 +68,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['prefix' => 'designations'], function () {
         Route::get('', [DesignationController::class, 'index'])->name('designations.index');
         Route::get('edit', [DesignationController::class, 'edit'])->name('designations.edit');
-        Route::get('create', [DesignationControlle::class, 'create'])->name('designations.create');
-        Route::get('show/{id}', [DesignationControlle::class, 'show'])->name('designations.show');
+        Route::get('create', [DesignationController::class, 'create'])->name('designations.create');
+        Route::get('show/{id}', [DesignationController::class, 'show'])->name('designations.show');
     });
 });
