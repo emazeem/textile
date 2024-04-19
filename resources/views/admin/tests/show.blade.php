@@ -35,6 +35,22 @@
               <th scope="col">Description</th>
               <td scope="col">chemical solidatity</td>
             </tr>
+            <tr>
+              <th scope="col">Add Range</th>
+              <td scope="col">
+              <form action="/action_page.php">
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                  <option value="Edge">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+                <input type="submit" class="bg-c-primary px-2">
+              </form>
+              </td>
+            </tr>
           </table>
     </div>
 </div>
