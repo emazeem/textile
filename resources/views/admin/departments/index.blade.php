@@ -6,10 +6,41 @@
     <!--heading and add user button-->
     <div class="row">
       <div class="col-12 mb-2">
-        <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-users"></i> Departments</h3>
-          <a href="" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Department</a>
-        
+      <button type="button" class="btn btn-primary float-right pb-1 font-weight-light" data-toggle="modal" data-target="#editModal">
+      <i class="fa fa-plus-circle mr-1"></i> Departments
+    </button>
       </div>
+      <!--Add Department Modal-->
+      <div class="modal fade mt-5" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="user-form" method="post" enctype="multipart/form-data">
+                @csrf
+                <input type="hidden" value="" name="id">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel"><i class="bx bx-copy-alt"></i>Add Department</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name" class="control-label">Department Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Department Name" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="control-label">Department Head</label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Department Head" value="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary"><i class="feather icon-Add"></i> Add</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
       <!--Search bar-->
       <div class="row"></div>
       <div class="col-12 mb-2 mt-2">
