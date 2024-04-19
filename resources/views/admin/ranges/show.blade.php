@@ -9,11 +9,15 @@
         <li class="breadcrumb-item active" aria-current="page">Ranges Details</li>
       </ol>
     </nav>
-<!-- <div class="col-12 mb-2">
-    <h3 class="float-left pb-1 font-weight-light"><i class="bx bx-task"></i>Test</h3>
-    <a href="" class="btn btn-primary shadow-sm float-right mt-2 ml-1"><i class="fa fa-tasks mr-1"></i>Start</a>
-    <a href="" class="btn btn-danger shadow-sm float-right mt-2"><i class="fa fa-tasks mr-1"></i>Complete</a>
-  </div> -->
+    <div class="col-12">
+            <div class="card user-card user-card-3 support-bar1">
+                <div class="card-header bg-light border-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="font-weight-light"><i class="feather icon-user mr-1"></i>Ranges Details</h4>
+                        </div>
+                    </div>
+            </div>
     <table class="table table-bordered table-sm bg-white">
     <tr>
       <th scope="col">Id</th>
