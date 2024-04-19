@@ -6,7 +6,7 @@
     <!--heading and add user button-->
     <div class="row">
       <div class="col-12 mb-2">
-      <h3 class="float-left pb-1 font-weight-light"> <i class="bx bx-copy-alt"></i> Designations</h3>
+      <h3 class="float-left pb-1 font-weight-light"><i class='bx bx-id-card'></i> Designations</h3>
       <button type="button" class="btn btn-primary float-right pb-1 font-weight-light" data-toggle="modal" data-target="#addModal">
       <i class="fa fa-plus-circle mr-1"></i> Designation</button>
     </div>
