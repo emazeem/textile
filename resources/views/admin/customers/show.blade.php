@@ -60,15 +60,6 @@
     </tr>
 </table>
 </div>
-<div class="col-12">
-            <div class="card user-card user-card-3 support-bar1">
-                <div class="card-header bg-light border-top">
-                    <div class="row">
-                        <div class="col-12">
-                            <h4 class="font-weight-light"><i class="feather icon-user mr-1"></i>Contacts</h4>
-                        </div>
-                    </div>
-            </div>
       <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
                 <thead >
                   <tr class="bg-c-blue">
@@ -111,7 +102,6 @@
                     </td>
                   </tr>
         </table>
-      </div>
     </div>
     <style>
     table#example thead tr th{
