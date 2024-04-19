@@ -68,7 +68,7 @@ $(document).ready(function () {
                                 <select type="dropdown" id="department" name="department" class="form-control w-100">
                                 <option value="Sales department">Sales Department</option>
                                 <option value="Software department">Software Department</option>
-                        </select>
+                                </select>
                         </div>
                         
                     </div>
