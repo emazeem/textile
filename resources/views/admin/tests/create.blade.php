@@ -19,7 +19,7 @@
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
         @csrf
         <div class="card">
-            <div class="card-footer bg-light border-top">
+            <div class="card-footer bg-white border-top">
                 <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Test</h5>
                 <div class="row">
                     <div class="form-group col-md-3 col-12 ">
@@ -39,7 +39,7 @@
                         <textarea class="form-control" id="description" placeholder="Description" rows="2"></textarea>
                         </div>
                 </div>
-                <div class="card-footer bg-light border-top">
+                <div class="card-footer bg-white border-top">
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary user-btn float-right"><i

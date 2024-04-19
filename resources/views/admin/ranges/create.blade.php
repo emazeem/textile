@@ -19,7 +19,7 @@
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
         @csrf
         <div class="card">
-            <div class="card-footer bg-light border-top">
+            <div class="card-footer bg-white border-top">
                 <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Ranges</h5>
                     <div class="form-group col-md-3 col-12 ">
                         <label for="name" class="control-label font-weight-bold">Name</label>
@@ -30,15 +30,15 @@
                         <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
                     </div>
                     
-                    <label for="fixrange" class="control-label font-weight-bold col-md-3 ">Fix Range</label>
-                    <div class="input-group-append col-md-3" id="fixRanges">
+                    <label for="fixrange" class="control-label font-weight-bold col-md-3">Fix Range</label>
+                    <div class="input-group-append col-md-3 mb-2" id="fixRanges">
                         <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
                         <input type="text" class="form-control col-md-3" id="fixrange" name="unit" placeholder="unit">
                     </div>
 
                     <div class=" col-md-3 col-6" id="minmaxRanges" style="display: none;">
                         <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
-                        <div class="input-group-append">
+                        <div class="input-group-append mb-2">
                         <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
                         <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
                         </div>
@@ -52,7 +52,7 @@
                     </div>
                     </div>
                     
-                    <div class="card-footer bg-light border-top">
+                    <div class="card-footer bg-white border-top">
                         <div class="row">
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary user-btn float-right">
