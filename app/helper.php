@@ -1,23 +1,6 @@
 <?php
 
 
-
-if (!function_exists('getDepartments')) {
-    function getDepartments()
-    {
-        $departments=[
-            ['id'=>1, 'Department Name'=>'Spinning', 'Department Head'=>'Ms. Ayesha Khan',],
-            ['id'=>2, 'Department Name'=>'Weaving', 'Department Head'=>'Mr. David Lee',],
-            ['id'=>3, 'Department Name'=>'Knitting', 'Department Head'=>'Mr. Omar Hassan',],
-            ['id'=>4, 'Department Name'=>'Dyeing & Finishing', 'Department Head'=>'Ms. Isabella Rodriguez',],
-            ['id'=>5, 'Department Name'=>'Quality Control', 'Department Head'=>'Mr. Chen Lin',],
-            ['id'=>6, 'Department Name'=>'Design & Development', 'Department Head'=>'Ms. Sofia Petrova',],
-          ];
-
-        return $departments;
-    }
-}
-
 if (!function_exists('getCustomers')) {
     function getCustomers()
     {
@@ -36,6 +19,24 @@ if (!function_exists('getCustomers')) {
         return $customers;
     }
 }
+if (!function_exists('getTests')) {
+    function getTests()
+    {
+        $tests=[
+            ['id'=>1, 'cid'=>'Test# 001', 'lab'=>'Chemical Lab', 'name'=>'Color', 'description'=>'Color is being test',],
+            ['id'=>2, 'cid'=>'Test# 002', 'lab'=>'Chemical Lab', 'name'=>'Fadeness', 'description'=>'Fadeness is being test',],
+            ['id'=>3, 'cid'=>'Test# 003', 'lab'=>'Chemical Lab', 'name'=>'Fastness', 'description'=>'Fastness is being test',],
+            ['id'=>4, 'cid'=>'Test# 004', 'lab'=>'Physical Lab', 'name'=>'Flamability', 'description'=>'Flamability is being test',],
+            ['id'=>5, 'cid'=>'Test# 005', 'lab'=>'Wet Lab', 'name'=>'Launder', 'description'=>'Launder is being test',],
+            ['id'=>6, 'cid'=>'Test# 006', 'lab'=>'Physical Lab', 'name'=>'Perspiration', 'description'=>'Perspiration is being test',],
+            ['id'=>7, 'cid'=>'Test# 007', 'lab'=>'Chemical Lab', 'name'=>'Allergy', 'description'=>'Allergy is being test',],
+            ['id'=>8, 'cid'=>'Test# 008', 'lab'=>'Physical Lab', 'name'=>'Tensile Strength', 'description'=>'Tensile Strength is being test',],
+            ['id'=>9, 'cid'=>'Test# 009', 'lab'=>'Physical Lab', 'name'=>'Flamability', 'description'=>'Flamability  is being test',],
+            ['id'=>10, 'cid'=>'Test# 010', 'lab'=>'Wet Lab', 'name'=>'Wash Effect	', 'description'=>'Wash Effect  is being test',],
+          ];
+        return $tests;
+    }
+}
 if (!function_exists('getRanges')) {
     function getRanges()
     {
@@ -52,6 +53,27 @@ if (!function_exists('getRanges')) {
             ['id' => '10','Name' => 'Yarn Evenness: CV% (Coefficient of Variation)','Minimum Range' => '5%','Maximum Range' => '20%',],
             ];
         return $ranges;
+    }
+}
+if (!function_exists('getDepartments')) {
+    function getDepartments()
+    {
+        $departments=[
+            ['id'=>1, 'Department Name'=>'Spinning', 'Department Head'=>'Ms. Ayesha Khan',],
+            ['id'=>2, 'Department Name'=>'Weaving', 'Department Head'=>'Mr. David Lee',],
+            ['id'=>3, 'Department Name'=>'Knitting', 'Department Head'=>'Mr. Omar Hassan',],
+            ['id'=>4, 'Department Name'=>'Human Resources (HR)', 'Department Head'=>'Ms. Beatrice Miller',],
+            ['id'=>5, 'Department Name'=>'Dyeing & Finishing', 'Department Head'=>'Ms. Isabella Rodriguez',],
+            ['id'=>6, 'Department Name'=>'Quality Control', 'Department Head'=>'Mr. Chen Lin',],
+            ['id'=>7, 'Department Name'=>'Fabric Sourcing & Procurement', 'Department Head'=>'Ms. Evelyn Ramirez',],
+            ['id'=>8, 'Department Name'=>'Production Planning & Scheduling	', 'Department Head'=>'Mr. William Schmidt',],
+            ['id'=>9, 'Department Name'=>'Warehouse & Logistics', 'Department Head'=>'Mr. Ahmed Ali',],
+            ['id'=>10, 'Department Name'=>'Sales & Marketing', 'Department Head'=>'Ms. Catherine Dubois',],
+            ['id'=>11, 'Department Name'=>'Sustainability & Compliance', 'Department Head'=>'Dr. Maria Garcia',],
+            ['id'=>12, 'Department Name'=>'Information Technology (IT)', 'Department Head'=>'Mr. Hiro Tanaka',],
+          ];
+
+        return $departments;
     }
 }
 
