@@ -46,8 +46,8 @@
                 <li class="nav-item">
                     <a href="{{route('ranges.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="bx bx-task"></i>
-                        </span>
+                        <i class='bx bxs-ruler'></i>
+                    </span>
                         <span class="pcoded-mtext">Ranges</span>
                     </a>
                 </li>
