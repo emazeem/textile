@@ -19,7 +19,7 @@
                 @csrf
                 <input type="hidden" value="" name="id">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addModalLabel"><i class="bx bx-copy-alt"></i>Add Department</h5>
+                    <h5 class="modal-title" id="addModalLabel"><i class="bx bx-copy-alt mr-1"></i>Add Department</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -50,7 +50,7 @@
                 @csrf
                 <input type="hidden" value="" name="id">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel"><i class="bx bx-copy-alt"></i>Edit Department</h5>
+                    <h5 class="modal-title" id="editModalLabel"><i class="bx bx-copy-alt mr-1"></i>Edit Department</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
