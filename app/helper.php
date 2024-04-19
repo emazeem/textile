@@ -82,7 +82,7 @@ if (!function_exists('getDepartments')) {
             $designations=[
                 ['id'=>1, 'Designation Name'=>'Spinning Supervisor', 'Department Name'=>'Spinning',],
                 ['id'=>2, 'Designation Name'=>'Weaver', 'Department Name'=>'Weaving',],
-                ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Mr. Omar Hassan',],
+                ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Knitting',],
                 ['id'=>4, 'Designation Name'=>'Design Assistant', 'Department Name'=>'Designing',],
                 ['id'=>5, 'Designation Name'=>'Cutter', 'Department Name'=>'Cutting',],
                 ['id'=>6, 'Designation Name'=>'Operator', 'Department Name'=>'Weaving',],
