@@ -27,15 +27,15 @@
             <div class="card-body pt-4 bg-white border-top">
                 
                 <div class="col-md-4 pb-4">
-                    <label for="remarks" class="control-label">Name</label>
+                    <label for="remarks" class="control-label font-weight-bold">Name</label>
                     <input class="form-control" name="name" placeholder="Name" value='Happy Bakery'>
                 </div>
                 <div class="col-md-4 pb-4">
-                    <label for="remarks" class="control-label">Address</label>
+                    <label for="remarks" class="control-label font-weight-bold">Address</label>
                     <input class="form-control" name="address" placeholder="Address" value='456 Baker Blvd, Breadville, TX 78901'>
                 </div>
                 <div class="col-md-4 pb-4">
-                    <label for="remarks" class="control-label">Industry</label>
+                    <label for="remarks" class="control-label font-weight-bold">Industry</label>
                     <input class="form-control" name="industry" placeholder="industry" value='Food Service'>
                 </div>
                 <div class="card-footer bg-white border-top">
