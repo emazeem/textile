@@ -75,25 +75,43 @@ if (!function_exists('getDepartments')) {
 
         return $departments;
     }
-
-    if (!function_exists('getDesignations')) {
-        function getDesignations()
-        {
-            $designations=[
-                ['id'=>1, 'Designation Name'=>'Spinning Supervisor', 'Department Name'=>'Spinning',],
-                ['id'=>2, 'Designation Name'=>'Weaver', 'Department Name'=>'Weaving',],
-                ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Knitting',],
-                ['id'=>4, 'Designation Name'=>'Design Assistant', 'Department Name'=>'Designing',],
-                ['id'=>5, 'Designation Name'=>'Cutter', 'Department Name'=>'Cutting',],
-                ['id'=>6, 'Designation Name'=>'Operator', 'Department Name'=>'Weaving',],
-                ['id'=>7, 'Designation Name'=>'Inspector', 'Department Name'=>'Quality Control',],
-                ['id'=>8, 'Designation Name'=>'Manager', 'Department Name'=>'Production',],
-                ['id'=>9, 'Designation Name'=>'Seamstress', 'Department Name'=>'Sewing',],
-                ['id'=>10, 'Designation Name'=>'Analyst', 'Department Name'=>'Research & Development',],
-              ];
-    
-            return $designations;
-        }
 }
+if (!function_exists('getDesignations')) {
+    function getDesignations()
+    {
+        $designations=[
+            ['id'=>1, 'Designation Name'=>'Spinning Supervisor', 'Department Name'=>'Spinning',],
+            ['id'=>2, 'Designation Name'=>'Weaver', 'Department Name'=>'Weaving',],
+            ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Knitting',],
+            ['id'=>4, 'Designation Name'=>'Design Assistant', 'Department Name'=>'Designing',],
+            ['id'=>5, 'Designation Name'=>'Cutter', 'Department Name'=>'Cutting',],
+            ['id'=>6, 'Designation Name'=>'Operator', 'Department Name'=>'Weaving',],
+            ['id'=>7, 'Designation Name'=>'Inspector', 'Department Name'=>'Quality Control',],
+            ['id'=>8, 'Designation Name'=>'Manager', 'Department Name'=>'Production',],
+            ['id'=>9, 'Designation Name'=>'Seamstress', 'Department Name'=>'Sewing',],
+            ['id'=>10, 'Designation Name'=>'Analyst', 'Department Name'=>'Research & Development',],
+          ];
 
+        return $designations;
+    }
 }
+if (!function_exists('getWorkOrders')) {
+    function getWorkOrders()
+    {
+        $workorders=[
+            ['id'=>1, 'Customer Name'=>'Spinning Supervisor', 'Contact Name'=>'Spinning',],
+            ['id'=>2, 'Designation Name'=>'Weaver', 'Department Name'=>'Weaving',],
+            ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Knitting',],
+            ['id'=>4, 'Designation Name'=>'Design Assistant', 'Department Name'=>'Designing',],
+            ['id'=>5, 'Designation Name'=>'Cutter', 'Department Name'=>'Cutting',],
+            ['id'=>6, 'Designation Name'=>'Operator', 'Department Name'=>'Weaving',],
+            ['id'=>7, 'Designation Name'=>'Inspector', 'Department Name'=>'Quality Control',],
+            ['id'=>8, 'Designation Name'=>'Manager', 'Department Name'=>'Production',],
+            ['id'=>9, 'Designation Name'=>'Seamstress', 'Department Name'=>'Sewing',],
+            ['id'=>10, 'Designation Name'=>'Analyst', 'Department Name'=>'Research & Development',],
+          ];
+
+        return $workorders;
+    }
+}          
+

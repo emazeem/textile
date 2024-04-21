@@ -67,6 +67,14 @@
                         <span class="pcoded-mtext">Designations</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('work-orders.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                        <i class='bx bx-briefcase'></i>
+                        </span>
+                        <span class="pcoded-mtext">Work Order</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
