@@ -38,20 +38,21 @@
             <tr>
               <th scope="col">Add Range</th>
               <td scope="col">
-              <form action="/action_page.php">
-                <input list="browsers" name="browser">
-                <datalist id="browsers">
-                  <option value="Edge">
-                  <option value="Firefox">
-                  <option value="Chrome">
-                  <option value="Opera">
-                  <option value="Safari">
-                </datalist>
-                <input type="submit" class="bg-c-primary px-2">
-              </form>
+              <form action="submit.php" method="post">
+                <select name="options[]" id="options" multiple class="col-md-4">
+                  <option value="option1">Range 1</option>
+                  <option value="option2">Range 2</option>
+                  <option value="option3">Range 3</option>
+                  <option value="option4">Range 4</option>
+                  <option value="option5">Range 5</option>
+                  <option value="option6">Range 6</option>
+                  <option value="option7">Range 7</option>
+                  <option value="option8">Range 8</option>
+                </select>
+                <button type="submit" class="bg-c-primary rounded-md">Submit</button>
               </td>
             </tr>
           </table>
-    </div>
-</div>
-@endsection
+        </div>
+      </div>
+      @endsection
