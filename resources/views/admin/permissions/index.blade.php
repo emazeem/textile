@@ -32,16 +32,16 @@
             </tr>
           </thead>
           <tbody>
-          @foreach(getPermissions() as $permissions)
-          <tr class="table-row">
-              <td>{{$permissions['id']}}</td>
-              <td>{{$permissions['Category']}}</td>
-              <td>{{$permissions['Permissions']}}</td>
-              <td class="text-center">
-              <a href="{{route('permissions.edit',['id'=>$permissions['id']])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="{{route('permissions.show',['id'=>$permissions['id']])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-              </td>
+          @foreach($permissions as $permission)
+            <tr class="table-row">
+                    <td>{{$permission->id}}</td>
+                    <td>{{$permission->category}}</td>
+                    <td>{{$permission->name}}</td>
+                 <td>
+                    <a href="{{route('permissions.edit',['id'=>$permission->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                    <a href="{{route('permissions.show',['id'=>$permission->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                    <a href="{{route('permissions.delete', ['id' => $permission->id])}}" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                 </td>
             </tr>
             @endforeach
           </tbody>

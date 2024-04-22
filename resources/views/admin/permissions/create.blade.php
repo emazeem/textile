@@ -9,7 +9,7 @@
         </script>
     @endif
      <div class="row pb-3">
-        <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
+        <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data" action="{{route('permissions.store')}}">
         @csrf
         <div class="card ">
             <div class="card-header bg-light">
@@ -20,14 +20,9 @@
                     <label for="category" class="control-label font-weight-bold">Category</label>
                     <input class="form-control" name="category" placeholder="Category">
                 </div>
-                <div class="col-md-12 pb-4">
-                <label for="assg-permissions" class="control-label font-weight-bold">Assign Permissions</label>
-                    <select class="multi-select form-control w-100" name="permissions[]" multiple="multiple" id="assg-permissions">
-                        <option value="View-user">View User</option>
-                        <option value="Show-User">Show User</option>
-                        <option value="Delete-User">Delete User</option>
-                        <option value="Create-User">Create User</option>
-                    </select>
+                <div class="col-md-4 pb-4">
+                <label for="permission" class="control-label font-weight-bold">Permission</label>
+                <input class="form-control" name="permission" placeholder="Permission">
                 </div>
 
                 
