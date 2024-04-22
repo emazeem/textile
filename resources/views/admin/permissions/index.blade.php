@@ -38,8 +38,8 @@
               <td>{{$permissions['Category']}}</td>
               <td>{{$permissions['Permissions']}}</td>
               <td class="text-center">
-              <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+              <a href="{{route('permissions.edit',['id'=>$permissions['id']])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                <a href="{{route('permissions.show',['id'=>$permissions['id']])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>
             </tr>

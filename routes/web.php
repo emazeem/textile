@@ -83,6 +83,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [PermissionController::class, 'index'])->name('permissions.index');
         Route::get('create', [PermissionController::class, 'create'])->name('permissions.create');
         Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
+        Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
         
     });
 });

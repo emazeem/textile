@@ -13,4 +13,10 @@ class PermissionController extends Controller
     public function create(){
         return view("admin.permissions.create");
     }
+    public function edit(){
+        return view("admin.permissions.edit");
+    }
+    public function show(){
+        return view("admin.permissions.show");
+    }
 }
