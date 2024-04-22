@@ -83,6 +83,14 @@
                         <span class="pcoded-mtext">Permissions</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('roles.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                        <i class='bx bxs-star'></i>
+                        </span>
+                        <span class="pcoded-mtext"> Roles</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\DesignationController;
 use App\Http\Controllers\Admin\WorkOrderController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\RoleController;
 
 
 
@@ -88,6 +89,13 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('store', [PermissionController::class, 'store'])->name('permissions.store');
         Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
         Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
+        
+    });
+    Route::group(['prefix' => 'roles'], function () {
+        Route::get('', [RoleController::class, 'index'])->name('roles.index');
+        Route::get('create', [RoleController::class, 'create'])->name('roles.create');
+        Route::get('edit', [RoleController::class, 'edit'])->name('roles.edit');
+        Route::get('show/{id]', [RoleController::class, 'show'])->name('roles.show');
         
     });
 });
