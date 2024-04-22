@@ -24,20 +24,13 @@
       <td scope="col">1</td>
     </tr>
     <tr>
-      <th scope="col">Name</th>
+      <th scope="col">User Name</th>
       <td scope="col">Ajwa textile</td>
     </tr>
+ 
     <tr>
-      <th scope="col">Fix Range</th>
-      <td scope="col">9</td>
-    </tr>
-    <tr>
-      <th scope="col">Minimum Range</th>
-      <td scope="col">7</td>
-    </tr>
-    <tr>
-      <th scope="col">Maximum Range</th>
-      <td scope="col">12</td>
+      <th scope="col">Role</th>
+      <td scope="col">Intern</td>
     </tr>
   </table>
 </div>

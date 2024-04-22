@@ -25,9 +25,8 @@
           <thead >
             <tr class="bg-c-blue">
               <th>ID</th>
-              <th>Name</th>
-              <th>Minimum Ranges</th>
-              <th>Maximum Range</th>
+              <th>User Name</th>
+              <th>Role </th>
               <th>Action</th>
             </tr>
           </thead>
@@ -36,8 +35,7 @@
             <tr class="table-row">
               <td>1</td>
               <td>weaving</td>
-              <td>7</td>
-              <td>8</td>
+              <td>Intern</td>
               <td>
                 <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>

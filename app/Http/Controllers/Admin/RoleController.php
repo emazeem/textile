@@ -14,6 +14,7 @@ class RoleController extends Controller
         return view('admin.roles.create');  
 }
 
+
 public function edit(){
     return view('admin.roles.edit');
 }
