@@ -115,12 +115,12 @@ if (!function_exists('getPermissions')) {
     function getPermissions()
     {
         $workorders=[
-            ['id'=>1, 'Category'=>'admin', 'Permissions'=>'view_user,edit_user,delete_user,create_order,approve_order'],
-            ['id'=>2, 'Category'=>'sales_dep', 'Permissions'=>'view_user,create_order,view_order'],
-            ['id'=>3, 'Category'=>'finance_dep', 'Permissions'=>'view_order,approve_order'],
-            ['id'=>4, 'Category'=>'warehouse_dep', 'Permissions'=>'view_order,fulfill_order'],
-            ['id'=>5, 'Category'=>'design_dep', 'Permissions'=>'view_product,edit_product'],
-            ['id'=>6, 'Category'=>'user', 'Permissions'=>'view_product,create_order'],
+            ['id'=>1, 'Category'=>'admin', 'Permissions'=>'View-user, Edit-User, Delete-User, Create-Order, Approve-Order'],
+            ['id'=>2, 'Category'=>'sales_dep', 'Permissions'=>'View-user, Create-Order, View-Order'],
+            ['id'=>3, 'Category'=>'finance_dep', 'Permissions'=>'View-Order, Approve-Order'],
+            ['id'=>4, 'Category'=>'warehouse_dep', 'Permissions'=>'View-Order, Approve-Order'],
+            ['id'=>5, 'Category'=>'design_dep', 'Permissions'=>'View-Product, Edit-Product'],
+            ['id'=>6, 'Category'=>'user', 'Permissions'=>'View-Product, Create-Order'],
           ];
 
         return $workorders;
