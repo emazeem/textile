@@ -17,10 +17,8 @@ use App\Http\Controllers\Admin\DashboardController;
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
-
-
-
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::group(['prefix' => 'users'], function () {
         Route::get('', [UserController::class, 'index'])->name('users.index');
@@ -87,12 +85,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['prefix' => 'permissions'], function () {
         Route::get('', [PermissionController::class, 'index'])->name('permissions.index');
         Route::get('create', [PermissionController::class, 'create'])->name('permissions.create');
+        Route::post('store', [PermissionController::class, 'store'])->name('permissions.store');
         Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
         Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
         
-    });
-    Route::group(['middleware' => ['auth']], function(){
-          Route::get('dashboard',[Dashboard::class, 'index'])->name('dashboard.index');
-
     });
 });
