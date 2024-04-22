@@ -77,6 +77,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [WorkOrderController::class, 'index'])->name('work-orders.index');
         Route::get('create', [WorkOrderController::class, 'create'])->name('work-orders.create');
         Route::get('edit', [WorkOrderController::class, 'edit'])->name('work-orders.edit');
+        Route::get('show', [WorkOrderController::class, 'show'])->name('work-orders.show');
         
     });
     Route::group(['prefix' => 'permissions'], function () {
