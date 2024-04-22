@@ -102,8 +102,6 @@ class UserController extends Controller
         $user->designation=$request->designation;
         $user->department=$request->department;
         $user->save();
-        
-        $user->save();
         return response()->json(['success'=>'User added successfully!','id'=>$user->id]);
     }
     

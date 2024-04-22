@@ -8,10 +8,10 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RangeController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\DesignationController;
-use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\WorkOrderController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PermissionController;
-use App\Http\Controllers\Admin\WorkOrderController;
+use App\Http\Controllers\Admin\RoleController;
 
 
 
@@ -86,7 +86,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['prefix' => 'permissions'], function () {
         Route::get('', [PermissionController::class, 'index'])->name('permissions.index');
         Route::get('create', [PermissionController::class, 'create'])->name('permissions.create');
-        Route::post('store', [PermissionController::class, 'store'])->name('permissions.store');
+        Route::post('store', [PermissionController::class, 'store'])->name('permissions.store');    
         Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
         Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
         

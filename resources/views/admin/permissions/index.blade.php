@@ -7,7 +7,6 @@
       <div class="col-12 mb-2">
         <h3 class="float-left pb-1 font-weight-light"> <i class='bx bx-key mr-1'></i></i>Permissions</h3>
           <a href="{{route('permissions.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Permission</a>
-        
       </div>
       <!--Search bar-->
       <div class="row"></div>
@@ -35,13 +34,8 @@
           @foreach($permissions as $permission)
             <tr class="table-row">
                     <td>{{$permission->id}}</td>
-                    <td>{{$permission->category}}</td>
                     <td>{{$permission->name}}</td>
-                 <td>
-                    <a href="{{route('permissions.edit',['id'=>$permission->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
-                    <a href="{{route('permissions.show',['id'=>$permission->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="{{route('permissions.delete', ['id' => $permission->id])}}" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                 </td>
+                    <td>{{$permission->category}}</td>
             </tr>
             @endforeach
           </tbody>
