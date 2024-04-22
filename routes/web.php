@@ -74,6 +74,8 @@ Route::group(['middleware' => ['auth']], function () {
     });
     Route::group(['prefix' => 'work-orders'], function () {
         Route::get('', [WorkOrderController::class, 'index'])->name('work-orders.index');
+        Route::get('create', [WorkOrderController::class, 'create'])->name('work-orders.create');
+        Route::get('edit', [WorkOrderController::class, 'edit'])->name('work-orders.edit');
         
     });
 });

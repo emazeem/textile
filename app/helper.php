@@ -99,19 +99,17 @@ if (!function_exists('getWorkOrders')) {
     function getWorkOrders()
     {
         $workorders=[
-            ['id'=>1, 'Customer Name'=>'Spinning Supervisor', 'Contact Name'=>'Spinning',],
-            ['id'=>2, 'Designation Name'=>'Weaver', 'Department Name'=>'Weaving',],
-            ['id'=>3, 'Designation Name'=>'Knitting Supervisor', 'Department Name'=>'Knitting',],
-            ['id'=>4, 'Designation Name'=>'Design Assistant', 'Department Name'=>'Designing',],
-            ['id'=>5, 'Designation Name'=>'Cutter', 'Department Name'=>'Cutting',],
-            ['id'=>6, 'Designation Name'=>'Operator', 'Department Name'=>'Weaving',],
-            ['id'=>7, 'Designation Name'=>'Inspector', 'Department Name'=>'Quality Control',],
-            ['id'=>8, 'Designation Name'=>'Manager', 'Department Name'=>'Production',],
-            ['id'=>9, 'Designation Name'=>'Seamstress', 'Department Name'=>'Sewing',],
-            ['id'=>10, 'Designation Name'=>'Analyst', 'Department Name'=>'Research & Development',],
+            ['id'=>1, 'Customer Name'=>'Acme Apparel Inc.', 'Contact Name'=>'Ms. Sarah Jones','PO Number'=>'AC-2024-0422'],
+            ['id'=>2, 'Customer Name'=>'Boutique Bleu', 'Contact Name'=>'M. Jean Dupont','PO Number'=>'BB-FR-23001'],
+            ['id'=>3, 'Customer Name'=>'Threadbare Threads.', 'Contact Name'=>'Mr. Antonio Garcia','PO Number'=>'TT-SP-00078'],
+            ['id'=>4, 'Customer Name'=>'The Silken Thread', 'Contact Name'=>'Ms. Li Wei','PO Number'=>'TST-CN-12345'],
+            ['id'=>5, 'Customer Name'=>'Fabrics R Us', 'Contact Name'=>'Mr. Peter Schmidt','PO Number'=>'FRU-US-56789'],
+            ['id'=>6, 'Customer Name'=>'Global Fashion Ltd.', 'Contact Name'=>'Ms. Aisha Khan','PO Number'=>'GFL-UK-98765'],
+            ['id'=>7, 'Customer Name'=>'Threadmill Threads', 'Contact Name'=>'Mr. Hiro Tanaka','PO Number'=>'TT-JP-01234'],
           ];
 
         return $workorders;
     }
-}          
+}
+        
 
