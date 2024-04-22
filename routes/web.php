@@ -10,12 +10,16 @@ use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\DesignationController;
 use App\Http\Controllers\Admin\WorkOrderController;
 use App\Http\Controllers\Admin\PermissionController;
+use App\Http\Controllers\Admin\DashboardController;
 
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+
+
+
 Route::group(['middleware' => ['auth']], function () {
 
     Route::group(['prefix' => 'users'], function () {
@@ -86,5 +90,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
         Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
         
+    });
+    Route::group(['middleware' => ['auth']], function(){
+          Route::get('dashboard',[Dashboard::class, 'index'])->name('dashboard.index');
+
     });
 });
