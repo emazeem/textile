@@ -1,19 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use app\Models\Permission;
-
+use App\Models\Permission;
 class PermissionController extends Controller
 {
     public function index(){
         $permissions = Permission::all();
-        return view("admin.permissions.index", compact("permissions"));
+        return view("admin.permissions.index",compact("permissions"));
     }
     public function create(){
-
         return view("admin.permissions.create");
     }
     public function store(Request $request){
@@ -31,7 +29,7 @@ class PermissionController extends Controller
         $permission->name=$request->name;
         $permission->category=$request->category;
         $permission->save();
-        return response()->json(['success'=>'User added successfully!','id'=>$permission->id]);
+        return response()->json(['success'=>'Permission added successfully!','id'=>$permission->id]);
     }
     public function edit(){
         return view("admin.permissions.edit");
