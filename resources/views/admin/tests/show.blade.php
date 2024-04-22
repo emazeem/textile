@@ -53,8 +53,8 @@
       </div>
       <style>
     .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #dfdfdf !important;
-    color: #000 !important;
+      background-color: #27458c !important;
+    color: #fff !important;
 }
 </style>
 <script>
