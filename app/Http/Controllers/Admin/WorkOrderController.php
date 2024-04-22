@@ -16,4 +16,7 @@ class WorkOrderController extends Controller
     public function edit(){
         return view("admin.work-orders.edit");
     }
+    public function show(){
+        return view("admin.work-orders.show");
+    }
 }
