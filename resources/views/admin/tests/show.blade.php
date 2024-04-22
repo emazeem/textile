@@ -38,21 +38,103 @@
             <tr>
               <th scope="col">Add Range</th>
               <td scope="col">
-              <form action="submit.php" method="post">
-                <select name="options[]" id="options" multiple class="col-md-4">
-                  <option value="option1">Range 1</option>
-                  <option value="option2">Range 2</option>
-                  <option value="option3">Range 3</option>
-                  <option value="option4">Range 4</option>
-                  <option value="option5">Range 5</option>
-                  <option value="option6">Range 6</option>
-                  <option value="option7">Range 7</option>
-                  <option value="option8">Range 8</option>
-                </select>
-                <button type="submit" class="bg-c-primary rounded-md">Submit</button>
-              </td>
+                <div class="dropdown">
+                  <button onclick="toggleDropdown()" class="bg-c-primary px-1 py-1 rounded-lg">Select Options</button>
+                    <div id="options" class="dropdown-content">
+                      <label><input type="checkbox" value="Option 1"> Option 1</label>
+                      <label><input type="checkbox" value="Option 2"> Option 2</label>
+                      <label><input type="checkbox" value="Option 3"> Option 3</label>
+                    </div>
+                  </div>
+                  <div class="selected-items"></div>
+                </td>
             </tr>
           </table>
         </div>`
       </div>
+      
+      <script>
+        function toggleDropdown() {
+            document.getElementById("options").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        document.querySelectorAll('.dropdown-content input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const text = this.value;
+                const selectedItems = document.querySelector('.selected-items');
+                const existingItem = selectedItems.querySelector(`[data-value="${text}"]`);
+
+                if (this.checked) {
+                    if (!existingItem) {
+                        const selectedItem = document.createElement('div');
+                        selectedItem.setAttribute('data-value', text);
+                        selectedItem.innerText = text;
+                        selectedItems.appendChild(selectedItem);
+                    }
+                } else {
+                    if (existingItem) {
+                        existingItem.remove();
+                    }
+                }
+            });
+        });
+    </script>
+    
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 120px;
+            overflow-y: auto;
+            max-height: 100px;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+        .dropdown-content label {
+            display: block;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-content label:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .selected-items {
+              width:100px;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .selected-items div {
+            margin-bottom: 5px;
+            width: 100px;
+            border-radius: 20px;
+        }
+    </style>
+
       @endsection
