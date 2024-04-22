@@ -38,103 +38,28 @@
             <tr>
               <th scope="col">Add Range</th>
               <td scope="col">
-                <div class="dropdown">
-                  <button onclick="toggleDropdown()" class="bg-c-primary px-1 py-1 rounded-lg">Select Options</button>
-                    <div id="options" class="dropdown-content">
-                      <label><input type="checkbox" value="Option 1"> Option 1</label>
-                      <label><input type="checkbox" value="Option 2"> Option 2</label>
-                      <label><input type="checkbox" value="Option 3"> Option 3</label>
-                    </div>
-                  </div>
-                  <div class="selected-items"></div>
+              <label for="assg-permissions" class="control-label font-weight-bold"></label>
+                    <select class="multi-select form-control w-100" name="permissions[]" multiple="multiple" id="assg-permissions">
+                        <option value="range1">Range 1</option>
+                        <option value="range2">Range 2</option>
+                        <option value="range3">Range 3</option>
+                        <option value="range4">Range 4</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary"><i class='bx bx-upload'></i> Select Ranges</button>
                 </td>
             </tr>
           </table>
-        </div>`
+        </div>
       </div>
-      
-      <script>
-        function toggleDropdown() {
-            document.getElementById("options").classList.toggle("show");
-        }
-
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropdown button')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-
-        document.querySelectorAll('.dropdown-content input[type="checkbox"]').forEach(checkbox => {
-            checkbox.addEventListener('change', function() {
-                const text = this.value;
-                const selectedItems = document.querySelector('.selected-items');
-                const existingItem = selectedItems.querySelector(`[data-value="${text}"]`);
-
-                if (this.checked) {
-                    if (!existingItem) {
-                        const selectedItem = document.createElement('div');
-                        selectedItem.setAttribute('data-value', text);
-                        selectedItem.innerText = text;
-                        selectedItems.appendChild(selectedItem);
-                    }
-                } else {
-                    if (existingItem) {
-                        existingItem.remove();
-                    }
-                }
-            });
-        });
-    </script>
-    
-    <style>
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 120px;
-            overflow-y: auto;
-            max-height: 100px;
-            border: 1px solid #ddd;
-            z-index: 1;
-        }
-
-        .dropdown-content label {
-            display: block;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        .dropdown-content label:hover {
-            background-color: #ddd;
-        }
-
-        .show {
-            display: block;
-        }
-
-        .selected-items {
-              width:100px;
-            margin-top: 5px;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .selected-items div {
-            margin-bottom: 5px;
-            width: 100px;
-            border-radius: 20px;
-        }
-    </style>
-
+      <style>
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #dfdfdf !important;
+    color: #000 !important;
+}
+</style>
+<script>
+    $(document).ready(function() {
+    $('.multi-select').select2();
+});
+</script>
       @endsection
