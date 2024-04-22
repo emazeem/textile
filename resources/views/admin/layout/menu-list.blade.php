@@ -75,6 +75,14 @@
                         <span class="pcoded-mtext">Work Order</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('permissions.index')}}" class="nav-link">
+                        <span class="pcoded-micon">
+                        <i class='bx bx-key'></i>
+                        </span>
+                        <span class="pcoded-mtext">Permissions</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

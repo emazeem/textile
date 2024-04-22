@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\RangeController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\DesignationController;
 use App\Http\Controllers\Admin\WorkOrderController;
+use App\Http\Controllers\Admin\PermissionController;
 
 
 
@@ -76,6 +77,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [WorkOrderController::class, 'index'])->name('work-orders.index');
         Route::get('create', [WorkOrderController::class, 'create'])->name('work-orders.create');
         Route::get('edit', [WorkOrderController::class, 'edit'])->name('work-orders.edit');
+        
+    });
+    Route::group(['prefix' => 'permissions'], function () {
+        Route::get('', [PermissionController::class, 'index'])->name('permissions.index');
+        Route::get('create', [PermissionController::class, 'create'])->name('permissions.create');
+        Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
         
     });
 });

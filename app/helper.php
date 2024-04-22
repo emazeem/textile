@@ -111,5 +111,20 @@ if (!function_exists('getWorkOrders')) {
         return $workorders;
     }
 }
+if (!function_exists('getPermissions')) {
+    function getPermissions()
+    {
+        $workorders=[
+            ['id'=>1, 'Category'=>'admin', 'Permissions'=>'view_user,edit_user,delete_user,create_order,approve_order'],
+            ['id'=>2, 'Category'=>'sales_dep', 'Permissions'=>'view_user,create_order,view_order'],
+            ['id'=>3, 'Category'=>'finance_dep', 'Permissions'=>'view_order,approve_order'],
+            ['id'=>4, 'Category'=>'warehouse_dep', 'Permissions'=>'view_order,fulfill_order'],
+            ['id'=>5, 'Category'=>'design_dep', 'Permissions'=>'view_product,edit_product'],
+            ['id'=>6, 'Category'=>'user', 'Permissions'=>'view_product,create_order'],
+          ];
+
+        return $workorders;
+    }
+}
         
 
