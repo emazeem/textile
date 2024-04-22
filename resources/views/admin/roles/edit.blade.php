@@ -25,43 +25,51 @@
             </div>
             <div class="card-body pt-4 bg-white border-top">
             <div class="col-md-4 pb-4">
-                <label for="name" class="control-label font-weight-bold">Name</label>
-                <input class="form-control" name="name" placeholder="Name">
+                <label for="username" class="control-label font-weight-bold">User Name</label>
+                <select type="dropdown" id="username" name="username" class="form-control w-100">
+                        <option value="Technogadget Inc.">Technogadget Inc.</option>
+                            <option value="Happy Bakery">Happy Bakery</option>
+                            <option value="Acme Corp">Acme Corp</option>
+                            <option value="Green Earth Growers">Green Earth Growers</option>
+                            <option value="Cloud Climbers">Cloud Climbers</option>
+                            <option value="Global Delivery Express">Green Earth Growers</option>
+                    </select>
                 </div>
-                <div class="row">
 
                 <div class="col-md-4 pb-4">
-                    <label for="fixrange" class="control-label font-weight-bold">Fix Range</label>
-                    <div class="input-group-append mb-2">
-                        <input type="text" class="form-control" id="fixrange" name="fixrange" placeholder="Fix Range">
-                        <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
-                        </div>   
-
-            </div>
-
-                <div class="col-md-4 pb-4">
-                <label for="maxrange" class="control-label font-weight-bold">Minimum Range</label>
-                <div class="input-group-append mb-2">
-                    <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Minimum Range">
-                    <input type="text" class="form-control col-md-3" id="minrange" name="unit" placeholder="unit">
+                <label for="role" class="control-label font-weight-bold">Role</label>
+                <select type="dropdown" id="role" name="role" class="form-control w-100">
+                        <option value="Technogadget Inc.">Chairman</option>
+                            <option value="Happy Bakery">Happy Bakery</option>
+                            <option value="Acme Corp">Acme Corp</option>
+                            <option value="Green Earth Growers">Green Earth Growers</option>
+                            <option value="Cloud Climbers">Cloud Climbers</option>
+                            <option value="Global Delivery Express">Green Earth Growers</option>
+                    </select>
                 </div>
-            </div>
 
-                <div class="col-md-4 pb-4">
-                <label for="minrange" class="control-label font-weight-bold">Maximum Range</label>
-                <div class="input-group-append mb-2">
-                    <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Maximum Range">
-                    <input type="text" class="form-control col-md-3" id="maxrange" name="unit" placeholder="unit">
-                </div>
-            </div>
-        </div>
-                
-        <div class="card-footer bg-white border-top">
+                <div class="card-footer bg-white border-top">
                     <div class="row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"></i> Update</button>
                             </div>
                         </div>
+               
+             
+
+
+                        
+        </div>
+                
+            </div>
+
+        
+
+                
+            </div>
+        
+                
+       
                     </div>
                 </div>
             </div>
