@@ -75,7 +75,7 @@ $(document).ready(function () {
                     <div class="card-footer bg-white mt-4 border-top">
                         <div class="row">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary user-btn float-right mt-2"><i class="feather icon-save"> </i> Save</button>
+                                <button type="submit" class="btn btn-primary user-btn float-right mt-2"><i class="feather icon-save"></i> Save</button>
                             </div>
                         </div>
                     </div>
