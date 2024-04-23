@@ -9,7 +9,7 @@
         </script>
     @endif
      <div class="row pb-3">
-        <form   style="width:100%" method="post" action="{{route('users.store')}}" >
+        <form   style="width:100%" method="post" action="{{route('permissions.store')}}" >
         @csrf
         <div class="card ">
             <div class="card-header bg-light">
