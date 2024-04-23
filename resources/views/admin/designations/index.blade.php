@@ -16,7 +16,6 @@
         <div class="modal-content">
             <form id="user-form" method="post" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" value="" name="id">
                 <div class="modal-header">
                     <h5 class="modal-title" id="addModalLabel"><i class="bx bx-copy-alt"></i>Add Designation</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -107,8 +106,6 @@
               <td>{{$designation['Designation Name']}}</td>
               <td>{{$designation['Department Name']}}</td>
               <td class="text-center">
-              <!-- <button type="button" class="btn btn-success btn-sm pb-1 font-weight-light fas fa-edit" data-toggle="modal" data-target="#editModal">
-              </button> -->
               <a href="#" class="btn btn-success btn-sm pb-1 font-weight-light"><i class="fas fa-edit" data-toggle="modal" data-target="#editModal"></i></a>
               <a href="" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
               </td>

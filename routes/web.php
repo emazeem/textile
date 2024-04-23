@@ -92,7 +92,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [PermissionController::class, 'index'])->name('permissions.index');
         Route::get('create', [PermissionController::class, 'create'])->name('permissions.create');
         Route::post('store', [PermissionController::class, 'store'])->name('permissions.store');    
-        Route::get('edit', [PermissionController::class, 'edit'])->name('permissions.edit');
+        Route::get('delete/{id}', [PermissionController::class, 'delete'])->name('permissions.delete');    
+        Route::get('edit/{id}', [PermissionController::class, 'edit'])->name('permissions.edit');
+        Route::post('update', [PermissionController::class, 'update'])->name('permissions.update');
         Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
         
     });

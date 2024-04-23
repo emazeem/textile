@@ -54,7 +54,7 @@
                 <li class="nav-item">
                     <a href="{{route('departments.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="bx bx-copy-alt"></i>
+                            <i class="bx bxs-copy-alt"></i>
                         </span>
                         <span class="pcoded-mtext">Departments</span>
                     </a>
@@ -62,7 +62,7 @@
                 <li class="nav-item">
                     <a href="{{route('designations.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bx-id-card'></i>
+                        <i class='bx bxs-id-card'></i>
                         </span>
                         <span class="pcoded-mtext">Designations</span>
                     </a>
@@ -70,7 +70,7 @@
                 <li class="nav-item">
                     <a href="{{route('work-orders.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bx-briefcase'></i>
+                        <i class='bx bxs-briefcase'></i>
                         </span>
                         <span class="pcoded-mtext">Work Order</span>
                     </a>
@@ -78,7 +78,7 @@
                 <li class="nav-item">
                     <a href="{{route('permissions.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bx-key'></i>
+                        <i class='bx bxs-key'></i>
                         </span>
                         <span class="pcoded-mtext">Permissions</span>
                     </a>
