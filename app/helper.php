@@ -111,20 +111,6 @@ if (!function_exists('getWorkOrders')) {
         return $workorders;
     }
 }
-if (!function_exists('getPermissions')) {
-    function getPermissions()
-    {
-        $workorders=[
-            ['id'=>1, 'Category'=>'admin', 'Permissions'=>'View-user, Edit-User, Delete-User, Create-Order, Approve-Order'],
-            ['id'=>2, 'Category'=>'sales-department', 'Permissions'=>'View-user, Create-Order, View-Order'],
-            ['id'=>3, 'Category'=>'finance-department', 'Permissions'=>'View-Order, Approve-Order'],
-            ['id'=>4, 'Category'=>'warehouse-department', 'Permissions'=>'View-Order, Approve-Order'],
-            ['id'=>5, 'Category'=>'design-department', 'Permissions'=>'View-Product, Edit-Product'],
-            ['id'=>6, 'Category'=>'user', 'Permissions'=>'View-Product, Create-Order'],
-          ];
 
-        return $workorders;
-    }
-}
         
 
