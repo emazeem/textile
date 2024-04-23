@@ -14,7 +14,6 @@ class PermissionController extends Controller
     public function create(){
         return view("admin.permissions.create");
     }
-    
     public function store(Request $request){
         
         $this->validate(request(), [

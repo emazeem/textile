@@ -36,6 +36,11 @@
                     <td>{{$permission->id}}</td>
                     <td>{{$permission->name}}</td>
                     <td>{{$permission->category}}</td>
+                    <td>
+                    <a href="" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
+                    <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                    <a href="" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                 </td>
             </tr>
             @endforeach
           </tbody>

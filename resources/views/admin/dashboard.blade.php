@@ -34,9 +34,7 @@
                 <span class="badge badge-primary">Check In</span>
                   </td>
                 </tr>
-                  <tr>
-                    <td colspan="100%" class="text-center">No record found</td>
-                  </tr>
+                  
               </tbody>
             </table>
           </div>
@@ -74,9 +72,6 @@
                     <span class="badge badge-success">Completed</span>
                     
                   </tr>
-                  <tr>
-                    <td colspan="100%" class="text-center">No record found</td>
-                  </tr>
                   
                 </tbody>
               </table>
@@ -113,14 +108,22 @@
                   <span class="badge badge-success">Declined</span>
                   </td>                  
                 </tr>
-                 <tr>
-                    <td colspan="100%" class="text-center">No record found</td>
-                  </tr>
+                 
               </tbody>
             </table>
           </div>
         </div>
       </div>
 
-      
+    <style>
+     
+     table#example thead tr th{
+    background: #233560!important;
+
+    }
+    .table-row{
+      background: #fff!important;
+    }
+
+    </style>
 @endsection

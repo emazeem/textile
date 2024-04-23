@@ -41,6 +41,7 @@
     </tr>
 </table>
     </div>
+    
     <style>
     table#example thead tr th{
     background: #253967!important;
