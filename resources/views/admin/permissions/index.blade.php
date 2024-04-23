@@ -25,7 +25,7 @@
           <thead >
             <tr class="bg-c-blue">
               <th>ID</th>
-              <th>Category</th>
+              <th>Name</th>
               <th>Permissions</th>
               <th>Action</th>
             </tr>

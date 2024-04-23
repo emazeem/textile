@@ -9,7 +9,7 @@
         </script>
     @endif
      <div class="row pb-3">
-        <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data" >
+        <form   style="width:100%" method="post" action="{{route('users.store')}}" >
         @csrf
         <div class="card ">
             <div class="card-header bg-light">
@@ -17,12 +17,12 @@
             </div>
             <div class="card-body">
                 <div class="col-md-4 pb-4">
-                    <label for="category" class="control-label font-weight-bold">Category</label>
-                    <input class="form-control" name="category" placeholder="Category">
+                    <label for="name" class="control-label font-weight-bold">Name</label>
+                    <input class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="col-md-4 pb-4">
-                <label for="permission" class="control-label font-weight-bold">Permission</label>
-                <input class="form-control" name="permission" placeholder="Permission">
+                <!-- <label for="permission" class="control-label font-weight-bold">Permission</label>
+                <input class="form-control" name="permission" placeholder="Permission"> -->
                 </div>
 
                 
