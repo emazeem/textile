@@ -16,6 +16,11 @@ use App\Http\Controllers\Admin\RoleController;
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/home', [App\Http\Controllers\HomeController::class, 'store'])->name('home');
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
@@ -93,7 +98,7 @@ Route::group(['middleware' => ['auth']], function () {
     });
     Route::group(['prefix' => 'roles'], function () {
         Route::get('', [RoleController::class, 'index'])->name('roles.index');
-        Route::get('create', [RoleController::class, 'create'])->name('roles.create');
+        Route::post('create', [RoleController::class, 'create'])->name('roles.create');
         Route::get('edit', [RoleController::class, 'edit'])->name('roles.edit');
         Route::get('show/{id]', [RoleController::class, 'show'])->name('roles.show');
         

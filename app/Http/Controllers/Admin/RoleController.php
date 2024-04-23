@@ -10,9 +10,22 @@ class RoleController extends Controller
     public function index(){
         return view('admin.roles.index');
     }
+
+    public function store(Request $request){
+        $request->validate([
+            'name' =>'required',
+            'description' =>'required'
+        ]) ;
+
+
+        
+    }
+
     public function create(){
         return view('admin.roles.create');  
 }
+
+
 
 
 public function edit(){

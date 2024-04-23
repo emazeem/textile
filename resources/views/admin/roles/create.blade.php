@@ -16,11 +16,12 @@
             <li class="breadcrumb-item active" aria-current="page">Add Details</li>
         </ol>
         </nav>
-        <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
+        <form  action="{{route('roles.show')}}" style="width:100%" method="post" >
         @csrf
         <div class="card">
             <div class="card-footer bg-white border-top">
                 <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Roles</h5>
+                
                     <div class="form-group col-md-3 col-12 ">
                         <label for="name" class="control-label font-weight-bold">User Name</label>
                       <input type="text" class="form-control" id="username" name="username" placeholder="User Name">
