@@ -92,7 +92,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [PermissionController::class, 'index'])->name('permissions.index');
         Route::get('create', [PermissionController::class, 'create'])->name('permissions.create');
         Route::post('store', [PermissionController::class, 'store'])->name('permissions.store');    
-        Route::get('delete/{id}', [PermissionController::class, 'delete'])->name('permissions.delete');    
+        Route::post('delete/{id}', [PermissionController::class, 'delete'])->name('permissions.delete');    
         Route::get('edit/{id}', [PermissionController::class, 'edit'])->name('permissions.edit');
         Route::post('update', [PermissionController::class, 'update'])->name('permissions.update');
         
@@ -104,7 +104,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit/{id}', [RoleController::class, 'edit'])->name('roles.edit');
         Route::post('update', [RoleController::class, 'update'])->name('roles.update');
         Route::get('show/{id}', [RoleController::class, 'show'])->name('roles.show');
-        Route::get('delete/{id}', [RoleController::class, 'delete'])->name('roles.delete');
+        Route::post('delete/{id}', [RoleController::class, 'delete'])->name('roles.delete');
         
     });
 });

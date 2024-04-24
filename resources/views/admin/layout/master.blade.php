@@ -98,7 +98,7 @@
     <script src="{{url('assets/js/plugins/bootstrap.min.js')}}"></script>
     <script src="{{url('assets/js/pcoded.min.js')}}"></script>
     <script src="{{url('assets/js/menu-setting.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('js/sweetalert.min.js')}}"></script>
+    <script type="text/javascript" src="{{url('assets/js/plugins/sweetalert.min.js')}}"></script>
 
     <link rel="stylesheet" type="text/css" href="{{url('css/datatables.min.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{url('css/responsive.dataTables.min.css')}}">

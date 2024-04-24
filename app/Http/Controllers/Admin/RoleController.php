@@ -61,7 +61,7 @@ class RoleController extends Controller
     public function delete($id){
         $role = Role::find($id);
         $role->delete();
-        return redirect()->route("roles.index")->with("success","");
+        return response()->json(['success'=>'Role deleted successfully!']);
     }
 }
 

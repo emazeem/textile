@@ -90,7 +90,7 @@
                     <td>{{$permission->name}}</td>
                     <td>
                     <a href="{{route('permissions.edit', ['id'=>$permission->id])}}" data-permission-id="{{ $permission->id }}" class="btn btn-success btn-sm edit-permission" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('permissions.delete', $permission->id)}}" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                    <a href="{{route('permissions.delete', $permission->id)}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                  </td>
             </tr>
             @endforeach
@@ -133,6 +133,37 @@
         }
     });
 });
+$(document).on('click', '.delete', function (e) {
+  e.preventDefault();
+                swal({
+                    title: "Are you sure to delete this permission?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            var id = $(this).attr('data-id');
+                            var token = '{{csrf_token()}}';
+                            e.preventDefault();
+                            $.ajax({
+                              url: $(this).attr('href'),
+                                type: 'POST',
+                                dataType: "JSON",
+                                data: {id:id,_token:token},
+                                success: function (data) {
+                                    swal('success', data.success, 'success').then(function (){
+                                        location.reload();
+                                    });
+                                },
+                                error: function (xhr) {
+                                    erroralert(xhr);
+                                },
+                            });
+
+                        }
+    });
+  });
     </script>
 @endsection
 

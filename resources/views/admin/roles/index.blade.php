@@ -39,9 +39,9 @@
                 <td>{{$role->name}}</td>
                 <td>{{$role->permission_name}}</td>
                 <td>
-                    <a href="{{route('roles.edit', $role->id)}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show', $role->id)}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="{{route('roles.delete', $role->id)}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                    <a href="{{route('roles.edit',['id'=>$role->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
+                    <a href="{{route('roles.show',['id'=>$role->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                    <a href="{{route('roles.delete',['id'=>$role->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
             @endforeach
@@ -62,4 +62,37 @@ table#example thead tr th {
     background: #fff !important;
 }
 </style>
+<script type="text/javascript">
+  $(document).on('click', '.delete', function (e) {
+  e.preventDefault();
+                swal({
+                    title: "Are you sure to delete this user?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            var id = $(this).attr('data-id');
+                            var token = '{{csrf_token()}}';
+                            e.preventDefault();
+                            $.ajax({
+                              url: $(this).attr('href'),
+                                type: 'POST',
+                                dataType: "JSON",
+                                data: {id:id,_token:token},
+                                success: function (data) {
+                                    swal('success', data.success, 'success').then(function (){
+                                        location.reload();
+                                    });
+                                },
+                                error: function (xhr) {
+                                    erroralert(xhr);
+                                },
+                            });
+
+                        }
+    });
+  });
+</script>
 @endsection
