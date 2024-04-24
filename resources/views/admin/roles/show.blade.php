@@ -24,13 +24,13 @@
       <td scope="col">1</td>
     </tr>
     <tr>
-      <th scope="col">User Name</th>
-      <td scope="col">Ajwa textile</td>
+      <th scope="col">Name</th>
+      <td scope="col">{{$role->name}}</td>
     </tr>
  
     <tr>
-      <th scope="col">Role</th>
-      <td scope="col">Intern</td>
+      <th scope="col">Permissions</th>
+      <td scope="col">{{$role->permission_name}}</td>
     </tr>
   </table>
 </div>
