@@ -39,11 +39,29 @@ class RoleController extends Controller
         $edit = Role::find($id);
         return view('admin.roles.edit', compact('edit'));
     }
-    
+    public function update(Request $request){
+        $this->validate($request, [
+            'name' =>'required',
+            'permission_name' =>'required',
+        ], [
+            'name.required' => 'Role Name is required *',
+            'permission_name.required' => 'Permission Name is required *',
+        ]);
+        $role = Role::find($request->id);
+        $role->name=$request->name;
+        $role->permission_name=$request->permission_name;
+        $role->save();
+        return redirect()->route('roles.index')->with('success','');
+    }
     public function show($id){
         $show = Role::Find($id);
         return view("admin.roles.show", compact("show"));
         
+    }
+    public function delete($id){
+        $role = Role::find($id);
+        $role->delete();
+        return redirect()->route("roles.index")->with("success","");
     }
 }
 
