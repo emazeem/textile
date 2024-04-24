@@ -33,6 +33,7 @@
             </tr>
         </thead>
         <tbody>
+        @if(count($roles)>0)
             @foreach($roles as $role)
             <tr class="table-row bg-white">
                 <td>{{$role->id}}</td>
@@ -45,6 +46,11 @@
                 </td>
             </tr>
             @endforeach
+            @else
+            <tr class="bg-white">
+              <td colspan="100%" class="text-center">No record found</td>
+            </tr>
+            @endif
         </tbody>
     </table>
     <div class="row float-right mt-2 mr-0">
