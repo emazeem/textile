@@ -33,8 +33,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="table-row">
-                @foreach($roles as $role)
+            @foreach($roles as $role)
+            <tr class="table-row bg-white">
                 <td>{{$role->id}}</td>
                 <td>{{$role->name}}</td>
                 <td>{{$role->permission_name}}</td>

@@ -15,7 +15,7 @@
         <li class="breadcrumb-item active" aria-current="page">Edit Details</li>
       </ol>
     </nav>
-        <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
+        <form  id="user-form" style="width:100%" method="post" action="{{route('roles.update')}}">
             @csrf
             <input type="hidden" value="{{$edit->id}}" name="id">
             <div class="card ">
