@@ -104,6 +104,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('edit/{id}', [RoleController::class, 'edit'])->name('roles.edit');
         Route::post('update', [RoleController::class, 'update'])->name('roles.update');
         Route::get('show/{id}', [RoleController::class, 'show'])->name('roles.show');
+        Route::get('delete/{id}', [RoleController::class, 'delete'])->name('roles.delete');
         
     });
 });

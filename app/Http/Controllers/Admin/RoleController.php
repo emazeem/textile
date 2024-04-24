@@ -58,6 +58,11 @@ class RoleController extends Controller
         return view("admin.roles.show", compact("show"));
         
     }
+    public function delete($id){
+        $role = Role::find($id);
+        $role->delete();
+        return redirect()->route("roles.index")->with("success","");
+    }
 }
 
 
