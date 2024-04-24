@@ -19,7 +19,7 @@
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Email Address') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -29,13 +29,29 @@
                                 @enderror
                             </div>
                         </div>
+                         <!--password-->
 
-                        <div class="row mb-3">
+                        <!-- <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div> -->
 
+                        <div class="row mb-3">
+                            <label for="password" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Password') }}</label>
+                            <div class="col-md-8 input-group">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                <button type="button" class="btn btn-outline-secondary col-md-2" onclick="togglePasswordVisibility()">
+                                <i class="fa fa-eye-slash toggle-icon"></i>
+                                 </button>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -43,6 +59,7 @@
                                 @enderror
                             </div>
                         </div>
+
 
                         <div class="row mb-3">
                             <div class="col-md-6 offset-md-4">
@@ -77,4 +94,28 @@
     </div>
 </div>
 </body>
+
+<style>
+    .input-group-append {
+        position: relative;
+        margin-left: -35px;
+
+    }
+</style>
+
+<script>
+    function togglePasswordVisibility() {
+        var passwordField = document.getElementById("password");
+        var passwordToggleBtn = document.getElementById("togglePasswordBtn");
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            passwordToggleBtn.innerHTML = '<i class="bi bi-eye"></i>';
+        } else {
+            passwordField.type = "password";
+            passwordToggleBtn.innerHTML = '<i class="bi bi-eye-slash"></i>';
+        }
+    }
+</script>
+
 @endsection
