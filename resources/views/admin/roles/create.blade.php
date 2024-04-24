@@ -16,20 +16,20 @@
             <li class="breadcrumb-item active" aria-current="page">Add Details</li>
         </ol>
         </nav>
-        <form  action="{{route('roles.show')}}" style="width:100%" method="post" >
+        <form  action="{{route('roles.store')}}" style="width:100%" method="post" >
         @csrf
         <div class="card">
             <div class="card-footer bg-white border-top">
                 <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Add Roles</h5>
                 
                     <div class="form-group col-md-3 col-12 ">
-                        <label for="name" class="control-label font-weight-bold">User Name</label>
-                      <input type="text" class="form-control" id="username" name="username" placeholder="User Name">
+                        <label for="name" class="control-label font-weight-bold">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                       
                     </div>
                     <div class="form-group col-md-3 col-12 ">
-                        <label for="name" class="control-label font-weight-bold">Role</label>
-                        <input type="text" class="form-control" id="role" name="role" placeholder="role">
+                        <label for="permission_name" class="control-label font-weight-bold">Permissions</label>
+                        <input type="text" class="form-control" id="permission_name" name="permission_name" placeholder="permission_name">
                     </div>
 
                     

@@ -27,90 +27,24 @@
         <thead>
             <tr class="bg-c-blue">
                 <th>ID</th>
-                <th>User Name</th>
-                <th>Role </th>
+                <th>Name</th>
+                <th>Permissions </th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
-
             <tr class="table-row">
-                <td>1</td>
-                <td>weaving</td>
-                <td>Intern</td>
+                @foreach($roles as $role)
+                <td>{{$role->id}}</td>
+                <td>{{$role->name}}</td>
+                <td>{{$role->permission_name}}</td>
                 <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                    <a href="" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
+                    <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                     <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
-
-            <tr class="table-row">
-                <td>2</td>
-                <td>weaving</td>
-                <td>Intern</td>
-                <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                </td>
-            </tr>
-
-            <tr class="table-row">
-                <td>3</td>
-                <td>weaving</td>
-                <td>Intern</td>
-                <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                </td>
-            </tr>
-
-            <tr class="table-row">
-                <td>4</td>
-                <td>weaving</td>
-                <td>Intern</td>
-                <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                </td>
-            </tr>
-
-            <tr class="table-row">
-                <td>5</td>
-                <td>weaving</td>
-                <td>Intern</td>
-                <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                </td>
-            </tr>
-
-            <tr class="table-row">
-                <td>6</td>
-                <td></td>
-                <td>Intern</td>
-                <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                </td>
-            </tr>
-
-            <tr class="table-row">
-                <td>7</td>
-                <td>dying</td>
-                <td>Intern</td>
-                <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('roles.show')}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
-                    <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
-                </td>
-            </tr>
-
+            @endforeach
         </tbody>
     </table>
     <div class="row float-right mt-2 mr-0">
