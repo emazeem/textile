@@ -38,7 +38,7 @@
                 <li class="nav-item">
                     <a href="{{route('tests.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="bx bx-test-tube"></i>
+                        <i class='bx bxs-flask'></i>
                         </span>
                         <span class="pcoded-mtext">Tests</span>
                     </a>

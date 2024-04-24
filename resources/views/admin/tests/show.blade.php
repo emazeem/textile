@@ -45,7 +45,7 @@
                         <option value="range3">Range 3</option>
                         <option value="range4">Range 4</option>
                     </select>
-                    <button type="submit" class="btn btn-primary"><i class='bx bx-select-multiple'></i> Select Ranges</button>
+                    <button type="submit" class="btn btn-primary"><i class='bx bxs-flask'></i> Select Ranges</button>
                 </td>
             </tr>
           </table>
