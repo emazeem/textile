@@ -8,8 +8,10 @@ use App\Models\Permission;
 class PermissionController extends Controller
 {
     public function index(){
+        
+        $parents = Permission::whereNull('parent_id')->get();
         $permissions = Permission::all();
-        return view("admin.permissions.index",compact("permissions"));
+        return view("admin.permissions.index",compact("permissions", "parents"));
     }
     public function create(){
         return view("admin.permissions.create");
@@ -24,7 +26,11 @@ class PermissionController extends Controller
         ]);
         $permission = new Permission();
         $permission->name=$request->name;
+        if($request->filled('parent_id')){
+            $permission->parent_id=$request->parent_id;
+        }
         $permission->save();
+
         return redirect()->route('permissions.index')->with('success','');
     }
     public function edit($id){

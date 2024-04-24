@@ -21,6 +21,15 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                <div class="form-group">
+                        <label for="pname" class="control-label font-weight-bold">Parent Name</label>
+                        <select type="dropdown" id="pname" name="parent_id" class="form-control w-100">
+                        <option  value="">--Select Parent Permission (Optional)</option>
+                          @foreach($parents as $parent)
+                            <option  value="{{$parent->id}}">{{$parent->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="name" class="control-label font-weight-bold">Permission Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Permission Name" value="">
