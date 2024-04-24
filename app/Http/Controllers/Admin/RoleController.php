@@ -39,7 +39,7 @@ class RoleController extends Controller
         return view('admin.roles.edit');
     }
     
-    public function show(){
+    public function show($id){
         $show = Role::Find($id);
         return view("admin.roles.show", compact("show"));
         // return view('admin.roles.show');
