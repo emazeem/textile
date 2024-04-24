@@ -88,18 +88,24 @@
             <tr class="bg-c-blue">
               <th>ID</th>
               <th>Name</th>
+              <th>Menu</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            @if(count($permissions)>0)
-          @foreach($permissions as $permission)
+            @if(count($parents)>0)
+          @foreach($parents as $parent)
             <tr class="table-row">
-                    <td>{{$permission->id}}</td>
-                    <td>{{$permission->name}}</td>
+                    <td>{{$parent->id}}</td>
+                    <td>{{$parent->name}}</td>
                     <td>
-                    <a href="{{route('permissions.edit', ['id'=>$permission->id])}}" data-permission-id="{{ $permission->id }}" class="btn btn-success btn-sm edit-permission" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i></a>
-                    <a href="{{route('permissions.delete', $permission->id)}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
+                      @foreach($parent->child as $permission)
+                        {{$permission['name'] . ' , '}}
+                      @endforeach
+                    </td>
+                    <td>
+                    <a href="{{route('permissions.edit', ['id'=>$parent->id])}}" data-permission-id="{{ $parent->id }}" class="btn btn-success btn-sm edit-permission" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i></a>
+                    <a href="{{route('permissions.delete', $parent->id)}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                  </td>
             </tr>
             @endforeach
