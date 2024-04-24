@@ -39,7 +39,7 @@
                 <td>{{$role->name}}</td>
                 <td>{{$role->permission_name}}</td>
                 <td>
-                    <a href="{{route('roles.edit')}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
+                    <a href="{{route('roles.edit', $role->id)}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                     <a href="" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                     <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                 </td>

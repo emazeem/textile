@@ -102,7 +102,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('', [RoleController::class, 'index'])->name('roles.index');
         Route::get('create', [RoleController::class, 'create'])->name('roles.create');
         Route::post('store', [RoleController::class, 'store'])->name('roles.store');
-        Route::get('edit', [RoleController::class, 'edit'])->name('roles.edit');
+        Route::get('edit/{id}', [RoleController::class, 'edit'])->name('roles.edit');
         Route::get('show/{id]', [RoleController::class, 'show'])->name('roles.show');
         
     });

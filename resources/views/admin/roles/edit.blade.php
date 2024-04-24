@@ -17,7 +17,7 @@
     </nav>
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
             @csrf
-            <input type="hidden" value="" name="id">
+            <input type="hidden" value="{{$edit->id}}" name="id">
             <div class="card ">
                 <div class="card-header">
                     <h5 class="font-weight-light"><i class="bx bx-task mr-1"></i>Update Roles</h5>
@@ -25,27 +25,13 @@
             </div>
             <div class="card-body pt-4 bg-white border-top">
             <div class="col-md-4 pb-4">
-                <label for="username" class="control-label font-weight-bold">User Name</label>
-                <select type="dropdown" id="username" name="username" class="form-control w-100">
-                        <option value="Technogadget Inc.">Technogadget Inc.</option>
-                            <option value="Happy Bakery">Happy Bakery</option>
-                            <option value="Acme Corp">Acme Corp</option>
-                            <option value="Green Earth Growers">Green Earth Growers</option>
-                            <option value="Cloud Climbers">Cloud Climbers</option>
-                            <option value="Global Delivery Express">Green Earth Growers</option>
-                    </select>
+                <label for="name" class="control-label font-weight-bold">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{$edit->name}}">
                 </div>
 
                 <div class="col-md-4 pb-4">
-                <label for="role" class="control-label font-weight-bold">Role</label>
-                <select type="dropdown" id="role" name="role" class="form-control w-100">
-                        <option value="Technogadget Inc.">Chairman</option>
-                            <option value="Happy Bakery">Happy Bakery</option>
-                            <option value="Acme Corp">Acme Corp</option>
-                            <option value="Green Earth Growers">Green Earth Growers</option>
-                            <option value="Cloud Climbers">Cloud Climbers</option>
-                            <option value="Global Delivery Express">Green Earth Growers</option>
-                    </select>
+                <label for="permmission" class="control-label font-weight-bold">Permissions</label>
+                <input type="text" class="form-control" id="permmission" name="permission_name" placeholder="Permission Name" value="{{$edit->permission_name}}">
                 </div>
 
                 <div class="card-footer bg-white border-top">
@@ -54,22 +40,6 @@
                             <button type="submit" class="btn btn-primary user-btn float-right"><i class="feather icon-save"></i> Update</button>
                             </div>
                         </div>
-               
-             
-
-
-                        
-        </div>
-                
-            </div>
-
-        
-
-                
-            </div>
-        
-                
-       
                     </div>
                 </div>
             </div>
