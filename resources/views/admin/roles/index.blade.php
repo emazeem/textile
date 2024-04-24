@@ -28,11 +28,12 @@
             <tr class="bg-c-blue">
                 <th>ID</th>
                 <th>Name</th>
-                <th>Permissions </th>
+                <th>Permissions</th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
+        @if(count($roles)>0)
             @foreach($roles as $role)
             <tr class="table-row bg-white">
                 <td>{{$role->id}}</td>
@@ -45,6 +46,11 @@
                 </td>
             </tr>
             @endforeach
+            @else
+            <tr class="bg-white">
+              <td colspan="100%" class="text-center">No record found</td>
+            </tr>
+            @endif
         </tbody>
     </table>
     <div class="row float-right mt-2 mr-0">
@@ -55,13 +61,12 @@
 <style>
 table#example thead tr th {
     background: #233560 !important;
-
 }
-
 .table-row {
     background: #fff !important;
 }
 </style>
+
 <script type="text/javascript">
   $(document).on('click', '.delete', function (e) {
   e.preventDefault();
