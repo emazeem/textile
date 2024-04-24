@@ -28,7 +28,7 @@
             <tr class="bg-c-blue">
                 <th>ID</th>
                 <th>Name</th>
-                <th>Permissions </th>
+                <th>Permissions</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -61,13 +61,12 @@
 <style>
 table#example thead tr th {
     background: #233560 !important;
-
 }
-
 .table-row {
     background: #fff !important;
 }
 </style>
+
 <script type="text/javascript">
   $(document).on('click', '.delete', function (e) {
   e.preventDefault();
