@@ -3,7 +3,7 @@
     <script src="{{url('assets/js/1.10.1/jquery.min.js')}}"></script>
     <div class="row">
       <div class="col-12 mb-2">
-        <h3 class="float-left"><i class='bx bx-home bx-fade-left' ></i> Dashboard</h3>
+        <h3 class="float-left"><i class='bx bx-home bx-spin' ></i> Dashboard</h3>
         <!-- <a href="" class="btn btn-danger float-right ml-1" >Check Out</a>
         <a href="" class="btn btn-success float-right" >Check In</a> -->
     
