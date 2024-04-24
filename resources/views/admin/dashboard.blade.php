@@ -4,8 +4,8 @@
     <div class="row">
       <div class="col-12 mb-2">
         <h4 class="float-left">Dashboard</h4>
-        <a href="" class="btn btn-danger float-right" >Check Out</a>
-        <a href="" class="btn btn-success float-right" >Check In</a>
+        <!-- <a href="" class="btn btn-danger float-right ml-1" >Check Out</a>
+        <a href="" class="btn btn-success float-right" >Check In</a> -->
     
       </div>
       <!--My Attendence-->
@@ -25,14 +25,11 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td>
-                <span class="badge badge-success">Check Out</span>
-                <span class="badge badge-primary">Check In</span>
-                  </td>
+                  <td></td>
+                  <td></td>
                 </tr>
                   
               </tbody>
@@ -62,22 +59,14 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td>
-                    <span class="badge badge-success">Low</span>
-                    <span class="badge badge-danger">High</span>
-                  </td>
-                  <td>
-                    <span class="badge badge-info">In-Progress</span>
-                    <span class="badge badge-warning">Pending</span>
-                    <span class="badge badge-success">Completed</span>
-                    
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+      </div>
       
       <!--My leave-->
       <div class="col-lg-12">
@@ -97,16 +86,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>
-                <span class="badge badge-info">Approved</span>
-                  <span class="badge badge-warning">Pending</span>
-                  <span class="badge badge-success">Declined</span>
-                  </td>                  
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>                  
                 </tr>
                  
               </tbody>
