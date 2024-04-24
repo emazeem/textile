@@ -5,7 +5,7 @@
 <div class="row pb-3">
 <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{route('ranges.index')}}">Roles List</a></li>
+        <li class="breadcrumb-item"><a href="{{route('roles.index')}}">Roles List</a></li>
         <li class="breadcrumb-item active" aria-current="page">Roles Details</li>
       </ol>
     </nav>
@@ -21,16 +21,16 @@
     <table class="table table-bordered table-sm bg-white">
     <tr>
       <th scope="col">Id</th>
-      <td scope="col">1</td>
+      <td scope="col">{{$show->id}}</td>
     </tr>
     <tr>
       <th scope="col">Name</th>
-      <td scope="col">{{$role->name}}</td>
+      <td scope="col">{{$show->name}}</td>
     </tr>
  
     <tr>
       <th scope="col">Permissions</th>
-      <td scope="col">{{$role->permission_name}}</td>
+      <td scope="col">{{$show->permission_name}}</td>
     </tr>
   </table>
 </div>

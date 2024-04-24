@@ -95,7 +95,6 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('delete/{id}', [PermissionController::class, 'delete'])->name('permissions.delete');    
         Route::get('edit/{id}', [PermissionController::class, 'edit'])->name('permissions.edit');
         Route::post('update', [PermissionController::class, 'update'])->name('permissions.update');
-        Route::get('show/{id]', [PermissionController::class, 'show'])->name('permissions.show');
         
     });
     Route::group(['prefix' => 'roles'], function () {
@@ -103,7 +102,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('create', [RoleController::class, 'create'])->name('roles.create');
         Route::post('store', [RoleController::class, 'store'])->name('roles.store');
         Route::get('edit/{id}', [RoleController::class, 'edit'])->name('roles.edit');
-        Route::get('show/{id]', [RoleController::class, 'show'])->name('roles.show');
+        Route::get('show/{id}', [RoleController::class, 'show'])->name('roles.show');
         
     });
 });
