@@ -38,7 +38,7 @@
             <tr class="table-row bg-white">
                 <td>{{$role->id}}</td>
                 <td>{{$role->name}}</td>
-                <td>{{$role->permission_name}}</td>
+                <td>{{$role->child . ", "}}</td>
                 <td>
                     <a href="{{route('roles.edit',['id'=>$role->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                     <a href="{{route('roles.show',['id'=>$role->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>

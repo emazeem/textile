@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Role;
+use App\Models\{Role,Permission};
 
 class RoleController extends Controller
 {
@@ -16,16 +16,20 @@ class RoleController extends Controller
     public function store(Request $request){
         $this->validate(request(), [
             'name' =>'required',
-            'permission_name' =>'required',
         ],
         [   
             'name.required' => 'Role Name is required *',
-            'permission_name.required' => 'Permission Name is required *',
 
         ]);
         $role = new Role();
         $role->name=$request->name;
-        $role->permission_name=$request->permission_name;
+        if($request->filled('child')){
+            $permissionsPath =[];
+            foreach ($request->input('child') as $permissionId) {
+                $permissionsPath[] = $permissionId;
+            }
+            $role->child=implode(',',$permissionsPath);
+        }
         $role->save();
         return redirect()->route('roles.index')->with('success','');
 
@@ -33,7 +37,8 @@ class RoleController extends Controller
     }
 
     public function create(){
-        return view('admin.roles.create'); 
+        $parents = Permission::with('child')->whereNull('parent_id')->get();
+        return view('admin.roles.create', compact('parents')); 
     } 
     public function edit($id){
         $edit = Role::find($id);
