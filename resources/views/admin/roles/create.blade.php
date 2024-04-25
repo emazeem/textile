@@ -27,18 +27,26 @@
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
 
-                    <div class="form-group col-md-6 col-12 ">
-                        <label for="permissions" class="control-label font-weight-bold">Permissions</label>
-                        <select class="multi-select form-control w-100" name="child[]" multiple="multiple" id="permissions">
-                        @foreach($parents as $parent)    
-                            <optgroup label="{{$parent->name}}">
-                            @foreach($parent->child as $permission)
-                            <option value="{{$permission['name']}}">{{$permission['name']}}</option>
-                            @endforeach
-                        </optgroup>
-                        @endforeach 
-                        </select>
+                    <div class="row">
+                        <div class="form-group ml-3 mt-3 col-md-6 col-12">
+                            <h3 class="font-weight-light">Permissions</h3>
+                            <div class="my-4">
+                                @foreach($parents as $parent)
+                                    <h6 class="my-3"><i class="bx bxs-cog mr-1"></i>{{$parent->name}} Management</h6>
+                                    @foreach($parent->child as $permission)
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="child[]" id="permission">
+                                            <label class="form-check-label mr-3" for="permission_{{$permission->id}}">
+                                                {{$permission->name}}
+                                            </label>
+                                        </div>
+                                    @endforeach
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
 
+                        
                     </div>
                       <div class="card-footer bg-white border-top">
                         <div class="row">
