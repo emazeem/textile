@@ -43,9 +43,11 @@ $(document).ready(function () {
                     <div class="row">
                         <div class="col-md-3">
                             <label for="role" class="control-label font-weight-bold float-left">Role</label>
-                            <select class="form-select custom-select" name="role" >
-                                <option value="user">--User</option>
-                                <option value="user">user</option>
+                            <select class="form-select custom-select" name="name" >
+                                <option value="user">--Select Role</option>
+                                @foreach($roles as $role)
+                                <option value="{{$role->id}}">{{$role->name}}</option>
+                                @endforeach
                             </select>
                         </div>
                         <!--Date Of Joining-->
@@ -56,6 +58,7 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="designation" class="control-label font-weight-bold float-left">Designation</label>
                             <select type="dropdown" id="designation" name="designation" class="form-control w-100">
+                            <option value="">--Select Designation</option>
                             <option value="Laravel internee">Laravel Internee</option>
                             <option value="Sale Executive">Sales Executive</option>
                             <option value="CEO">Cheif Executive Officer</option>
@@ -66,6 +69,7 @@ $(document).ready(function () {
                             <div class="col-md-3">
                                 <label for="department" class="control-label font-weight-bold float-left">Department</label>
                                 <select type="dropdown" id="department" name="department" class="form-control w-100">
+                                <option value="">--Select Department</option>
                                 <option value="Sales department">Sales Department</option>
                                 <option value="Software department">Software Department</option>
                                 </select>

@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use app\Models\User;
-use app\Models\Role;
-use Hash;
+use App\Models\{Role,User};
+
 class UserController extends Controller
 {
     public function index(){
@@ -51,7 +51,7 @@ class UserController extends Controller
     
     $user = User::find($request->id);
     if (!$user) {
-        return response()->route('users.index')->json(['error' => 'User not found'], 404);
+        return response()->json(['error' => 'User not found'], 404);
     }
 
     $user->fname = $request->fname;
@@ -108,5 +108,4 @@ class UserController extends Controller
         $user->save();
         return redirect()->route('users.index');
     }
-    
 }

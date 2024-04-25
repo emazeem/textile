@@ -30,7 +30,6 @@
                     <div class="form-group col-md-6 col-12 ">
                         <label for="permissions" class="control-label font-weight-bold">Permissions</label>
                         <select class="multi-select form-control w-100" name="child[]" multiple="multiple" id="permissions">
-                        <option value="">--Select Permissions</option>
                         @foreach($parents as $parent)    
                             <optgroup label="{{$parent->name}}">
                             @foreach($parent->child as $permission)
