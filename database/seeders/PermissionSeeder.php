@@ -49,20 +49,16 @@ class PermissionSeeder extends Seeder
         $adminRole->givePermissionTo('delete role');              
 
 
-        // $editorRole = Role::where('name', 'editor')->first();
-        // $editorRole->givePermissionTo('create posts');
-        // $editorRole->givePermissionTo('edit posts');
-        // $editorRole->givePermissionTo('delete posts');
-        // $editorRole->givePermissionTo('publish posts');
-        // $editorRole->givePermissionTo('create comments');
-        // $editorRole->givePermissionTo('edit comments');
-        // $editorRole->givePermissionTo('delete comments');
-
         $userRole = Role::where('name', 'user')->first();
-        $userRole->givePermissionTo('');
-        $userRole->givePermissionTo('');
-        $userRole->givePermissionTo('');
-        $userRole->givePermissionTo('');
+        $userRole->givePermissionTo('show user');
+        $userRole->givePermissionTo('show customer');
+        $userRole->givePermissionTo('show department');
+        $userRole->givePermissionTo('show designation');
+        $userRole->givePermissionTo('show test');
+        $userRole->givePermissionTo('show range');
+        $userRole->givePermissionTo('show role');
+        $userRole->givePermissionTo('show permission');
+        $userRole->givePermissionTo('show work-order');
 }
 
 }
