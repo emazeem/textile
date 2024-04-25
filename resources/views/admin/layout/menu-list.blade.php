@@ -14,7 +14,7 @@
                 <li class="nav-item">
                     <a href="{{url('dashboard')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="fa fa-home"></i>
+                            <i class="fa fa-home bx-spin"></i>
                         </span>
                         <span class="pcoded-mtext">Dashboard</span>
                     </a>
@@ -22,7 +22,7 @@
                 <li class="nav-item">
                     <a href="{{route('users.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-user bx-spin"></i>
                         </span>
                         <span class="pcoded-mtext">Users</span>
                     </a>
@@ -30,7 +30,7 @@
                 <li class="nav-item">
                     <a href="{{route('customers.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="fa fa-users"></i>
+                            <i class="fa fa-users bx-spin"></i>
                         </span>
                         <span class="pcoded-mtext">Customers</span>
                     </a>
@@ -38,7 +38,7 @@
                 <li class="nav-item">
                     <a href="{{route('tests.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bxs-flask'></i>
+                        <i class='bx bxs-flask bx-spin'></i>
                         </span>
                         <span class="pcoded-mtext">Tests</span>
                     </a>
@@ -46,7 +46,7 @@
                 <li class="nav-item">
                     <a href="{{route('ranges.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bxs-ruler'></i>
+                        <i class='bx bxs-ruler bx-spin'></i>
                     </span>
                         <span class="pcoded-mtext">Ranges</span>
                     </a>
@@ -54,7 +54,7 @@
                 <li class="nav-item">
                     <a href="{{route('departments.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                            <i class="bx bxs-copy-alt"></i>
+                            <i class="bx bxs-copy-alt bx-spin"></i>
                         </span>
                         <span class="pcoded-mtext">Departments</span>
                     </a>
@@ -62,7 +62,7 @@
                 <li class="nav-item">
                     <a href="{{route('designations.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bxs-id-card'></i>
+                        <i class='bx bxs-id-card bx-spin'></i>
                         </span>
                         <span class="pcoded-mtext">Designations</span>
                     </a>
@@ -70,7 +70,7 @@
                 <li class="nav-item">
                     <a href="{{route('work-orders.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bxs-briefcase'></i>
+                        <i class='bx bxs-briefcase bx-spin'></i>
                         </span>
                         <span class="pcoded-mtext">Work Order</span>
                     </a>
@@ -78,7 +78,7 @@
                 <li class="nav-item">
                     <a href="{{route('permissions.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bxs-key'></i>
+                        <i class='bx bxs-key bx-spin'></i>
                         </span>
                         <span class="pcoded-mtext">Permissions</span>
                     </a>
@@ -86,7 +86,7 @@
                 <li class="nav-item">
                     <a href="{{route('roles.index')}}" class="nav-link">
                         <span class="pcoded-micon">
-                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star bx-spin' ></i>
                         </span>
                         <span class="pcoded-mtext"> Roles</span>
                     </a>
