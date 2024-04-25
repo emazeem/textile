@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\{Role,User};
-
+use Hash;
 class UserController extends Controller
 {
     public function index(){
@@ -53,7 +53,6 @@ class UserController extends Controller
     if (!$user) {
         return response()->json(['error' => 'User not found'], 404);
     }
-
     $user->fname = $request->fname;
     $user->lname = $request->lname;
     $user->role = $request->role;
