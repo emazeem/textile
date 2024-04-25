@@ -33,7 +33,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('create', [UserController::class, 'create'])->name('users.create');
         Route::get('edit/{id}', [UserController::class, 'edit'])->name('users.edit');
         Route::get('show/{id}', [UserController::class, 'show'])->name('users.show');
-        Route::get('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
+        Route::post('delete/{id}', [UserController::class, 'delete'])->name('users.delete');
 
     });
     Route::group(['prefix' => 'customers'], function () {

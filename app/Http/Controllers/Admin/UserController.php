@@ -12,7 +12,9 @@ class UserController extends Controller
         return view("admin.users.index", compact("users"));
     }
     public function delete($id){
-        return response()->json(['success'=>'User deleted successfully!']);
+        $user = User::find($id);
+        $user->delete();
+        return response()->json(['success'=>'User deleted successfully']);
     }
     public function show($id){
         $show = User::Find($id);
@@ -48,7 +50,7 @@ class UserController extends Controller
     
     $user = User::find($request->id);
     if (!$user) {
-        return response()->json(['error' => 'User not found'], 404);
+        return response()->route('users.index')->json(['error' => 'User not found'], 404);
     }
 
     $user->fname = $request->fname;
@@ -102,7 +104,7 @@ class UserController extends Controller
         $user->designation=$request->designation;
         $user->department=$request->department;
         $user->save();
-        return response()->json(['success'=>'User added successfully!','id'=>$user->id]);
+        return redirect()->route('users.index');
     }
     
 }

@@ -71,7 +71,7 @@ table#example thead tr th {
   $(document).on('click', '.delete', function (e) {
   e.preventDefault();
                 swal({
-                    title: "Are you sure to delete this user?",
+                    title: "Are you sure to delete this Role?",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
