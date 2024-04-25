@@ -16,19 +16,20 @@ class RoleController extends Controller
     public function store(Request $request){
         $this->validate(request(), [
             'name' =>'required',
+            'child' => 'array',
         ],
         [   
             'name.required' => 'Role Name is required *',
+            'child.array' => 'Permission must be selected *',
 
         ]);
         $role = new Role();
         $role->name=$request->name;
-        if($request->filled('child')){
-            $permissionsPath =[];
-            foreach ($request->input('child') as $permissionId) {
-                $permissionsPath[] = $permissionId;
-            }
-            $role->child=implode(',',$permissionsPath);
+        if ($request->filled('child')) {
+            $permissionsPath = $request->input('child');
+            $role->child = implode(',', $permissionsPath);
+        } else {
+            $role->child = '';
         }
         $role->save();
         return redirect()->route('roles.index')->with('success','');

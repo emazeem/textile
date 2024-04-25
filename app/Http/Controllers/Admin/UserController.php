@@ -104,6 +104,7 @@ class UserController extends Controller
         $user->joining=$request->joining;
         $user->designation=$request->designation;
         $user->department=$request->department;
+
         $user->save();
         return redirect()->route('users.index');
     }
