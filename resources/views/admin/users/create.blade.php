@@ -88,7 +88,7 @@ $(document).ready(function () {
         </form>
     </div>
 
-    <script type="text/javascript">
+<script type="text/javascript">
  $(document).ready(function () {
     $("#user-form").on('submit', (function (e) {
         var button = $('.user-btn');

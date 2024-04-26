@@ -71,4 +71,7 @@
     $('.multi-select').select2();
 });
 </script>
+
+
+
 @endsection

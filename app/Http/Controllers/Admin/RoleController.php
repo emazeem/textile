@@ -58,6 +58,7 @@ class RoleController extends Controller
         $role->permission_name=$request->permission_name;
         $role->save();
         return redirect()->route('roles.index')->with('success','');
+
     }
     public function show($id){
         $show = Role::Find($id);
