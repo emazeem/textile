@@ -4,10 +4,8 @@
     <div class="row">
       <div class="col-12 mb-2">
         <h3 class="float-left"><i class='bx bx-home bx-burst' ></i> Dashboard</h3>
-        <!-- <a href="" class="btn btn-danger float-right ml-1" >Check Out</a>
-        <a href="" class="btn btn-success float-right" >Check In</a> -->
-    
       </div>
+      
       <!--My Attendence-->
       <div class="col-lg-12">
         <div class="card">
