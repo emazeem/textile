@@ -59,5 +59,11 @@ class PermissionSeeder extends Seeder
         $userRole->givePermissionTo('show role');
         $userRole->givePermissionTo('show permission');
         $userRole->givePermissionTo('show work-order');
-    }
+
+
+        $customerRole = Role::where('name', 'customer')->first();
+        $customerRole->givePermissionTo('create work-order');
+        $customerRole->givePermissionTo('show work-order');
+}
+
 }
