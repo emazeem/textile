@@ -33,13 +33,13 @@
                             <h6 class="my-3"><i class="bx bxs-cog mr-1"></i>{{$parent->name}} Management</h6>
                             @foreach($parent->child as $permission)
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="child[]" value="{{$permission->name}}" id="permission_{{$permission->id}}">
+                                <input class="form-check-input" type="checkbox" name="child[]" value="{{$permission->id}}" id="permission_{{$permission->id}}">
                                 <label class="form-check-label mr-3" for="permission_{{$permission->id}}">
-                                                {{$permission->name}}
-                                            </label>
-                                        </div>
-                                        @endforeach
-                                        @endforeach
+                                    {{$permission->name}}
+                                </label>
+                             </div>
+                            @endforeach
+                            @endforeach
                             </div>
                         </div>
                     </div>
