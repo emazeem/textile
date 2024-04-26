@@ -30,7 +30,7 @@
  
     <tr>
       <th scope="col">Permissions</th>
-      <td scope="col">{{$show->permission_name}}</td>
+      <td scope="col">{{$show->child}}</td>
     </tr>
   </table>
 </div>
