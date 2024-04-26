@@ -64,7 +64,7 @@ class UserController extends Controller
 
     $user->save();
 
-    return response()->json(['success' => 'User updated successfully!', 'id' => $user->id]);
+    return response()->json(['success'=>'User updated successfully!','id'=>$user->id]);
 }
 
     public function create(){
@@ -106,6 +106,6 @@ class UserController extends Controller
         $user->department=$request->department;
 
         $user->save();
-        return redirect()->route('users.index');
+        return response()->json(['success'=>'User added successfully!','id'=>$user->id]);
     }
 }

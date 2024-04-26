@@ -84,4 +84,36 @@ $(document).ready(function () {
         </div>
         </form>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#user-form").on('submit', (function (e) {
+                var button = $('.user-btn');
+                var previous = $('.user-btn').html();
+                button.attr('disabled', 'disabled').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing');
+                e.preventDefault();
+                $.ajax({
+                    url: "{{route('users.update')}}",
+                    type: "POST",
+                    data: new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function (data) {
+                        button.attr('disabled', null).html(previous);
+                        swal('success', data.success, 'success').then(() => {
+                            window.location.href = '{{url('users/show')}}/' + data.id;
+                        });
+                     },
+                    error: function (xhr) {
+                        button.attr('disabled', null).html(previous);
+                        erroralert(xhr);
+                    }
+                });
+            }));
+            
+
+        });
+    </script>
+
 @endsection
