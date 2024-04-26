@@ -24,17 +24,19 @@ class RoleController extends Controller
 
         ]);
         $role = new Role();
-        $role->name=$request->name;
+        $permissionsPath = [];
+        $role->name = $request->name;
+
         if ($request->filled('child')) {
-            $permissionsPath = $request->input('child');
+            foreach ($request->input('child') as $permission) {
+                $permissionsPath[] = $permission;
+            }
             $role->child = implode(',', $permissionsPath);
         } else {
             $role->child = '';
         }
         $role->save();
         return redirect()->route('roles.index')->with('success','');
-
-        
     }
 
     public function create(){
@@ -43,19 +45,29 @@ class RoleController extends Controller
     } 
     public function edit($id){
         $edit = Role::find($id);
-        return view('admin.roles.edit', compact('edit'));
+        $parents = Permission::with('child')->whereNull('parent_id')->get();
+        foreach (explode(',',$edit->child) as $ids) {
+            $selectedPermissions[] = $ids;
+        }
+        return view('admin.roles.edit', compact('edit','parents','selectedPermissions'));
     }
     public function update(Request $request){
         $this->validate($request, [
             'name' =>'required',
-            'permission_name' =>'required',
+            'child' => 'array',
         ], [
             'name.required' => 'Role Name is required *',
-            'permission_name.required' => 'Permission Name is required *',
+            'child.array' => 'Permission must be selected *',
         ]);
         $role = Role::find($request->id);
         $role->name=$request->name;
-        $role->permission_name=$request->permission_name;
+        
+        if ($request->filled('child')) {
+            foreach ($request->input('child') as $permission) {
+                $permissionsPath[] = $permission;
+            }
+            $role->child = implode(',', $permissionsPath);
+        }
         $role->save();
         return redirect()->route('roles.index')->with('success','');
 
