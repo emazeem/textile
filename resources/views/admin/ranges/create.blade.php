@@ -11,11 +11,12 @@
     @endif
     <div class="row pb-3">
         <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="">Ranges List</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Add Details</li>
-        </ol>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="">Ranges List</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add Details</li>
+            </ol>
         </nav>
+
         <form  id="user-form" style="width:100%" method="post" enctype="multipart/form-data">
         @csrf
         <div class="card">
@@ -25,6 +26,7 @@
                         <label for="name" class="control-label font-weight-bold">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
+                    
                     <div class="form-group col-md-4 col-12 ml-4">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="toggleRanges()">
                         <label class="form-check-label" for="defaultCheck1">Do you want to add multiple ranges</label>
@@ -40,17 +42,17 @@
                     <div class=" col-md-3 col-6" id="minmaxRanges" style="display: none;">
                         <label for="minrange" class="control-label font-weight-bold">Minimum Range</label>
                         <div class="input-group-append mb-2">
-                        <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Min Range">
-                        <input type="text" class="form-control col-md-4" id="minrange" name="unit" placeholder="unit">
+                            <input type="text" class="form-control" id="minrange" name="minrange" placeholder="Min Range">
+                            <input type="text" class="form-control col-md-4" id="minrange" name="unit" placeholder="unit">
                         </div>
 
                     </div>
                     <div class="form-group col-md-3" id="maxrangeGroup" style="display: none;">
                         <label for="maxrange" class="control-label font-weight-bold">Maximum Range</label>
                         <div class="input-group-append">
-                        <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Max Range">
-                        <input type="text" class="form-control col-md-4" id="maxrange" name="unit" placeholder="unit">
-                    </div>
+                            <input type="text" class="form-control" id="maxrange" name="maxrange" placeholder="Max Range">
+                            <input type="text" class="form-control col-md-4" id="maxrange" name="unit" placeholder="unit">
+                        </div>
                     </div>
                     
                     <div class="card-footer bg-white border-top">
@@ -62,12 +64,12 @@
                             </div>
                         </div>
                     </div>
-            </div> 
-        </form>
-    </div>
+                </div>
+            </form>
+        </div>
 
-<script>
-    function toggleRanges() {
+  <script>
+  function toggleRanges() {
         var checkBox = document.getElementById("defaultCheck1");
         var minmaxRanges = document.getElementById("minmaxRanges");
         var maxrangeGroup = document.getElementById("maxrangeGroup");
