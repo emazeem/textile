@@ -82,8 +82,6 @@
 </div>
 </body>
 
-
-
 <script>
     function togglePasswordVisibility() {
         var passwordField = document.getElementById("password");
@@ -98,5 +96,4 @@
         }
     }
 </script>
-
 @endsection
