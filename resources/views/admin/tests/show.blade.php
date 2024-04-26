@@ -39,7 +39,8 @@
               <th scope="col">Add Range</th>
               <td scope="col">
               <label for="assg-permissions" class="control-label font-weight-bold"></label>
-                    <select class="multi-select form-control w-100" name="permissions[]" multiple="multiple" id="assg-permissions">
+                    <select class="multi-select form-control w-100"
+                     name="permissions[]" multiple="multiple" id="assg-permissions">
                         <option value="range1">Range 1</option>
                         <option value="range2">Range 2</option>
                         <option value="range3">Range 3</option>

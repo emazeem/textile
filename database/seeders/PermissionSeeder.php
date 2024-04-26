@@ -59,6 +59,5 @@ class PermissionSeeder extends Seeder
         $userRole->givePermissionTo('show role');
         $userRole->givePermissionTo('show permission');
         $userRole->givePermissionTo('show work-order');
-}
-
+    }
 }
