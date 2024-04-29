@@ -40,7 +40,7 @@
     </tr>
     <tr>
       <th scope="col">Role</th>
-      <td scope="col">{{$roles->name}}</td>
+      <td scope="col">{{$rname}}</td>
     </tr>
     <tr>
       <th scope="col">Date of joining</th>
