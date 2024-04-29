@@ -41,10 +41,9 @@
               <label for="assg-permissions" class="control-label font-weight-bold"></label>
                     <select class="multi-select form-control w-100"
                      name="permissions[]" multiple="multiple" id="assg-permissions">
-                        <option value="range1">Range 1</option>
-                        <option value="range2">Range 2</option>
-                        <option value="range3">Range 3</option>
-                        <option value="range4">Range 4</option>
+                        <option value="rng1">Fix Range</option>
+                        <option value="rng2">Minimum Range</option>
+                        <option value="rng3">Maximum Range</option>
                     </select>
                     <button type="submit" class="btn btn-primary"><i class='bx bxs-flask'></i> Select Ranges</button>
                 </td>
