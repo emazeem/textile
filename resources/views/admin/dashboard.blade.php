@@ -42,24 +42,23 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
-            <h5 class="float-left pb-1 font-weight-light">Add table info</h5>
+            <h5 class="float-left pb-1 font-weight-light"><i class='bx bx-briefcase'></i> Work Order</h5>
             <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">
               <thead>
                 <tr class="bg-c-blue">
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                  <th>ID</th>
+                  <th>CUSTOMER NAME</th>
+                  <th>CONTACT NAME</th>
+                  <th>PO NUMBER</th>
+                  
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>1</td>
+                  <td>Acme Apparel Inc.</td>
+                  <td>Ms. Sarah Jones</td>
+                  <td>AC-2024-0422</td>
                 </tr>
               </tbody>
             </table>
