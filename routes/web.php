@@ -24,7 +24,10 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('change_password', [DashboardController::class, 'changePassword'])->name('change.password');
+    Route::post('update_password', [DashboardController::class, 'updatePassword'])->name('update.password');
 
     Route::group(['prefix' => 'users'], function () {
         Route::get('', [UserController::class, 'index'])->name('users.index');

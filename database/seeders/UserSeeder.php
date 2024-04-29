@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
             'fname' => 'Super',
             'lname' => 'Admin',
             'email' => 'info@textile.com',
-            'role' => 'super-admin',
+            'role' => 1,
             'password' => Hash::make('123454321'),
             'department' => 'Excecutive',
             'designation' => 'CEO',

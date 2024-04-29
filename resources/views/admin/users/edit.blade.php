@@ -45,8 +45,10 @@ $(document).ready(function () {
                         <div class="col-md-3">
                             <label for="role" class="control-label font-weight-bold float-left">Role</label>
                             <select class="form-select custom-select" name="role" >
-                                <option value="user">--User</option>
-                                <option value="user">user</option>
+                                <option value="user">--Select Role</option>
+                                @foreach($roles as $role)
+                                <option value="{{$role->id}}">{{$role->name}}</option>
+                                @endforeach
                             </select>
                         </div>
                         <!--Date Of Joining-->
