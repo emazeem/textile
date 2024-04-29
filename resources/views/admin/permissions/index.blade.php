@@ -88,8 +88,8 @@
             <tr class="bg-c-blue">
               <th>ID</th>
               <th>Name</th>
-              <th>Menu</th>
-              <th>Action</th>
+              <th class="text-wrap">Menu</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -98,12 +98,13 @@
             <tr class="table-row">
                     <td>{{$parent->id}}</td>
                     <td>{{$parent->name}}</td>
-                    <td>
+                    <td class="text-wrap">
                       @foreach($parent->child as $permission)
-                        {{$permission['name'] . ' , '}}
+                        <li>{{$permission['name']}}</li>
+                        <!-- {{$permission['name'] . ' , '}} -->
                       @endforeach
                     </td>
-                    <td>
+                    <td class="text-center">
                     <a href="{{route('permissions.edit', ['id'=>$parent->id])}}" data-permission-id="{{ $parent->id }}" class="btn btn-success btn-sm edit-permission" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i></a>
                     <a href="{{route('permissions.delete', $parent->id)}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                  </td>
@@ -122,6 +123,9 @@
     </div> 
     
     <style>
+    .text-wrap{
+    text-wrap: balance;
+    }
     table#example thead tr th{
     background: #233560!important;
   

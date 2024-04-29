@@ -26,7 +26,7 @@
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="row">
-                    <div class="form-group ml-3 mt-3 col-md-6 col-12">
+                    <div class="form-group ml-3 mt-3 col-md-12 col-12">
                         <h3 class="font-weight-light">Permissions</h3>
                         <div class="my-4">
                             @foreach($parents as $parent)
@@ -69,7 +69,9 @@
     $('.multi-select').select2();
 });
 </script>
-
-
+<div>
+    <div>
+</div>
+</div>
 
 @endsection

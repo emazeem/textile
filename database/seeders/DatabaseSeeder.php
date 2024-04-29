@@ -16,10 +16,7 @@ class DatabaseSeeder extends Seeder
     {
 
       $this->call(PermissionSeeder::class);
-        // $this->call([
-        //   PermissionSeeder::class
-        // ]);
 
-        // User::factory()->create();
     }
+
 }
