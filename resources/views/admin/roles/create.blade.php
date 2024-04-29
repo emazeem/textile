@@ -21,7 +21,7 @@ $(document).ready(function() {
         @csrf
         <div class="card">
             <div class="card-footer bg-white border-top">
-                <h5 class="font-weight-light"><i class="bx bx-star mr-1"></i>Add Roles</h5>
+                <h5 class="font-weight-light"><i class="bx bx-star my-3 mr-1"></i>Add Roles</h5>
                 <div class="form-group col-md-3 col-12 ">
                     <label for="name" class="control-label font-weight-bold">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
