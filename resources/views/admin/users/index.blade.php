@@ -50,6 +50,9 @@
             @endforeach
           </tbody>
         </table>
+        <div class="float-right">
+        {{ $users->links('pagination::bootstrap-4') }}
+        </div>
         <div class="row float-right mt-2 mr-0">
         </div>
       </div>
