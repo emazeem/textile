@@ -20,8 +20,7 @@ class UserController extends Controller
     }
     public function show($id){
         $show = User::Find($id);
-        $rname = $show->roles->name;
-        return view("admin.users.show", compact("show", "rname"));
+        return view("admin.users.show", compact("show"));
     }
     public function edit($id){
         $roles = Role::all();
