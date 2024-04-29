@@ -70,24 +70,24 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body table-responsive">
-            <h5 class="float-left pb-1 font-weight-light">Add table info</h5>
+            <h5 class="float-left pb-1 font-weight-light"><i class='bx bx-ruler'></i> Ranges</h5>
             <table id="example" class="table table-bordered table-hover  table-sm display nowrap" cellspacing="0" width="100%">              
               <thead>
                 <tr class="bg-c-blue">
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Fix Range</th>
+                  <th>Minimum Range</th>
+                  <th>Maximum Range</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>                
+                  <td>001</td>
+                  <td>ph test</td>
+                  <td>7ph</td>
+                  <td>1ph</td>
+                  <td>14ph</td>                
                 </tr>
                  
               </tbody>
