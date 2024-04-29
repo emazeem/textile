@@ -92,7 +92,7 @@
               <th>ID</th>
               <th>Department Name</th>
               <th>Department head</th>
-              <th>Action</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody>

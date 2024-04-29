@@ -29,7 +29,7 @@
               <th>Name</th>
               <th>Address</th>
               <th>Industry</th>
-              <th>Action</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -39,7 +39,7 @@
               <td>{{$customer['Name']}}</td>
               <td>{{$customer['Address']}}</td>
               <td>{{$customer['Industry']}}</td>
-              <td>
+              <td class="text-center">
                 <a href="{{route('customers.edit',['id'=>$customer['id']])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                 <a href="{{route('customers.show',['id'=>$customer['id']])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                 <a href="" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>

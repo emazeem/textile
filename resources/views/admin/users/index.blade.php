@@ -30,7 +30,7 @@
               <th>Email</th>
               <th>Department</th>
               <th>Role</th>
-              <th>Action</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -41,7 +41,7 @@
                     <td>{{$user->email}}</td>
                     <td>{{$user->department}}</td>
                     <td>{{$user->role}}</td>
-                 <td>
+                 <td class="text-center">
                     <a href="{{route('users.edit',['id'=>$user->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                     <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                     <a href="{{route('users.delete', ['id' => $user->id])}}" method="post" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>

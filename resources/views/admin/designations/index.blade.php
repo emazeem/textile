@@ -96,7 +96,7 @@
               <th>ID</th>
               <th>Designation Name</th>
               <th>Department Name</th>
-              <th>Action</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody>

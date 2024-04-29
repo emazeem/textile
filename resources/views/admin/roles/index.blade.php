@@ -29,7 +29,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Permissions</th>
-                <th>Action</th>
+                <th class="text-center">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -39,7 +39,7 @@
                 <td>{{$role->id}}</td>
                 <td>{{$role->name}}</td>
                 <td>{{$role->child . ", "}}</td>
-                <td>
+                <td class="text-center">
                     <a href="{{route('roles.edit',['id'=>$role->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                     <a href="{{route('roles.delete',['id'=>$role->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
                 </td>

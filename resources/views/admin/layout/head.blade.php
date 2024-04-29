@@ -85,7 +85,7 @@
                     <div class="dropdown-menu dropdown-menu-right profile-notification ">
                         <div class="pro-head">
                             <img src="images/ds.png" class="img-radius wid-40 hei-40" style="object-fit: cover">
-                            <span></span>
+                            <span>{{auth()->user()->fname}} {{auth()->user()->lname}}</span>
                             <a class="dud-logout" title="Logout"
                                onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"
                                href="">

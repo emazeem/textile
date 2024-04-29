@@ -29,7 +29,7 @@
               <th>Customer Name</th>
               <th>Contact Name</th>
               <th>PO Number</th>
-              <th>Action</th>
+              <th class="text-center">Action</th>
             </tr>
           </thead>
           <tbody>
