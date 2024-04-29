@@ -31,7 +31,10 @@ $(document).ready(function() {
                         <h3 class="font-weight-light">Permissions</h3>
                         <div class="my-4">
                             @foreach($parents as $parent)
-                            <h6 class="my-3"><i class="bx bxs-cog mr-1"></i>{{$parent->name}} Management</h6>
+                            <div>
+                                <input class="form-check-input mx-1" type="checkbox" name="">
+                                <h6 class="my-3 py-1 px-2 ml-3"></i>{{$parent->name}} Management</h6>
+                            </div>
                             @foreach($parent->child as $permission)
                             <div class="form-check form-check-inline">
                                
