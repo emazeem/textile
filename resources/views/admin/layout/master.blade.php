@@ -30,7 +30,7 @@
     @endif
     <link href="{{url('assets/css/plugins/notifier.css')}}" rel="stylesheet">
 </head>
-@if(Route::currentRouteName()!='login' and Route::currentRouteName()!='password.reset' and Route::currentRouteName()!='password.request')
+@if(Route::currentRouteName()!='login' and Route::currentRouteName()!='register' and Route::currentRouteName()!='password.reset' and Route::currentRouteName()!='password.request')
     <body class="">
     <div class="loader-bg">
         <div class="loader-track">
