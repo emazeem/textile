@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Permission;
+use Illuminate\Support\Str;
 class PermissionController extends Controller
 {
     public function index(){
@@ -24,6 +25,7 @@ class PermissionController extends Controller
         ]);
         $permission = new Permission();
         $permission->name=$request->name;
+        $permission->slug=Str::slug($request->name);
         if($request->filled('parent_id')){
             $permission->parent_id=$request->parent_id;
         }
@@ -46,6 +48,7 @@ class PermissionController extends Controller
         ]);
         $permission = Permission::find($request->id);
         $permission->name=$request->name;
+        $permission->slug=Str::slug($request->name);
         $permission->save();
         return redirect()->route('permissions.index')->with('success','');
     }

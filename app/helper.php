@@ -112,5 +112,12 @@ if (!function_exists('getWorkOrders')) {
     }
 }
 
-        
+function c_auth($slug, $user)
+{
+    if (in_array($slug, explode(',', $user->roles->permissions))) {
+        return true;
+    } else {
+        return false;
+    }
+}
 

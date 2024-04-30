@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\{Role,Permission};
-
+use Illuminate\Support\Str;
 class RoleController extends Controller
 {
     public function index(){
@@ -15,7 +15,7 @@ class RoleController extends Controller
 
     public function store(Request $request){
         $this->validate(request(), [
-            'name' =>'required',
+            'name' =>'required|string|unique:roles',
             'child' => 'array',
         ],
         [   
@@ -29,9 +29,9 @@ class RoleController extends Controller
 
         if ($request->filled('child')) {
             foreach ($request->input('child') as $permission) {
-                $permissionsPath[] = $permission;
+                $permissionsPath[] = Str::slug($permission);
             }
-            $role->child = implode(',', $permissionsPath);
+            $role->child = implode(', ', $permissionsPath);
         } else {
             $role->child = '';
         }
@@ -54,7 +54,7 @@ class RoleController extends Controller
     public function update(Request $request){
         $this->validate($request, [
             'name' =>'required',
-            'child' => 'array',
+            'child' => 'array|required|unique:permissions',
         ], [
             'name.required' => 'Role Name is required *',
             'child.array' => 'Permission must be selected *',
