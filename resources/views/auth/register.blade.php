@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-            <div class="card col-md-9">
+            <div class="card col-md-8">
                 <h3 class="mx-auto mt-4">Register User</h3>
                 <div class="card-header mx-auto text-dark font-weight-bold">Add your information</div>
 
@@ -48,14 +48,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <div class="input-group">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-                                <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary toggle-button"><i
-                                                class="fa fa-eye-slash toggle-icon"></i></button>
-                                    </div>
-                            </div>
-                                
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -69,16 +62,12 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
-                                <div class="input-group">
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button>
-                                    </div>
-                                </div>
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
+                        </div>
 
-                        <div class=" mx-auto mt-4 mb-0">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="row mb-0">
+                            <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
@@ -87,7 +76,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+            </div>
         </div>
     </div>
 </div>
