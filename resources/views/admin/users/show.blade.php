@@ -43,6 +43,10 @@
       <td scope="col">{{$show->roles->name}}</td>
     </tr>
     <tr>
+      <th class="text-wrap" scope="col">Permissions</th>
+      <td class="text-wrap" scope="col">{{$show->roles->child}}</td>
+    </tr>
+    <tr>
       <th scope="col">Date of joining</th>
       <td scope="col">{{$show->joining}}</td>
     </tr>
@@ -57,4 +61,10 @@
 </table>
     </div>
     
+
+<style>
+  .text-wrap{
+    text-wrap: balance;
+    }
+</style>
 @endsection
