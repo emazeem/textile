@@ -31,7 +31,7 @@ class RoleController extends Controller
             foreach ($request->input('child') as $permission) {
                 $permissionsPath[] = Str::slug($permission);
             }
-            $role->child = implode(', ', $permissionsPath);
+            $role->child = implode(',', $permissionsPath);
         } else {
             $role->child = '';
         }
@@ -46,15 +46,15 @@ class RoleController extends Controller
     public function edit($id){
         $edit = Role::find($id);
         $parents = Permission::with('child')->whereNull('parent_id')->get();
-        foreach (explode(',',$edit->child) as $ids) {
-            $selectedPermissions[] = $ids;
+        foreach (explode(',',$edit->child) as $names) {
+            $selectedPermissions[] = $names;
         }
         return view('admin.roles.edit', compact('edit','parents','selectedPermissions'));
     }
     public function update(Request $request){
         $this->validate($request, [
             'name' =>'required',
-            'child' => 'array|required|unique:permissions',
+            'child' => 'array|required|unique:roles',
         ], [
             'name.required' => 'Role Name is required *',
             'child.array' => 'Permission must be selected *',
