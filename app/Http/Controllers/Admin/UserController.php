@@ -10,8 +10,17 @@ class UserController extends Controller
 {
     public function index(Request $request){
         $users = User::all();
+
+        // $search = $request['search'] ?? "";
+        // if ($search != ""){
+        //   $users = $users
+        //   ->where('id','LIKE',"%$search%")
+        //   ->orwhere('fname','LIKE',"%$search%")
+        //   ->orwhere('lname','LIKE',"%$search%")
+        //   ->orwhere('email','LIKE',"%$search%");
+        // }
         $users = User::paginate(10);
-        return view("admin.users.index", compact("users"));
+        return view("admin.users.index", compact("users",));
     }
     public function delete($id){
         $user = User::find($id);
