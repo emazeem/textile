@@ -104,7 +104,6 @@ class UserController extends Controller
             'joining.required' => ' Joining date is required *',
             'designation.required' => ' Designation is required *',
             'department.required' => ' Department is required *',
-
         ]);
         $user = new User();
         $user->fname=$request->fname;
