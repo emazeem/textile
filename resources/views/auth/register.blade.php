@@ -48,7 +48,14 @@
                             <label for="password" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
+                                <div class="input-group">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <div class="input-group-append">
+                                        <button type="button" class="btn btn-success toggle-button"><i
+                                                class="fa fa-eye-slash toggle-icon"></i></button>
+                                    </div>
+                            </div>
+                                
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -62,11 +69,15 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <div class="input-group">
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-success toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row mb-0">
+                        <div class=" mx-auto mt-5 mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
@@ -76,9 +87,11 @@
                     </form>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
     </div>
 </div>
 </body>
+
+
 @endsection
