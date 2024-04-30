@@ -2,10 +2,11 @@
 
 @section('content')
 
+<body class="bg-c-primary">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card ">
                 <h3 class="mx-auto mt-4">Register User</h3>
                 <div class="card-header mx-auto text-dark font-weight-bold">Add your information</div>
 
@@ -77,4 +78,5 @@
         </div>
     </div>
 </div>
+</body>
 @endsection
