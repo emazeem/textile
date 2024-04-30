@@ -51,7 +51,7 @@
                                 <div class="input-group">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                                 <div class="input-group-append">
-                                        <button type="button" class="btn btn-success toggle-button"><i
+                                        <button type="button" class="btn btn-primary toggle-button"><i
                                                 class="fa fa-eye-slash toggle-icon"></i></button>
                                     </div>
                             </div>
@@ -72,12 +72,12 @@
                                 <div class="input-group">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                     <div class="input-group-append">
-                                        <button type="button" class="btn btn-success toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button>
+                                        <button type="button" class="btn btn-primary toggle-button"><i class="fa fa-eye-slash toggle-icon"></i></button>
                                     </div>
                                 </div>
                             </div>
 
-                        <div class=" mx-auto mt-5 mb-0">
+                        <div class=" mx-auto mt-4 mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
@@ -92,6 +92,4 @@
     </div>
 </div>
 </body>
-
-
 @endsection

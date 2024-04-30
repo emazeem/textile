@@ -30,7 +30,7 @@
                             <div class="col-md-8 input-group">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
-                                <button type="button" class="btn btn-outline-secondary col-md-2" onclick="togglePasswordVisibility()">
+                                <button type="button" class="btn btn-primary col-md-2" onclick="togglePasswordVisibility()">
                                 <i class="fa fa-eye-slash toggle-icon"></i>
                                  </button>
                                 @error('password')
@@ -90,4 +90,5 @@
         }
     }
 </script>
+
 @endsection
