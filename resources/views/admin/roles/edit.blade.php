@@ -41,10 +41,10 @@ $(document).ready(function() {
                             @foreach($parent->child as $permission)
                             <div class="form-check form-check-inline">
                                 @php
-                                $selected = in_array($permission->id, $selectedPermissions) ? 'checked' : '';
+                                $selected = in_array($permission->slug, $selectedPermissions) ? 'checked' : '';
                                 @endphp
                                 <input class="form-check-input" type="checkbox" {{ $selected }} name="child[]"
-                                    value="{{$permission->id}}" id="{{$permission->id}}">
+                                    value="{{$permission->slug}}" id="{{$permission->id}}">
                                 <label class="form-check-label mr-3" for="{{$permission->id}}">
                                     {{$permission->name}}
                                 </label>

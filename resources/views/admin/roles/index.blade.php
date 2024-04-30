@@ -28,7 +28,7 @@
             <tr class="bg-c-blue">
                 <th>ID</th>
                 <th>Name</th>
-                <th>Permissions</th>
+                <th class="text-wrap">Permissions</th>
                 <th class="text-center">Action</th>
             </tr>
         </thead>
@@ -38,7 +38,7 @@
             <tr class="table-row bg-white">
                 <td>{{$role->id}}</td>
                 <td>{{$role->name}}</td>
-                <td>{{$role->child . ", "}}</td>
+                <td class="text-wrap">{{$role->child . ","}}</td>
                 <td class="text-center">
                     <a href="{{route('roles.edit',['id'=>$role->id])}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                     <a href="{{route('roles.delete',['id'=>$role->id])}}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt"></i></a>
@@ -58,6 +58,9 @@
 </div>
 
 <style>
+.text-wrap{
+text-wrap: balance;
+}
 table#example thead tr th {
     background: #233560 !important;
 }
