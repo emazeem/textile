@@ -89,6 +89,7 @@
               <th>ID</th>
               <th>Name</th>
               <th class="text-wrap">Menu</th>
+              <th class="text-wrap">Slug</th>
               <th class="text-center">Action</th>
             </tr>
           </thead>
@@ -101,6 +102,12 @@
                     <td class="text-wrap">
                       @foreach($parent->child as $permission)
                         <li>{{$permission['name']}}</li>
+                        <!-- {{$permission['name'] . ' , '}} -->
+                      @endforeach
+                    </td>
+                    <td>
+                      @foreach($parent->child as $permission)
+                        <li>{{$permission['slug']}}</li>
                         <!-- {{$permission['name'] . ' , '}} -->
                       @endforeach
                     </td>

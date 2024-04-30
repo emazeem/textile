@@ -39,7 +39,7 @@ $(document).ready(function() {
                             <div class="form-check form-check-inline">
                                
                                 <input class="form-check-input" type="checkbox" name="child[]"
-                                    value="{{$permission->id}}" id="permission_{{$permission->id}}">
+                                    value="{{$permission->name}}" id="permission_{{$permission->id}}">
                                 <label class="form-check-label mr-3" for="permission_{{$permission->id}}">
                                     {{$permission->name}}
                                 </label>
