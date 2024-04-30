@@ -44,7 +44,7 @@
     </tr>
     <tr>
       <th class="text-wrap" scope="col">Permissions</th>
-      <td class="text-wrap" scope="col">{{$show->roles->child}}</td>
+      <td class="text-wrap" scope="col">{{$show->roles->child}} </td>
     </tr>
     <tr>
       <th scope="col">Date of joining</th>
