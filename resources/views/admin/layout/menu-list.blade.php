@@ -19,6 +19,7 @@
                         <span class="pcoded-mtext">Dashboard</span>
                     </a>
                 </li>
+                @can('users')
                 <li class="nav-item">
                     <a href="{{route('users.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -27,6 +28,9 @@
                         <span class="pcoded-mtext">Users</span>
                     </a>
                 </li>
+                @endcan
+                
+            @can('customers')
                 <li class="nav-item">
                     <a href="{{route('customers.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -35,6 +39,8 @@
                         <span class="pcoded-mtext">Customers</span>
                     </a>
                 </li>
+            @endcan  
+            @can('tests')  
                 <li class="nav-item">
                     <a href="{{route('tests.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -43,6 +49,8 @@
                         <span class="pcoded-mtext">Tests</span>
                     </a>
                 </li>
+            @endcan
+            @can('ranges')  
                 <li class="nav-item">
                     <a href="{{route('ranges.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -51,6 +59,8 @@
                         <span class="pcoded-mtext">Ranges</span>
                     </a>
                 </li>
+            @endcan
+            @can('departments')  
                 <li class="nav-item">
                     <a href="{{route('departments.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -59,6 +69,8 @@
                         <span class="pcoded-mtext">Departments</span>
                     </a>
                 </li>
+            @endcan
+            @can('designations')
                 <li class="nav-item">
                     <a href="{{route('designations.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -67,6 +79,8 @@
                         <span class="pcoded-mtext">Designations</span>
                     </a>
                 </li>
+            @endcan
+            @can('work-orders')
                 <li class="nav-item">
                     <a href="{{route('work-orders.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -75,6 +89,8 @@
                         <span class="pcoded-mtext">Work Order</span>
                     </a>
                 </li>
+            @endcan
+            @can('permissions')
                 <li class="nav-item">
                     <a href="{{route('permissions.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -83,6 +99,8 @@
                         <span class="pcoded-mtext">Permissions</span>
                     </a>
                 </li>
+            @endcan
+            @can('roles')
                 <li class="nav-item">
                     <a href="{{route('roles.index')}}" class="nav-link">
                         <span class="pcoded-micon">
@@ -91,6 +109,7 @@
                         <span class="pcoded-mtext"> Roles</span>
                     </a>
                 </li>
+            @endcan
             </ul>
         </div>
     </div>

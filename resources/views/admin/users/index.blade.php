@@ -7,7 +7,6 @@
       <div class="col-12 mb-2">
         <h3 class="float-left pb-1 font-weight-light"><i class="feather icon-user"></i> Personnel</h3>
           <a href="{{route('users.create')}}" class="btn btn-primary shadow-sm float-right mt-2"><i class="fa fa-plus-circle mr-1"></i>Users</a>
-        
       </div>
       <!--Search bar-->
       <div class="row"></div>
@@ -40,7 +39,7 @@
                     <td>{{$user->fname}} {{$user->lname}}</td>
                     <td>{{$user->email}}</td>
                     <td>{{$user->department}}</td>
-                    <td>{{$user->role}}</td>
+                    <td>{{$user->roles->name}}</td>
                  <td class="text-center">
                     <a href="{{route('users.edit',['id'=>$user->id])}}" class="btn btn-success btn-sm" ><i class="fas fa-edit"></i></a>
                     <a href="{{route('users.show',['id'=>$user->id])}}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
