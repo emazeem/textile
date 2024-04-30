@@ -21,20 +21,20 @@ class DashboardController extends Controller
     }
     public function updatePassword(Request $request)
     {
-    $request->validate([
-        'currentPassword' => 'required',
-        'newPassword' => 'required|string|min:8|confirmed',
-    ]);
+        $request->validate([
+            'currentPassword' => 'required',
+            'newPassword' => 'required|string|min:8|confirmed',
+        ]);
 
-    $user = Auth::user();
+        $user = Auth::user();
 
-    if (!Hash::check($request->currentPassword, $user->password)) {
-        return redirect()->back()->with('error', 'The current password is incorrect.');
-    }
+        if (!Hash::check($request->currentPassword, $user->password)) {
+            return redirect()->back()->with('error', 'The current password is incorrect.');
+        }
 
-    $user->password = Hash::make($request->newPassword);
-    $user->save();
+        $user->password = Hash::make($request->newPassword);
+        $user->save();
 
-    return redirect()->back()->with('success', 'Password updated successfully.');
+        return redirect()->back()->with('success', 'Password updated successfully.');
     }
 }

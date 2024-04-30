@@ -14,7 +14,11 @@ class PermissionSeeder extends Seeder
      */
     public function run(): void
     {
-
+        $dashboardPermission = Permission::create([
+            'name' => 'Dashboard',
+            'slug' => Str::slug('Dashboard'),
+            'parent_id' => null
+        ]);
         $userPermission = Permission::create([
             'name' => 'Users',
             'slug' => Str::slug('Users'),
@@ -63,6 +67,10 @@ class PermissionSeeder extends Seeder
         
 
         $permissions = [
+        [
+            'name' => 'View Dashboard',
+            'parent_id' => $dashboardPermission->id,
+        ],
         [
             'name' => 'View User',
             'parent_id' => $userPermission->id,

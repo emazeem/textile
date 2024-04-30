@@ -35,14 +35,17 @@ $(document).ready(function() {
                         <div class="my-4">
                             @foreach($parents as $parent)
                             <div>
-                                <input class="form-check-input mx-1" type="checkbox" name="">
+                            @php
+                            $selected = in_array($parent->slug, $selectedPermissions) ? 'checked' : '';
+                            @endphp
+                                <input class="form-check-input mx-1" type="checkbox" {{$selected}}  value="{{$parent->slug}}" name="child[]">
                                 <h6 class="my-3 py-1 px-2 ml-3"></i>{{$parent->name}} Management</h6>
                             </div> 
                             @foreach($parent->child as $permission)
+                            @php
+                            $selected = in_array($permission->slug, $selectedPermissions) ? 'checked' : '';
+                            @endphp
                             <div class="form-check form-check-inline">
-                                @php
-                                $selected = in_array($permission->slug, $selectedPermissions) ? 'checked' : '';
-                                @endphp
                                 <input class="form-check-input" type="checkbox" {{ $selected }} name="child[]"
                                     value="{{$permission->slug}}" id="{{$permission->id}}">
                                 <label class="form-check-label mr-3" for="{{$permission->id}}">

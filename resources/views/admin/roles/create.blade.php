@@ -32,7 +32,7 @@ $(document).ready(function() {
                         <div class="my-4">
                             @foreach($parents as $parent)
                             <div>
-                                <input class="form-check-input mx-1" type="checkbox" name="">
+                                <input class="form-check-input mx-1" type="checkbox" value="{{$parent->slug}}" name="child[]">
                                 <h6 class="my-3 py-1 px-2 ml-3"></i>{{$parent->name}} Management</h6>
                             </div>
                             @foreach($parent->child as $permission)
