@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use App\Models\Permission;
 use Illuminate\Support\ServiceProvider;
-use App\providers\AuthServiceProvider;
+use Illuminate\Support\Facades\Gate;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -20,11 +20,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        foreach (Permission::all() as $permission){
-            Gate::define($permission->slug, function ($user) use ($permission){
-                return c_auth($permission->slug, $user);
-            });
-        }
+        // foreach (Permission::all() as $permission){
+        //     Gate::define($permission->slug, function ($user) use ($permission){
+        //         return c_auth($permission->slug, $user);
+        //     });
+        // }
         
     }
 }
