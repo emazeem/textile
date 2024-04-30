@@ -6,7 +6,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="card col-md-8">
                 <h3 class="mx-auto mt-4">Register User</h3>
                 <div class="card-header mx-auto text-dark font-weight-bold">Add your information</div>
 
@@ -74,6 +75,7 @@
                         </div>
                     </form>
                 </div>
+            </div>
             </div>
         </div>
     </div>
